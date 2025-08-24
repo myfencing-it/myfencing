@@ -1,0 +1,200 @@
+/*---------------------------------------------------------
+# colore ufficiale
+#399CFF
+#007bff
+#3498db 007bff
+-----------------------------------------------------------*/
+
+
+/* ------------------------------------------
+    Extra Table
+--------------------------------------------- */
+.hidden { display: none;}
+
+.extraTables {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 10px auto 30px auto;
+}
+
+.extraTable {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  padding: 5px;
+  font-style: normal;
+  font-size: 13px;
+}
+
+.extraTable th,
+.extraTable td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+  font-size: 13px;
+  min-width: 25px;
+}
+
+/* Differenze di layout */
+.extraTableLeft  { margin-left: 20px; }
+.extraTableRight { margin-right: 35px; }
+
+/* ------------------------------------------
+    Container principale
+--------------------------------------------- */
+.PoolContainer {
+  border-spacing: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: black;
+  padding: 5px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-width: 900px;
+}
+
+/* ------------------------------------------
+    Table principale
+--------------------------------------------- */
+table.poolTable {
+  margin-top: 20px;
+  margin-left: 20px;
+  border-collapse: collapse;
+/*  border: 1px solid red;*/
+}
+
+table.poolTable th,
+table.poolTable td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  min-width: 25px;
+  text-align: right;
+}
+
+.PTabH1 {
+  /*color: #0047AB;*/
+  color: #007bff;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.PTabH1p {
+  border: none !important;
+  text-align: left;
+  font-style: normal;
+}
+
+.PTabH1s {
+  border: none !important;
+  text-align: left;
+  font-style: italic;
+}
+
+.PTabH1t {
+  border: none !important;
+  text-align: right;
+  font-style: italic;
+}
+
+.PTabH2 {
+  background-color: #007bff;
+  color: white;
+}
+
+.PTabH2Cell  {
+  background-color: #007bff;
+  color: white;
+  text-align: center !important;
+  font-size: 14px;
+  height: 20px;
+  min-width: 35px;
+}
+
+.PTabH2CellA {
+  background-color: #007bff;
+  text-align:  center !important;
+  color:       white;
+  font-size:   14px;
+  height:      20px;
+  width:      200px;
+}
+
+.PTabH2Cempty {
+  height:    20px;
+  min-width: 10px;
+  color:     red;
+  border-top:    none !important;
+  border-bottom: none !important;
+}
+
+.PoolTabHeader2CellAAA {
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  height: 25px;
+  min-width: 35px;
+}
+
+.PTabRCempty {
+  border-top:       none    !important;
+  border-bottom:    none    !important;
+}
+
+.DTabH, .RTabH {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+
+/* --------------------
+ Button on tab footer
+-------------------- */
+.PoolTab-button {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+  border-radius: 6px;
+  width: 35px;
+  height: 35px;
+  display: flex;           /* centra contenuto */
+  align-items: center;     /* verticale */
+  justify-content: center; /* orizzontale */
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.PoolTab-button.left {
+  float: left;
+  border: none !important;
+}
+
+.PoolTab-button.right {
+  float: right;
+}
+
+.PoolTab-button:hover {
+  background-color: #c0392b;
+}
+
+.PoolTab-button i {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+ 
+
+.no-border-btn {
+  border: none !important;
+  padding: 0 !important;;
+}
+.PoolTab-button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain; /* mantiene proporzioni senza distorcere */
+  display: block;      /* evita margini indesiderati */
+  margin: 0;
+}

@@ -1,0 +1,225 @@
+/*---------------------------------------------------------
+# colore ufficiale 
+#399CFF
+#007bff
+#3498db 007bff
+-----------------------------------------------------------*/
+body {
+  font-family: sans-serif;
+  margin:        20px;
+  padding:     0 10px;
+}
+
+
+table {
+      border-collapse: collapse;
+      margin-top: 20px;
+}
+
+th, td {
+      border: 1px solid #ccc;
+      padding: 5px;
+      text-align: center;
+      font-size:       14px;
+      /*width: 50px;*/
+      /*height: 40px;*/
+}
+
+th {
+      /*background-color: #007bff;*/
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      /*text-transform: uppercase;*/
+      /*border-bottom: 2px solid #666;*/
+}
+
+tfoot td {
+      border: none;
+      background: none;
+      /* padding-top: 20px;*/
+      text-align: left;
+      font-size: 12px;
+}
+    
+/* Colonne speciali */
+.colAtheta {
+  text-align: left;
+  font-weight: 500;
+  min-width: 250px;
+}    
+
+
+/* Celle speciali intestazione */
+.FFTabHeaderTitle {
+   color:       #0047AB;
+   font-size:   22px;
+   font-weight: normal;
+   text-align:  center;   
+}
+
+
+/* Celle speciali intestazione */
+.FFTabHeader1Cell {
+   border:      none;
+   color:       #0047AB;
+   font-weight: normal;
+   font-style:  italic;
+   text-align:  left;   
+}
+
+
+/* Celle speciali intestazione */
+.FFTabHeader2Cell {
+  background-color: #007bff !important;
+  min-width: 25px;
+}
+
+ 
+/* Pulsanti nel footer */
+.PoolTab-button {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  /*padding: 6px 6px;*/
+  cursor: pointer;
+  transition: all 0.3s;
+ 
+}
+
+.PoolTab-button:hover {
+  background-color: #c0392b;
+}
+
+.PoolTab-button i {
+  margin-right: 5px;
+}
+
+/* -----------------------------------------------
+          Dettaglio Container 
+/* -----------------------------------------------*/
+#detail-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* evita il wrapping */
+  gap: 10px;
+}
+
+#detail-container > div, /* oppure > table */
+#detail-container > table {
+  min-width: 300px;
+  max-width: 300px;
+  flex-shrink: 0; /* non si riducono */
+}
+
+.wrapper {
+  display: inline-block; /* si adatta alla larghezza del contenuto */
+  position: relative;
+}
+/*
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.left, .right {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.container1 {
+  display: flex;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: cyan;
+}
+
+
+.left-container {
+  flex: 1;
+  border: 1px solid blue;
+  min-height: 100px;  
+   width: 100%;
+  max-width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+*/
+
+.right-container1 {
+  flex: 1;
+  border: 1px solid orange;
+  min-height: 100px;  
+   width: 100%;
+  max-width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+
+.th-lista-assalti {
+  font-size: 12px;
+  border: 1px solid #ccc;
+  background-color: #007bff;
+  white-space: nowrap;
+}
+
+
+.tr-lista-assalti {
+  font-size: 12px;
+  text-align: left;  
+  border: 1px solid #ccc;
+  white-space: nowrap;
+}
+
+
+/* Barra titolo */
+.title-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #003366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+}
+
+.title-bar .center {
+
+      flex: 1;
+      text-align: center;
+      font-weight: bold;
+}
+title-bar {
+    position: sticky;
+    top: 0;
+}
+.title-bar .left {
+      width: 200px;
+      text-align: left;
+      cursor: pointer;
+    }
+    
+
+.title-bar .right {
+      width: 200px;
+      text-align: right;
+      cursor: pointer;
+    }    
+
+.title-content {
+    padding-top: 60px; /* per non essere coperto dalla barra */
+}

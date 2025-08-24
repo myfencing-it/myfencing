@@ -1,0 +1,115 @@
+<table id="filtro-tabella">
+  <thead>
+    <tr>
+      <th>Categoria</th>
+      <th>Arma</th>
+      <th>Genere</th>
+      <th>Nome</th>
+      <th>Cognome</th>
+      <th>Età</th>
+    </tr>
+    <tr>
+      <th>
+        <select onchange="filtraTabella(0)">
+          <option value="">Tutte</option>
+          <option value="Allievi">Allievi</option>
+          <option value="Allieve">Allieve</option>          
+          <option value="Ragazzi">Ragazzi</option>
+          <option value="Ragazze">Ragazze</option>
+          <option value="Giovanissime">Giovanissime</option>
+          <option value="Giovanissimi">Giovanissimi</option>          
+          <option value="Maschietti">Maschietti</option>
+          <option value="Bambine">Bambine</option>
+          <option value="Mista">Mista</option>
+        </select>
+      </th>
+      <th>
+        <select onchange="filtraTabella(1)">
+          <option value="">Tutte</option>
+          <option value="Fioretto">Fioretto</option>
+          <option value="Sciabola">Sciabola</option>
+          <option value="Spada">Spada</option>
+        </select>
+      </th>
+      <th>
+        <select onchange="filtraTabella(2)">
+          <option value=""></option>
+          <option value="Maschile">Maschile</option>
+          <option value="Femminile">Femminile</option>
+        </select>
+      </th>
+      <th><input type="text" placeholder="Nome" onkeyup="filtraTabella(3)"></th>
+      <th><input type="text" placeholder="Cognome" onkeyup="filtraTabella(4)"></th>
+      <th><input type="text" placeholder="Età" onkeyup="filtraTabella(5)"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Allievi</td><td>Fioretto</td><td>Maschile</td><td>Luca</td><td>Rossi</td><td>32</td></tr>
+    <tr><td>Allievi</td><td>Spada</td><td>Maschile</td><td>Marco</td><td>Bianchi</td><td>28</td></tr>
+    <tr><td>Giovanissime</td><td>Sciabola</td><td>Femminile</td><td>Sara</td><td>Verdi</td><td>25</td></tr>
+    <tr><td>Bambine</td><td>Spada</td><td>Femminile</td><td>Anna</td><td>Rossi</td><td>40</td></tr>
+  </tbody>
+</table>
+
+<script>
+//function filtraTabella(colIndex) {
+//  const table = document.getElementById("filtro-tabella");
+//  const inputRow = table.querySelectorAll("thead tr")[1]; // seconda riga (filtri)
+//  const filtro = inputRow.cells[colIndex].querySelector("input, select").value.toLowerCase();
+//  const righe = table.tBodies[0].rows;
+//
+//  for (let i = 0; i < righe.length; i++) {
+//    const celle = righe[i].cells;
+//    const testo = celle[colIndex].textContent.toLowerCase();
+//    righe[i].style.display = testo.includes(filtro) || filtro === "" ? "" : "none";
+//  }
+//}
+
+function filtraTabella(colIndex) {
+  const table = document.getElementById("filtro-tabella");
+  const inputRow = table.querySelectorAll("thead tr")[1]; // riga filtri
+  const filtro = inputRow.cells[colIndex].querySelector("input, select").value.toLowerCase();
+  const righe = table.tBodies[0].rows;
+
+  for (let i = 0; i < righe.length; i++) {
+    const celle = righe[i].cells;
+    const testo = celle[colIndex].textContent.toLowerCase();
+console.log("77 "  +filtro);    	
+    if (filtro === "Mista") {
+console.log("79");    	
+      // se filtro è "mista" accetti "ragazzi" o "giovanissimi"
+      if (testo === "Giovanissime" || testo === "Bambine") {
+        righe[i].style.display = "";
+      } else {
+        righe[i].style.display = "none";
+      }
+    } else {
+      // filtro normale
+      righe[i].style.display = testo.includes(filtro) || filtro === "" ? "" : "none";
+    }
+  }
+}
+
+
+function filtraDueColonne(colIndex1, colIndex2) {
+  const table = document.getElementById("filtro-tabella");
+  const inputRow = table.querySelectorAll("thead tr")[1]; // riga filtri
+  const filtro1 = inputRow.cells[colIndex1].querySelector("input, select").value.toLowerCase();
+  const filtro2 = inputRow.cells[colIndex2].querySelector("input, select").value.toLowerCase();
+  const righe = table.tBodies[0].rows;
+
+  for (let i = 0; i < righe.length; i++) {
+    const celle = righe[i].cells;
+    const testo1 = celle[colIndex1].textContent.toLowerCase();
+    const testo2 = celle[colIndex2].textContent.toLowerCase();
+
+    // Mostra riga solo se entrambe le condizioni sono vere oppure filtro vuoto
+    if ((testo1.includes(filtro1) || filtro1 === "") && (testo2.includes(filtro2) || filtro2 === "")) {
+      righe[i].style.display = "";
+    } else {
+      righe[i].style.display = "none";
+    }
+  }
+}
+
+</script>

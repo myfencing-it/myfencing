@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>2 Tabelle sotto la tabella principale</title>
+
+
+<style>
+
+/* ------------------------------------------
+    Extra Table
+--------------------------------------------- */
+.hidden { display: none;}
+
+.extraTables {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 900px;
+  margin: 10px auto 30px auto; /* dentro container-pool */
+}
+
+.extraTables table {
+  width: 440px;
+  min-width: 200px;
+}
+
+.extraTables table.hidden {
+  visibility: hidden;
+}
+
+
+
+/* ------------------------------------------
+    Container
+--------------------------------------------- */
+.PoolContainer {
+    border-spacing:   0;
+    font-family:      sans-serif;
+    font-size:        14px;
+    color:            black;
+    padding:          5px;
+    margin-left:      10px;
+    margin-bottom:    30px;
+    background:       #f5f7fa;
+    background-color: green;
+    border-radius:    6px;
+    box-shadow:       0 8px 20px rgba(0,0,0,0.1);
+    max-width:        900px;
+}
+
+/* ------------------------------------------
+    Table
+--------------------------------------------- */
+/*Pool Table*/
+table.poolTable{
+      border-collapse: collapse;
+      border:     1px solid red;
+      padding:    5px;
+}
+
+table.poolTable th,
+table.poolTable td {
+      border:     1px solid #ccc;
+      padding:    5px;
+      text-align: center;
+      font-size:  13px;
+      min-width:  25px;
+}
+
+/* Header 1 */
+.PTabH1 { color:      #0047AB; 
+	        font-style: italic;
+}
+
+/* Header 2 */
+.PTabH2 {
+  background-color: #007bff;
+  color:            white;
+}
+
+.PTabH2Cell  {
+  background-color: #007bff;
+  color:            white;
+  font-size:        14px;
+  height:           20px;
+  min-width:        35px;
+}
+
+.PTabH2CellA {
+  background-color: #007bff;
+  text-align:       left;
+  color:            white;
+  font-size:        14px;
+  height:           20px;
+  width:            200px;
+}
+
+.PTabH2Cempty {
+  height:           20px;
+  min-width:        10px;
+  color:            red;
+  border-top:       none !important;
+  border-bottom:    none !important; 
+}
+
+.PoolTabHeader2Cell {
+  background-color: #007bff;
+  color:            white;
+  font-size:        14px;
+  height:           25px;
+  min-width:        35px;
+}
+  </style>
+</head>
+<body>
+
+
+
+  <!-- Tabella principale -->
+<div class="PoolContainer"> 
+  <table id="Table01" class="poolTable">
+  <thead>
+    <!-- Header 01 -->
+    <tr class="PTabH1">
+      <th class="PoolTabHeader1Cell"             style="border: none; text-align: left; font-weight: bold; font-style: normal;">Pool 1</th>
+      <th class="PoolTabHeader1Cell" colspan="3" style="border: none; text-align: left; font-weight: bold;">Streep 5 (rosso)</th>
+      <th class="PoolTabHeader1Cell" colspan="6" style="border: none; text-align: right; font-weight: bold"">time 14:30</th>
+    </tr>
+  </thead>
+  <tbody>
+  	<!-- PoolTabHeader2Cell 01 -->
+    <tr>
+    	 <th class="PTabH2CellA">Athleta</th>
+    	 <th class="PTabH2Cell">Rank</th>
+    	 <th class="PTabH2Cell">Club</th>
+       <th class="PTabH2Cell">1</th>
+       <th class="PTabH2Cell">2</th>
+       <th class="PTabH2Cell">3</th>
+       <th class="PTabH2Cell">4</th>
+       <th class="PTabH2Cell">5</th>
+       <th class="PTabH2Cell">6</th>
+       <th class="PTabH2Cell">7</th>
+       <th class="PTabH2Cempty"></th>
+       <th class="PTabH2Cell">TS</th>
+       <th class="PTabH2Cell">RS</th>
+       <th class="PTabH2Cell">Diff</th>
+       <th class="PTabH2Cempty"></th>
+       <th class="PTabH2Cell">V</th>
+       <th class="PTabH2Cell">V/M</th>
+    </tr>
+    <tr>
+    	<td>xx PISTOIA Mariana</td>
+    	<td>6</td>
+    	<td>6</td>
+    	<td>6</td>
+
+    	<td>6</td>
+    	<td>6</td>
+    	<td>6</td>
+
+    	<td>6</td>
+    	<td>6</td>
+    	<td>6</td>
+      <td class="PTabH2Cempty"></td>
+    	<td>6</td>
+    	<td>6</td>
+
+    	<td>6</td>
+      <td class="PTabH2Cempty"></td>
+    	<td>6</td>
+    	<td>6</td>
+    </tr>
+
+    <tr>
+    	<td>xx PISTOIA Mariana</td>
+    	<td>6</td>
+    	<td>6</td>
+    	<td>6</td>
+
+    	<td>6</td>
+    	<td>6</td>
+    	<td>6</td>
+
+    	<td>6</td>
+    	<td>6</td>
+    	<td>6</td>
+      <td class="PTabH2Cempty"></td>
+    	<td>6</td>
+    	<td>6</td>
+
+    	<td>6</td>
+      <td class="PTabH2Cempty"></td>
+    	<td>6</td>
+    	<td>6</td>
+    </tr>
+
+    <tr>
+    	<td>xx PISTOIA Mariana</td>
+    	<td>6</td>
+    	<td>6</td>
+    	<td>6</td>
+
+    	<td>6</td>
+    	<td>6</td>
+    	<td>6</td>
+
+    	<td>6</td>
+    	<td>6</td>
+    	<td>6</td>
+      <td class="PTabH2Cempty"></td>
+    	<td>6</td>
+    	<td>6</td>
+
+    	<td>6</td>
+      <td class="PTabH2Cempty"></td>
+    	<td>6</td>
+    	<td>6</td>
+    </tr>
+
+    <tr>
+    	<td>xx PISTOIA Mariana</td>
+    	<td>6</td>
+    	<td>6</td>
+    	<td>6</td>
+
+    	<td>6</td>
+    	<td>6</td>
+    	<td>6</td>
+
+    	<td>6</td>
+    	<td>6</td>
+    	<td>6</td>
+      <td class="PTabH2Cempty"></td>
+    	<td>6</td>
+    	<td>6</td>
+
+    	<td>6</td>
+      <td class="PTabH2Cempty"></td>
+    	<td>6</td>
+    	<td>6</td>
+    </tr>
+
+    <tr>
+      <td colspan="10" style="border: none; text-align:left;"><button id="btnToggle1">Details</button></td>
+      <td              style="border: none"></td>
+      <td colspan="6"  style="border: none;text-align:right;"><button id="btnToggle2">Referees</button></td>
+    </tr>
+</tbody>
+
+  </table>
+
+
+</table>
+
+
+
+<!-- Metti le tabelle extra direttamente dentro container-pool,
+subito dopo la tabella principale -->
+<div id="extraRow" class="extraTables hidden">
+  <table id="extraTable1" class="hidden">
+    <tr><th>Dettaglio</th><th>Info</th></tr>
+    <tr><td>Extra 1</td><td>AAA</td></tr>
+    <tr><td>Extra 2</td><td>BBB</td></tr>
+  </table>
+
+  <table id="extraTable2" class="hidden">
+    <tr><th>Codice</th><th>Descrizione</th></tr>
+    <tr><td>X01</td><td>Voce speciale</td></tr>
+    <tr><td>X02</td><td>Voce alternativa</td></tr>
+  </table>
+</div>
+
+
+</div>
+  <script>
+    function toggleTable(table) {
+      table.classList.toggle("hidden");
+
+      // Mostra la riga extra se almeno una tabella  visibile
+      const extraRow = document.getElementById("extraRow");
+      const t1 = document.getElementById("extraTable1");
+      const t2 = document.getElementById("extraTable2");
+
+      if (!t1.classList.contains("hidden") || !t2.classList.contains("hidden")) {
+        extraRow.classList.remove("hidden");
+      } else {
+        extraRow.classList.add("hidden");
+      }
+    }
+
+    // Toggle tabella 1
+    const btn1 = document.getElementById("btnToggle1");
+    const table1 = document.getElementById("extraTable1");
+    btn1.addEventListener("click", () => toggleTable(table1));
+
+    // Toggle tabella 2
+    const btn2 = document.getElementById("btnToggle2");
+    const table2 = document.getElementById("extraTable2");
+    btn2.addEventListener("click", () => toggleTable(table2));
+  </script>
+
+</body>
+</html>
+
+
+

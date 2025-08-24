@@ -1,0 +1,112 @@
+/*===========================================================
+== FFD v.1.0.0 - 27/07/2025 21:35:01                       ==
+== #003366 blue title                                      ==
+== #005599 blue menu
+== #005599 blue heading tabl
+== #0047AB NO NO
+== #f5f7fa; background
+===========================================================*/
+ 
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.racelist-container {
+  margin-left:25px;  /* spostalo a destra di 20px */
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 930px;
+  max-height: 500px;       /* limite altezza per scroll */
+  overflow-y: auto;        /* scroll verticale */
+  animation: fadeIn 0.4s ease;
+  max-height: calc(5 * (80px + 0.8rem)); /* altezza card + gap */
+  overflow-y: auto;
+}
+
+.event-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/*
+.event-card {
+  cursor: pointer;
+  background: #f1f5f9;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.15s ease;
+  line-height: 1.2;
+}
+*/
+
+.event-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: #f1f5f9;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.15s ease;
+  line-height: 1.2;
+}
+
+.event-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+.event-card .event-header,
+.event-card .event-description {
+  flex: 1; /* Occupa lo spazio disponibile a sinistra */
+}
+
+.event-card .event-image {
+  width: 80px;   /* dimensione più piccola */
+  height: 35px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-left: 1rem; /* spazio tra testo e immagine */
+  order: 2;          /* forza immagine a destra */
+}
+
+.event-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+.event-description {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: normal;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+  .racelist-container {
+    max-width: 100%;
+  }
+}
+
+

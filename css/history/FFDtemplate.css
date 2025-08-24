@@ -1,0 +1,263 @@
+/*===========================================================
+== FFD v.1.0.0 - 27/07/2025 21:35:01                       ==
+===========================================================*/
+* {
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title-bar {
+  position: fixed;
+  top:   0;
+  left:  0;
+  width: 100%;
+  height: 60px;
+  background-color: #003366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+};
+
+.title-bar .left {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.title-bar .right {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.title-bar .right .label {
+  color: white;
+  font-size: 14px;
+  margin-right: 8px;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.title-bar .right img {
+  height: 80%;
+  max-height: 48px;
+  object-fit: contain;
+  cursor: pointer;
+  margin-left: 10px;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.title-bar .center {
+  position:    absolute;
+  left:        50%;
+  transform:   translateX(-50%);
+  font-size:   20px;
+  font-weight: bold;
+  text-align:  center;
+  white-space: nowrap;
+  overflow:    hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+}
+
+/* -------- */
+
+/* -------- */
+.menu-bar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #005599;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding-left: 20px; /* aggiunge spazio a sinistra */
+}
+
+.menu-tabs {
+  display: flex;
+  position: relative;
+  justify-content: flex-start; /* cambia da center a sinistra */
+  align-items: center;
+  gap: 40px;
+}
+
+.menu-option {
+  position: relative;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px 20px; /* Aggiunta padding orizzontale */
+  transition: color 0.3s ease;
+}
+
+.menu-option:hover {
+  color: #ffdd57;
+}
+
+.menu-option.active {
+  color: #ffdd57;
+}
+
+.menu-indicator {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 60px;
+  background-color: #ffdd57;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+#content-area {
+  margin-top: 120px;
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+  padding-top: 60px; /* lascia spazio tra barra e contenuto reale */
+  //padding-left: 20px;
+  padding-right: 20px;
+}
+/* -------------- */
+/* Create Tableau */
+/* -------------- */
+#wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* scroll fluido su iOS */
+  max-width: 100%;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  position: relative;
+  padding-left: 40px;  /* spazio per pulsante sinistro */
+  padding-right: 40px; /* spazio per pulsante destro */
+  height: auto; /* o fissa se serve */
+}
+
+#tabella {
+  border-collapse: collapse;
+  min-width: 800px;
+  width: max-content;
+}
+
+#tabella th, {
+  padding: 8px 12px;
+/*  border: 1px solid #999;*/
+  text-align: center;
+  white-space: nowrap;
+}
+
+#tabella td {
+  padding: 8px 12px;
+/*  border: 1px solid #999;*/
+  text-align: left;
+  white-space: nowrap;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  z-index: 10;
+  pointer-events: auto;
+  user-select: none;
+}
+
+.scroll-button:hover {
+  opacity: 1;
+}
+
+#scrollLeft {
+  left: 0;
+}
+
+#scrollRight {
+  right: 0;
+}
+
+
+
+
+/*-----------------------------------------------------------
+--  Responsive per schermi piccoli                         --
+-----------------------------------------------------------*/
+@media (max-width: 600px) {
+  .title-bar {
+    padding: 0 10px;
+  
+  }
+
+  .title-bar .right {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .title-bar .right .label {
+    color: white;
+    font-size: 12px;
+    margin-right: 8px;
+    white-space: nowrap;
+    user-select: none;
+  }
+
+  .title-bar .right img {
+    height: 30px;
+    max-height: 30px;
+    margin-right: 0;
+  }
+
+  .title-bar .left {
+    width: auto;
+    padding-left: 5px;
+  }
+
+  .title-bar .center {
+    margin: 0 110px;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  /* menubar*/  
+  .menu-tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu-indicator {
+    display: none;
+  }
+
+  /* -------------- */
+  /* Create Tableau */
+  /* -------------- */
+  /* Nascondi i pulsanti su mobile (opzionale) */
+  .scroll-button {
+    display: none;
+  }
+  
+}
+

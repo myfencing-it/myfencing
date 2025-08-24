@@ -1,0 +1,47 @@
+/*===========================================================
+== FFD v.1.0.0 - 27/07/2025 21:35:01                       ==
+== #003366 blue title                                      ==
+== #005599 blue menu
+== #005599 blue heading tabl
+== #0047AB NO NO
+== #f5f7fa; background
+== #64748b title color
+===========================================================*/
+/* --------------------
+ Content Title (dinamico)
+-------------------- */
+#content-title {
+  margin-top: 0; /* non serve più compensare */
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 100px; /* resta visibile sotto il menu */
+  z-index: 10;
+}
+
+
+
+/* --------------------
+ Content Area
+-------------------- */
+#content-areaB {
+  position: absolute;
+  top: 100px;        /* altezza header/menu (regola se serve) */
+  bottom: 30px;      /* uguale all’altezza della .footer-bar */
+  left: 0;
+  right: 0;
+
+  overflow-y: auto;  /* scroll solo qui */
+  padding: 20px;
+  background-color: red;
+}
+ 
+.scrollable-content {
+  max-height: 500px;   /* altezza massima, regolala come vuoi */
+  overflow-y: auto;    /* attiva lo scroll verticale se serve */
+  border: 1px solid #ccc; /* opzionale, solo per vedere i confini */
+  padding: 10px;       /* margine interno */
+  background: #f9f9f9; /* opzionale, colore di sfondo */
+} 

@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>091 FF</title>
+    <link rel="stylesheet" href="libs/flag-icons-main/css/flag-icons.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/all.css">
+    <link rel="stylesheet" href="css/fencinghome01.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/pools.css">
+</head>
+<body>
+   <script src="data/dt-eventslist.js"></script>
+   <script src="data/dt-fencinghome01.js"></script>
+   <script src="data/dt-events-1-FMM.js"></script>
+<script>
+
+// ---------------------------------------------------------------------
+// Function RefereeTab
+// ---------------------------------------------------------------------
+function RefereeTab(PoolTab,referees) {
+  console.log("22 ",referees);
+  console.log("PoolTab", PoolTab);
+  const RefereeTabId = "RefereeTab-" + PoolTab.id;
+  let table = document.getElementById(RefereeTabId);
+
+  // Cerca o crea il wrapper
+  let wrapper = PoolTab.parentElement;
+  if (!wrapper || !wrapper.classList.contains('wrapper')) {
+    const result = createPoolTabWrapper(PoolTab);
+    wrapper = result.wrapper;
+  }
+
+  // Cerca o crea il container
+  let container = document.getElementById('Container-' + PoolTab.id);
+
+
+  if (!container) {
+    container = document.createElement('div');
+    container.id = 'Container-' + PoolTab.id;
+    Object.assign(container.style, {
+      display: 'flex',
+      justifyContent: 'space-between',
+      marginTop: '10px',
+      gap: '10px',
+      flexWrap: 'wrap',
+      width: '100%',
+      flex: '1',
+      alignItems: 'flex-start',
+      flexDirection: 'row',
+      boxSizing: 'border-box',
+      padding: '10px 0',
+      // border: '1px solid red',
+      // backgroundColor: 'cyan'
+    });
+
+    // Left container (se vuoi aggiungere qualcosa)
+    const leftContainer = document.createElement('div');
+    leftContainer.className = 'left-container';
+    Object.assign(leftContainer.style, {
+      flex: '1',
+      border: '1px solid blue',
+      minWidth: '45%',
+      backgroundColor: '#e0f7fa'
+    });
+
+    // Right container (dove mettiamo la tabella)
+    const rightContainer = document.createElement('div');
+    rightContainer.className = 'right-container';
+    Object.assign(rightContainer.style, {
+      flex: '1',
+      border: '1px solid green',
+      minWidth: '45%',
+      backgroundColor: '#f1f8e9'
+    });
+
+
+    container.appendChild(leftContainer);
+    container.appendChild(rightContainer);
+    wrapper.appendChild(container);
+  }
+
+  // Trova right-container
+  const rightDiv = container.querySelector('.right-container');
+  if (!rightDiv) return;
+
+
+if (!table) {
+  table = document.createElement("table");
+  table.id = RefereeTabId;
+  Object.assign(table.style, {
+    border: "1px solid #ccc",
+    borderCollapse: "collapse",
+    display: "table",
+    visibility: "visible",
+    opacity: "1",
+    pointerEvents: "auto",
+    width: "auto",
+    marginLeft: "auto"
+  });
+
+const tbody = document.createElement('tbody');
+  referees.forEach(referee => {
+    const tr = document.createElement("tr");
+
+    const crole = document.createElement("td");
+    crole.textContent = referee.role;
+    Object.assign(crole.style, {
+      fontSize: "12px",
+      textAlign: "left",
+      border: '1px solid #ccc',
+      padding: '5px',
+      whiteSpace: 'nowrap'
+    });
+
+ const cname = document.createElement("td");
+    Object.assign(cname.style, {
+      fontSize: "12px",
+      textAlign: "left",
+      border: '1px solid #ccc',
+      padding: '5px',
+      whiteSpace: 'nowrap',
+      display: 'flex',
+      alignItems: 'center',
+      gap: '6px'
+    });
+
+    const flag = document.createElement("span");
+    flag.classList.add("fi", `fi-${referee.flag.toLowerCase()}`);
+    cname.appendChild(flag);
+    cname.appendChild(document.createTextNode(referee.referee));
+
+    tr.appendChild(crole);
+    tr.appendChild(cname);
+    tbody.appendChild(tr);
+  });
+
+  table.appendChild(tbody);
+  rightDiv.appendChild(table);
+
+
+} else {
+  // Toggle visibilità tabella
+  const isHidden = table.style.visibility === "hidden" || table.style.display === "none";
+  table.style.visibility = isHidden ? "visible" : "hidden";
+  table.style.opacity   = isHidden ? "1" : "0";
+  table.style.pointerEvents = isHidden ? "auto" : "none";
+  table.style.display = isHidden ? "table" : "none";
+}
+} // End Function RefereeTab
+
+
+// ---------------------------------------------------------------------
+// Function updateContainerVisibility
+// ---------------------------------------------------------------------
+function createPoolTabWrapper(PoolTab) {
+  const wrapper = document.createElement('div');
+  wrapper.className = 'wrapper';
+  wrapper.appendChild(PoolTab);
+  const container = document.createElement('div');
+  container.id = 'Container-' + PoolTab.id;
+  Object.assign(container.style, {
+    display: 'none',
+    justifyContent: 'space-between',
+    marginTop: '10px',
+    gap: '10px',
+    flexWrap: 'wrap',
+    width: '100%',
+    flex: '1',
+    alignItems: 'flex-start',
+    flexDirection: 'row',
+    boxSizing: 'border-box',
+    //padding: '10px 0',
+    //border: '1px solid red',
+    //backgroundColor: 'yellow'
+  });
+
+  // Crea left-container
+  const leftContainer = document.createElement('div');
+  leftContainer.className = 'left-container';
+  Object.assign(leftContainer.style, {
+    flex: '1',
+    minWidth: '45%',
+    //border: '1px solid red',
+    //backgroundColor: '#e0f7fa'
+  });
+
+  // Crea right-container
+  const rightContainer = document.createElement('div');
+  rightContainer.className = 'right-container';
+  Object.assign(rightContainer.style, {
+    flex: '1',
+    minWidth: '45%',
+    //border: '1px solid yellow',
+    //backgroundColor: '#f1f8e9'
+  });
+
+  // Inserisci i due container interni
+  container.appendChild(leftContainer);
+  container.appendChild(rightContainer);
+
+  // Inserisci il container nel wrapper
+  wrapper.appendChild(container);
+
+  // Inserisci nel DOM
+  document.body.appendChild(wrapper);
+
+  // Ritorna i riferimenti se servono
+  return {
+    wrapper,
+    container,
+    leftContainer,
+    rightContainer
+  };
+
+}; // end function createPoolTabWrapper
+
+// ---------------------------------------------------------------------
+// Function TitleBar
+// ---------------------------------------------------------------------
+function TitleBar() {
+  const logoSrc      = "images/fencing-logo.png";
+  const bar          = document.createElement("div");
+  bar.className      = "title-bar";
+
+  const left         = document.createElement("div");
+  left.className     = "left";
+  left.textContent   = "Season: " + ddgeneral.season;
+
+  const center       = document.createElement("div");
+  center.className   = "center";
+  center.textContent = atob("RmVuY2luZyBJdGFsaWFuIENoYW1waW9uc2hpcHM=");
+
+  const right = document.createElement("div");
+  right.className = "right";
+
+  let today = new Date();
+        today = today.toLocaleDateString('it-IT');
+
+  const label = document.createElement("span");
+  label.className   = "label";
+  label.textContent = today;
+
+  const img = document.createElement("img");
+  img.src = logoSrc;
+  img.alt = "Logo";
+
+  right.appendChild(label);
+  right.appendChild(img);
+
+  bar.appendChild(left);
+  bar.appendChild(center);
+  bar.appendChild(right);
+
+  document.body.prepend(bar);
+}; // end function TitleBar
+
+// ---------------------------------------------------------------------
+// Function FooterBar
+// ---------------------------------------------------------------------
+function FooterBar() {
+  const footer = document.createElement("div");
+  footer.className = "footer-bar";
+
+  const left = document.createElement("div");
+  left.className = "left";
+  //left.textContent = " " + new Date().getFullYear() + " - Tutti i diritti riservati";
+
+  const center = document.createElement("div");
+  center.className = "center";
+  center.textContent = "Created by FDF";
+
+  const right = document.createElement("div");
+  right.className = "right";
+
+  footer.appendChild(left);
+  footer.appendChild(center);
+  footer.appendChild(right);
+
+  document.body.appendChild(footer);
+}; // end function FooterBar
+
+//---------------------------------------------------------------------
+//Function Pools
+// ---------------------------------------------------------------------
+function Pools() {
+  const contentArea = document.getElementById("content-area");
+  const nrPools = Object.keys(dati).length;
+  Object.keys(dati).forEach(chiave => {
+        const tabella = Pool(dati[chiave]);
+        contentArea.appendChild(tabella);
+  });
+}
+
+// ---------------------------------------------------------------------
+// Function Pool
+// ---------------------------------------------------------------------
+function Pool(mydati) {
+
+  const PoolTab = document.createElement("table");
+  const thead   = document.createElement("thead");
+  const tbody   = document.createElement("tbody");
+        PoolTab.classList.add("my-table");
+  
+  //console.log('mydati',mydati.pool);
+
+  const countries = mydati.pool.map(a => a.country);
+  //console.log('countries',countries);
+
+  // ------------------------------------------------
+  // Tab Header 01
+  // ------------------------------------------------
+  const streep = (mydati.datapool.streepcolor === "" || mydati.datapool.streepcolor === undefined)
+  ? mydati.datapool.streepnr
+  : mydati.datapool.streepnr + " (" +mydati.datapool.streepcolor + ")";
+
+  const PoolTabHeader1 = document.createElement("tr");
+  const th1 = document.createElement("th");
+        th1.textContent = "Pool " + mydati.datapool.nr;
+        th1.classList.add("PoolTabHeader1Cell");
+        th1.style.cssText = "border: none;text-align: left; font-weight: bold;font-style:normal;";
+        PoolTabHeader1.appendChild(th1);
+
+  const th2 = document.createElement("th");
+        th2.textContent = "Streep " + streep;
+        th2.colSpan = 3;
+        th2.classList.add("PoolTabHeader1Cell");
+        th2.style.cssText = "border: none; text-align: left; font-weight: bold;font-style:italic;";
+        PoolTabHeader1.appendChild(th2);
+
+  const th3 = document.createElement("th");
+        th3.textContent = "time " + mydati.datapool.time;
+        th3.colSpan = mydati.pool.length - 1;
+        th3.classList.add("PoolTabHeader1Cell");
+        th3.style.cssText = "border: none;text-align: right; font-weight: bold;font-style:italic;";
+        PoolTabHeader1.appendChild(th3);
+  thead.appendChild(PoolTabHeader1);
+
+  // ------------------------------------------------
+  // Tab Header 02 #007bff
+  // ------------------------------------------------
+  const PoolTabHeader2 = document.createElement("tr");
+    let headersRow2  = ["Athleta", "Rank", "Club"];
+        //if (uniquecountries.length>3) headersRow2[2] = "NAT";
+
+        for (let i = 0; i < mydati.pool.length; i++)  headersRow2.push(i+1);
+        for (let i = mydati.pool.length; i < 8; i++) headersRow2.push("");
+        headersRow2.push("TS", "RS", "Diff", "","V", "V/M");
+        headersRow2.forEach(text => {
+  const th = document.createElement("th");
+        th.textContent = text;
+        if (text !== "" ) th.classList.add("PoolTabHeader2Cell");
+        if (text  == "" ) th.style.border = "none";
+        PoolTabHeader2.appendChild(th);
+  });
+  thead.appendChild(PoolTabHeader2);
+  PoolTab.appendChild(thead);
+
+  // ------------------------------------------------
+  // Tab Body 03
+  // ------------------------------------------------
+  let j=0;
+
+  mydati.pool.forEach((atleta, index) => {
+    const tr = document.createElement("tr");
+    //console.log("163 atleta ", atleta.value);
+
+
+    // Athleta
+          atleta.club = atleta.club ?? null;
+    const catleta = document.createElement("td");
+    const flag    = document.createElement("span");
+          flag.classList.add("fi", `fi-${atleta.flag.toLowerCase()}`);
+          flag.style.marginRight = "6px";
+          catleta.appendChild(flag);
+          catleta.appendChild(document.createTextNode(atleta.atleta));
+          catleta.style.setProperty("text-align", "left", "important");
+          if (j === 0)  catleta.style.minWidth = "250px";
+          tr.appendChild(catleta);
+    // Rank
+    const crank = document.createElement("td");
+          crank.textContent = atleta.rank;
+          crank.style.fontSize  = "12px";
+          crank.style.textAlign = "right";
+          tr.appendChild(crank);
+    // Club
+    const cclub = document.createElement("td");
+          cclub.textContent     = atleta.club;
+          cclub.style.textAlign = "left";
+          cclub.style.fontSize  = "12px";
+          if (atleta.country)  {
+          	  cclub.textContent = atleta.country;
+              cclub.style.textAlign = "center";
+          };
+
+    tr.appendChild(cclub);
+
+    // Assalti 1-7
+    atleta.won = 0;
+    for (let i = 0; i < atleta.value.length-2; i++) {
+
+           const cval = document.createElement("td");
+         if (typeof atleta.value[i] === 'undefined') atleta.value[i] = " ";
+               cval.textContent       = atleta.value[i].slice(1);
+//console.log("183 ",cval.textContent);
+               if (atleta.value[i][0] === "V") cval.style.color = "green";
+               if (atleta.value[i][0] === "D") cval.style.color = "red";
+               if (atleta.value[i][0] === "V") atleta.won++;
+               if (i === (j)) {cval.textContent = null; cval.style.backgroundColor = "#007bff"};
+               tr.appendChild(cval);
+    };
+    // Separatore
+    for (let i = mydati.pool.length; i <= 7; i++) {
+       separator = document.createElement("th");
+       separator.style.border     = "none";
+       separator.style.background = "white";
+       separator.style.minWidth   = "10px";
+       tr.appendChild(separator);
+    };
+    // Totali Stoccate
+    let cts = document.createElement("td");
+        cts.textContent     = "";
+        if (atleta.value[atleta.value.length - 2]>=0) cts.textContent = atleta.value[atleta.value.length - 2];
+        cts.style.textAlign = "right";
+        tr.appendChild(cts);
+    let ctr = document.createElement("td");
+        ctr.style.textAlign = "right";
+        ctr.textContent     = "";
+        if (atleta.value[atleta.value.length - 1]>=0) ctr.textContent = atleta.value[atleta.value.length - 1];
+        ctr.textContent     = atleta.value[atleta.value.length - 1];
+        if (atleta.value[atleta.value.length - 1] === "RR" ||
+           atleta.value[atleta.value.length - 2] === "AA") ctr.textContent="";
+
+        tr.appendChild(ctr);
+
+    let delta = atleta.value[atleta.value.length - 2] - atleta.value[atleta.value.length - 1];
+
+    let cd    = document.createElement("td");
+        cd.style.textAlign = "right";
+        cd.textContent     =  delta.toString();
+        if (atleta.value[atleta.value.length - 1] === ""    ||
+            atleta.value[atleta.value.length - 2] === ""  ) cd.textContent="";
+        if (atleta.value[atleta.value.length - 1] === "RR"  ||
+            atleta.value[atleta.value.length - 2] === "RR") cd.textContent="";
+        if (atleta.value[atleta.value.length - 1] === "AA"  ||
+            atleta.value[atleta.value.length - 2] === "AA") cd.textContent="";
+
+        cd.style.color = delta >= 0 ? "green" : "red";
+        //   row.style.backgroundColor = (j % 2 === 0) ? "#ffffff" : "#f2f2f2";
+        tr.appendChild(cd);
+    // Separatore
+        separator = document.createElement("th");
+        separator.style.background = "white";
+        separator.style.border     = "none";
+        separator.style.minWidth   = "10px";        
+        tr.appendChild(separator);
+
+    // Vittorie
+    let aw = document.createElement("td");
+        aw.textContent     = atleta.won;
+        if (cd.textContent === "") aw.textContent ="";
+        tr.appendChild(aw);
+    let ap = document.createElement("td");
+    let apn = (atleta.won/(atleta.value.length-3))
+        ap.textContent      = apn.toFixed(2);
+        if (cd.textContent === "") ap.textContent ="";
+        ap.style.textAlign   = "right";
+        ap.style.fontWeight  = "bold";
+        tr.appendChild(ap);
+    j++;
+    tbody.appendChild(tr);
+  }); // end forEach
+  PoolTab.appendChild(tbody);
+
+  // ------------------------------------------------
+  // Tab Foot
+  // ------------------------------------------------
+  const tfoot     = document.createElement('tfoot');
+  const footerRow = document.createElement('tr');
+
+  const td1       = document.createElement('td');
+  const btn1      = document.createElement("button");
+        btn1.classList.add("PoolTab-button");
+  const icon1 = document.createElement("i");
+        icon1.classList.add("fa-solid", "fa-list");
+        icon1.style.fontSize = "18px"; // esempio dimensione personalizzata
+        icon1.style.marginTop = '5px';
+        icon1.style.width     = '24px';
+        icon1.style.height    = '24px';
+        icon1.style.objectFit = 'contain';
+
+
+        btn1.appendChild(icon1);
+        btn1.title  = "Details";
+        btn1.onclick = () => {
+           const container = document.getElementById('Container-' + PoolTab.id);
+           if (container) container.style.display = 'flex';
+           BoutTab(detail, PoolTab,referees);
+        };
+        td1.colSpan = 2;
+        td1.style.textAlign = "left";
+        td1.appendChild(btn1);
+
+        footerRow.appendChild(td1);
+
+  const td2   = document.createElement('td');
+  const btn2  = document.createElement("button");
+        btn2.classList.add("PoolTab-button");
+
+  const icon2 = document.createElement('img');
+        icon2.src             = 'images/referee02white.png';
+        icon2.alt             = 'referee';
+        icon2.style.width     = '24px';
+        icon2.style.height    = '24px';
+        icon2.style.objectFit = 'contain';
+        btn2.title            = "Referee";
+        btn2.appendChild(icon2);
+        btn2.onclick = () => {
+          const container = document.getElementById('Container-' + PoolTab.id);
+          if (container) container.style.display = 'flex';
+//console.log ("517 " + PoolTab.innerText);     
+//console.log ("519 ",  mydati.referees);     
+//console.log ("519 ");     
+ 
+          RefereeTab(PoolTab,mydati.referees);
+
+        };
+
+        td2.style.textAlign = "right";
+        td2.colSpan = 16;
+        td2.appendChild(btn2);
+        footerRow.appendChild(td2);
+
+  tfoot.appendChild(footerRow);
+
+   PoolTab.appendChild(thead);
+   PoolTab.appendChild(tbody);
+   PoolTab.appendChild(tfoot);
+
+
+
+
+  return PoolTab;
+
+}
+
+
+// ---------------------------------------------------------------------
+// Categories:  
+// ---------------------------------------------------------------------
+function Categories() {
+  const container = document.createElement("div");
+  container.className = "schedule-container";
+
+  if (!menuContext.eventId) {
+    container.textContent = "Seleziona prima un evento!";
+    return container;
+  }
+
+  const title = document.createElement("h2");
+  title.textContent = menuContext.eventTitle || "Evento";
+  title.className = "event-schedule-title";
+  container.appendChild(title);
+
+  const grid = document.createElement("div");
+  grid.className = "event-schedule-grid";
+  container.appendChild(grid);
+
+  // Caricamento dati
+  loadData(menuContext.eventId).then(() => {
+    const html = eventcats.map(ev => `
+      <div class="scheduled-card" data-id="${ev.id}" data-title="${ev.title}">
+        <div class="event-header">
+          <strong>${ev.title}</strong>
+          <span class="event-description">(${ev.description})</span>
+        </div>
+        <small>${ev.date} ⏰ ${ev.time}</small>
+      </div>
+    `).join('');
+
+    grid.innerHTML = html;
+
+    // Click sulle card
+    grid.addEventListener("click", e => {
+      const card = e.target.closest(".scheduled-card");
+      if (!card) return;
+
+      menuContext.eventCategory = card.dataset.title;
+      console.log("Click card - eventCategory:", menuContext.eventCategory);
+
+      // Abilita Pools e seleziona nel menu
+      menu.enableMenuItem("Pools");
+      menu.selectByLabel("Pools");
+    });
+  });
+
+  return container;
+}
+
+// ---------------------------------------------------------------------
+// Function RaceList
+// ---------------------------------------------------------------------
+function RaceList() {
+  const container = document.createElement('div');
+  container.className = 'racelist-container scrollable-container';
+
+  const grid = document.createElement('div');
+  grid.className = 'event-grid event-list-single-column';
+  grid.id = 'event-list';
+  container.appendChild(grid);
+
+  const html = eventlist.map(ev => {
+    const imgSx   = ev.imgSx         ? `<img src="${ev.imgSx}">`              : `<div class="img-empty"></div>`;
+    const imgTeam = ev.team === true ? `<img src="images/team64.gif">`        : `<img src="images/single64.gif">`;
+    const imgLive = ev.live === true ? `<img src="images/fencing-live05.gif">`: `<div class="img-empty"></div>`;
+
+    return `
+      <div class="event-card" data-id="${ev.id}">
+        <table class="event-table">
+          <colgroup>
+            <col class="col-img-sx">
+            <col class="col-text">
+            <col class="col-img-team">
+            <col class="col-img-live">
+          </colgroup>
+          <tr>
+            <td class="img-sx">${imgSx}</td>
+            <td class="text-col">
+              <div class="event-header">${ev.date} - ${ev.location} - ${ev.title} - ${ev.category}</div>
+              <span class="event-description">Season: ${ev.season} - ${ev.description}</span>
+            </td>
+            <td class="img-team">${imgTeam}</td>
+            <td class="img-live">${imgLive}</td>
+          </tr>
+        </table>
+      </div>
+    `;
+  }).join('');
+
+  grid.innerHTML = html;
+
+  grid.addEventListener('click', e => {
+    const card = e.target.closest('.event-card');
+    if (!card) return;
+
+
+    menuContext.eventId = card.dataset.id;
+    const evento = eventlist.find(ev => String(ev.id) === String(menuContext.eventId));
+    menuContext.eventTitle = evento.location + ' - ' + evento.title;
+    console.log("173 - RaceList - Click evento con ID:" + menuContext.eventId);
+    menu.enableMenuItem("Categories");
+    menu.selectByLabel("Categories");
+
+    const result = Categories();
+    //const result = Categories(menuContext.eventId,menuContext.eventTitle);
+
+    const contentArea = document.getElementById("content-area");
+    contentArea.innerHTML = "";
+
+    if (result instanceof Node) {
+      contentArea.appendChild(result);
+    } else if (typeof result === "string") {
+      contentArea.innerHTML = result;
+    } else {
+      contentArea.innerHTML = "<p>Contenuto non disponibile</p>";
+    }
+  });
+
+  return container;
+}; // end function RaceList
+
+
+// ---------------------------------------------------------------------
+// Function loadData
+// ---------------------------------------------------------------------
+function loadData(id) {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = `data/dt-events-${id}.js`;
+    script.onload = () => resolve();
+    script.onerror = () => reject(new Error('Errore caricando script'));
+    document.head.appendChild(script);
+  });
+}
+
+// ---------------------------------------------------------------------
+// Function getContentArea
+// ---------------------------------------------------------------------
+function getContentArea() {
+  let contentArea = document.getElementById("content-area");
+
+  // Se non esiste, lo creo e lo aggiungo al body
+  if (!contentArea) {
+    contentArea = document.createElement("div");
+    contentArea.id = "content-area";
+    document.body.appendChild(contentArea);
+  }
+
+  return contentArea;
+}; // end function getContentArea
+
+
+// ---------------------------------------------------------------------
+// Function menuHandler
+// ---------------------------------------------------------------------
+function menuHandler(menuItems, options = {}) {
+  const container = document.createElement("div");
+  container.classList.add("menu-bar");
+  document.body.appendChild(container);
+
+  const ul = document.createElement("ul");
+  ul.classList.add("menu-tabs");
+
+  const items = [];
+  menuItems.forEach(({ label, enabled, myfunc }) => {
+    const li = document.createElement("li");
+    li.textContent = label;
+    li.classList.add("menu-option");
+
+    if (!enabled) {
+      li.classList.add("disabled");
+    }
+
+    ul.appendChild(li);
+    items.push({ li, label, myfunc, enabled });
+  });
+
+  container.appendChild(ul);
+
+  let currentIndex = 0;
+
+  function getContentArea() {
+    let contentArea = document.getElementById("content-area");
+    if (!contentArea) {
+      contentArea = document.createElement("div");
+      contentArea.id = "content-area";
+      document.body.appendChild(contentArea);
+    }
+    return contentArea;
+  }
+
+  function selectItem(index) {
+    items.forEach(({ li }) => li.classList.remove("active"));
+
+    if (items[index] && items[index].enabled) {
+      items[index].li.classList.add("active");
+      currentIndex = index;
+
+      const { label, myfunc } = items[index];
+      //console.log("260 menuHandler - selectItem - Selezionato tab:", label);
+
+      const contentArea = getContentArea();
+      contentArea.innerHTML = "";
+      if (typeof myfunc === "function") {
+        const content = myfunc();
+        if (content instanceof Node) {
+          contentArea.appendChild(content);
+        } else if (typeof content === "string") {
+          contentArea.innerHTML = content;
+        }
+      }
+    }
+  }
+
+  // Gestione click
+  items.forEach(({ li }, index) => {
+    li.addEventListener("click", () => {
+      if (!items[index].enabled) return;
+      selectItem(index);
+    });
+  });
+
+  // Navigazione tastiera
+  document.addEventListener("keydown", e => {
+    if (e.key === "ArrowRight") {
+      do {
+        currentIndex = (currentIndex + 1) % items.length;
+      } while (!items[currentIndex].enabled);
+      selectItem(currentIndex);
+    }
+    if (e.key === "ArrowLeft") {
+      do {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+      } while (!items[currentIndex].enabled);
+      selectItem(currentIndex);
+    }
+  });
+
+  // Funzioni per abilitare/disabilitare
+  function enableMenuItem(label) {
+    const item = items.find(i => i.label === label);
+    if (item) {
+      item.enabled = true;
+      item.li.classList.remove("disabled");
+    }
+  }
+
+  function disableMenuItem(label) {
+    const item = items.find(i => i.label === label);
+    if (item) {
+      item.enabled = false;
+      item.li.classList.add("disabled");
+      if (item.li.classList.contains("active")) {
+        item.li.classList.remove("active");
+      }
+    }
+  }
+
+  // Avvio
+  const startIndex =
+    typeof options.defaultIndex === "number" &&
+    options.defaultIndex >= 0 &&
+    options.defaultIndex < items.length
+      ? options.defaultIndex
+      : 0;
+
+  selectItem(startIndex);
+
+  // 🔹 Ritorno un oggetto API
+  return {
+    enableMenuItem,
+    disableMenuItem,
+    selectItem, // <-- aggiunto
+    selectByLabel: label => {
+      const index = items.findIndex(i => i.label === label);
+      if (index !== -1) selectItem(index);
+    },
+    getCurrentIndex: () => currentIndex
+  };
+}; // end function menuHandler
+
+// ---------------------------------------------------------------------
+// Function AthletaRanking
+// ---------------------------------------------------------------------
+function AthletaRanking() {
+  menu.disableMenuItem("Pools");
+  menu.disableMenuItem("Categories");
+  let poolContent = `<p><strong>Athleta Ranking</strong></p>`;
+  for (let i = 1; i <= 60; i++) {
+    poolContent += `Riga ${i}<br>`;
+  }
+  const div = document.createElement('div');
+  div.innerHTML = `Pool dell'evento con ID <br>` + poolContent;
+  return div;
+}
+
+// ---------------------------------------------------------------------
+// Function RankingPools
+// ---------------------------------------------------------------------
+function RankingPools() {
+  let poolContent = `<p><strong>Ranking Pools</strong></p>`;
+  for (let i = 1; i <= 14; i++) {
+    poolContent += `RankingPools ${i}<br>`;
+  }
+  const div = document.createElement('div');
+  div.innerHTML = `EventID <br>` + poolContent;
+  return div;
+}; // end function RankingPools
+
+// ---------------------------------------------------------------------
+// Function Ranking Pools
+// ---------------------------------------------------------------------
+function RankingPools01() {
+  const div = document.createElement('div');
+  div.textContent = "Ranking Pools!";
+  return div;
+}; // end function rankingPools
+
+
+// =====================================================================
+//             MAIN
+// =====================================================================
+function MAIN() {  };
+
+const menuContext = { eventId: null,eventTitle: null, eventCategory: null};
+
+const menuItems = [
+  { label: "Home",            enabled: true,  myfunc: RaceList          },
+  { label: "Athleta Ranking", enabled: true,  myfunc: AthletaRanking    }, //AthletaRanking
+  { label: "Categories",      enabled: false, myfunc: Categories    },
+  { label: "Pools",           enabled: false, myfunc: Pools             },
+  { label: "Ranking Pools",   enabled: false, myfunc: RankingPools      },
+  { label: "TableauA",        enabled: false, myfunc: () => { /*...*/ } },
+  { label: "TableauB",        enabled: false, myfunc: () => { /*...*/ } },
+  { label: "Final Ranking",   enabled: false, myfunc: () => { /*...*/ } },
+  { label: "Altro",           enabled: false, myfunc: RaceList      }
+];
+
+TitleBar();
+FooterBar();
+const menu = menuHandler(menuItems, { defaultIndex: 0 });
+
+</script>
+</body>
+</html>
+ 

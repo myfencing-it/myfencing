@@ -1,0 +1,113 @@
+/*===========================================================
+== FFD v.1.0.0 - 27/07/2025 21:35:01                       ==
+== #003366 blue title                                      ==
+== #005599 blue menu
+== #005599 blue heading tabl
+== #0047AB NO NO
+== #f5f7fa; background
+===========================================================*/
+
+/* --------------------
+ CSS - Race List
+-------------------- */
+.racelist-container {
+  margin-left:25px;       
+  background: #f5f7fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 930px;
+  max-height: 500px;       /* limite altezza per scroll */
+  overflow-y: auto;        /* scroll verticale */
+  animation: fadeIn 0.4s ease;
+  max-height: calc(5 * (80px + 0.8rem)); /* altezza card + gap */
+  overflow-y: auto;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* -------------------------------------
+ CSS -  CARD con layout a griglia
+------------------------------------- */
+.event-card {
+  display: grid;
+  grid-template-columns: 1fr 80px;   /* testo a sinistra, immagine a destra */
+  grid-template-rows: auto auto;     /* titolo + descrizione */
+  gap: 0.25rem 1rem;
+  align-items: start;
+  background: #f1f5f9;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  line-height: 1.2;
+}
+
+.event-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Titolo */
+.event-header {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+}
+.event-header strong {
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+/* Descrizione */
+.event-description {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: normal;
+}
+
+/* Immagine */
+.event-card img {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Singola colonna */
+.event-list-single-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Animazione fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1);    }
+}
+
+/* Mobile: impila tutto in verticale */
+@media (max-width: 520px) {
+  .event-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .event-card img {
+    grid-column: 1;
+    grid-row: 3;
+    width: 100%;
+    height: 160px;
+    margin-top: 0.4rem;
+  }
+}

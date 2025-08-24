@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>01 FF</title>
+    <link rel="stylesheet" href="libs/flag-icons-main/css/flag-icons.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/all.css">
+    <link rel="stylesheet" href="css/f01.css">
+</head>
+<body>
+   <script src="data/dt-fencinghome01.js"></script>
+   <script src="data/eventslist.js"></script>
+<script>
+
+function getContentArea() {
+  let contentArea = document.getElementById("content-area");
+
+  // Se non esiste, lo creo e lo aggiungo al body
+  if (!contentArea) {
+    contentArea = document.createElement("div");
+    contentArea.id = "content-area";
+    document.body.appendChild(contentArea);
+  }
+
+  return contentArea;
+}
+
+// ---------------------------------------------------------------------
+// Function MenuHandler
+// ---------------------------------------------------------------------
+function MenuHandler(menuItems) {
+  const container = document.createElement("div");
+  container.classList.add("menu-bar");
+  document.body.appendChild(container);
+
+  const ul = document.createElement("ul");
+  ul.classList.add("menu-tabs");
+
+  const items = [];
+  menuItems.forEach(label => {
+    const li = document.createElement("li");
+    li.textContent = label;
+    li.classList.add("menu-option");
+    ul.appendChild(li);
+    items.push(li);
+  });
+
+  container.appendChild(ul);
+
+  let currentIndex = 0;
+
+  function selectItem(index) {
+    items.forEach(item => item.classList.remove("active"));
+    items[index].classList.add("active");
+    currentIndex = index;
+  }
+
+  items.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      selectItem(index);
+      const contentArea = getContentArea(); 
+      contentArea.innerHTML = "";
+      let content;
+      console.log("",)      
+      if (menuItems[index] === "Athleta Ranking") content = AthletaRanking();
+      if (menuItems[index] === "Pools")           content = Pools();
+      if (menuItems[index] === "Ranking Pools")   content = RankingPools();      
+      if (content) contentArea.appendChild(content);
+    });
+  });
+
+  document.addEventListener("keydown", e => {
+    if (e.key === "ArrowRight") {
+      currentIndex = (currentIndex + 1) % items.length;
+      selectItem(currentIndex);
+    }
+    if (e.key === "ArrowLeft") {
+      currentIndex = (currentIndex - 1 + items.length) % items.length;
+      selectItem(currentIndex);
+    }
+  });
+
+  selectItem(0);
+}
+
+
+
+
+
+// ---------------------------------------------------------------------
+// Function FooterBar
+// ---------------------------------------------------------------------
+function FooterBar() {
+  const footer = document.createElement("div");
+  footer.className = "footer-bar";
+
+  const left = document.createElement("div");
+  left.className = "left";
+  //left.textContent = "© " + new Date().getFullYear() + " - Tutti i diritti riservati";
+
+  const center = document.createElement("div");
+  center.className = "center";
+  center.textContent = "Created by FDF";
+
+  const right = document.createElement("div");
+  right.className = "right";
+
+  footer.appendChild(left);
+  footer.appendChild(center);
+  footer.appendChild(right);
+
+  document.body.appendChild(footer);
+}
+
+// ---------------------------------------------------------------------
+// Function TitleBar
+// ---------------------------------------------------------------------
+function TitleBar() {
+  const categoria    = datiTT.category;
+  const titolo       = datiTT.title;
+  const logoSrc      = "images/fencing-logo.png";
+  const labelTesto   = datiTT.date;
+
+  const bar          = document.createElement("div");
+  bar.className      = "title-bar";
+
+  const left         = document.createElement("div");
+  left.className     = "left";
+  left.textContent   = "Season: " + categoria; 
+
+  const center       = document.createElement("div");
+  center.className   = "center";
+  center.textContent = titolo;
+
+  const right = document.createElement("div");
+  right.className = "right";
+
+  let today = new Date();
+        today = today.toLocaleDateString('it-IT');
+
+  const label = document.createElement("span");
+  label.className   = "label";
+  label.textContent = today;
+
+  const img = document.createElement("img");
+  img.src = logoSrc;
+  img.alt = "Logo";
+
+  right.appendChild(label);
+  right.appendChild(img);
+
+  bar.appendChild(left);
+  bar.appendChild(center);
+  bar.appendChild(right);
+
+  document.body.prepend(bar);
+}; // end function TitleBar
+
+ 
+
+// ---------------------------------------------------------------------
+// Function Ranking Pools
+// ---------------------------------------------------------------------
+function RankingPools() {
+  const div = document.createElement('div');
+  div.textContent = "Ranking Pools!";
+  return div;
+}; // end function rankingPools
+
+// ---------------------------------------------------------------------
+// Function AthletaRanking
+// ---------------------------------------------------------------------
+function AthletaRanking() {
+  let poolContent = `<p><strong>Athleta Ranking</strong></p>`;
+  for (let i = 1; i <= 60; i++) {
+    poolContent += `Riga ${i}<br>`;
+  }
+  const div = document.createElement('div');
+  div.innerHTML = `Pool dell'evento con ID <br>` + poolContent;
+  return div; // sarà il MenuHandler a inserirlo nella content-area
+}
+
+// ---------------------------------------------------------------------
+// Function AthletaRanking
+// ---------------------------------------------------------------------
+function Pools() {
+  let poolContent = `<p><strong>Pools</strong></p>`;
+  for (let i = 1; i <= 10; i++) {
+    poolContent += `Pools Riga ${i}<br>`;
+  }
+  const div = document.createElement('div');
+  div.innerHTML = `EventID <br>` + poolContent;
+  return div;
+}
+
+// ---------------------------------------------------------------------
+// Function RankingPools
+// ---------------------------------------------------------------------
+function RankingPools() {
+  let poolContent = `<p><strong>Ranking Pools</strong></p>`;
+  for (let i = 1; i <= 14; i++) {
+    poolContent += `RankingPools ${i}<br>`;
+  }
+  const div = document.createElement('div');
+  div.innerHTML = `EventID <br>` + poolContent;
+  return div;
+}
+
+
+ 
+
+// =====================================================================
+//             MAIN
+// =====================================================================
+function MAIN() {  };
+
+TitleBar();
+FooterBar();
+MenuHandler(['Home', 'Athleta Ranking', 'Pools', 'Ranking Pools', 'TableauA', 'TableauB', 'Final Ranking', 'Altro']);
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Eventi Schedulati</title>
+  <link rel="stylesheet" href="css/events.css">
+</head>
+<body>
+  <div class="event-list-container"><div class="event-grid" id="event-list"></div></div>
+  <script>
+//    const events = [
+//      { title: "Fioretto Maschietti",    date: "2025-08-10", time: "10:00", yob: "2011" },
+//      { title: "Fioretto Bambine",       date: "2025-08-11", time: "14:30", yob: "2012" },
+//      { title: "Fioretto Giovanissimi",  date: "2025-08-12", time: "09:00", yob: "2012" },
+//      { title: "Fioretto Giovanissime",  date: "2025-08-13", time: "15:00", yob: "2012" },
+//      { title: "Fioretto Ragazzi",       date: "2025-08-14", time: "12:30", yob: "2012" },
+//      { title: "Fioretto Ragazze",       date: "2025-08-15", time: "11:00", yob: "2012" },
+//      { title: "Fioretto Allievi",       date: "2025-08-16", time: "16:00", yob: "2012" },
+//      { title: "Fioretto Allieve",       date: "2025-08-17", time: "09:30", yob: "2012" }
+//    ];
+//
+//function renderEvents() {
+//  const listContainer = document.getElementById('event-list');
+//
+//  const html = events.map(ev => `
+//    <div class="event-card">
+//      <div class="event-header">
+//        <strong>${ev.title}</strong>
+//        <span class="event-description">${ev.yob}</span>
+//      </div>
+//      📅 ${ev.date} ⏰ ${ev.time}
+//    </div>
+//  `).join('');
+//
+//  listContainer.innerHTML = html;
+//}
+//
+//    // Avvia rendering
+//    renderEvents();
+  </script>
+
+</body>
+<script src="js/event.js" defer></script>
+</html>

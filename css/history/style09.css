@@ -1,0 +1,187 @@
+body {
+  font-family: sans-serif;
+  margin:        20px;
+  padding:     0 10px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  width:         100%;
+  overflow-x:    auto;
+  display:      block;
+}
+
+th, td {
+  border: 15px   solid #ccc;
+  text-align:    left;
+  padding:        5px;
+  min-width:     30px;
+  font-size:     14px;
+
+
+}
+
+/*  #ccc;
+   .DetailPoolTab th  {
+    border: 1px solid #ccc;;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .DetailPoolTab th {
+    background-color: none;
+  }
+
+  .DetailPoolTab tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+*/
+
+
+
+/* pool column 0 athleta #f0f0f0;  */
+.pc0-athleta th{
+  text-align:    left;
+  padding:        5px;
+  min-width:     60px;
+  font-size:     14px;
+  border-right:  none;
+  color:red;
+
+}
+
+.pc0-athleta th{
+    background-color: none;
+}
+
+.pc0-athleta tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+
+.pc1-club {
+  text-align:    left;
+  padding:        5px;
+  min-width:     40px;
+  font-size:     12px;
+  color:green;  
+}
+
+.pc1-rank {
+  text-align:    right;
+  padding:        5px;
+  font-size:     12px;
+
+}
+
+/* pool header 0 col 0 - pool */
+.ph0-c0-pool {
+  border:         0px;
+  font-size:     18px;
+  text-align:    left;
+
+}
+
+/* pool header 1 col 1 - rank */
+.ph1-c012 {
+  text-align:  center;
+  background-color: #f0f0f0;
+}
+
+.pc-header  {text-align:   center; background-color: #f0f0f0;}
+.ph1-c01234567  {text-align:   center; background-color: #f0f0f0;}
+
+/* pool header 0 col 1 - streep */
+.ph0-c0-streep {
+  border:         0px;
+  font-size:     14px;
+  text-align:    left;
+  font-weight: normal;
+  font-style:  italic;
+}
+
+/* pool header 0 col 2 - time */
+.ph0-c2-time {
+  border:         0px;
+  font-size:     14px;
+  text-align:   right;
+  font-weight: normal;
+  font-style:  italic;
+}
+
+.pc-null    {background-color: green;}
+.pc-victory {color: orange; text-align: center;}
+.pc-defeat  {color: red;   text-align: center;}
+
+
+
+.btn-detail {
+ background-color: #3498db;
+ color: white;
+ border-radius: 5px;
+ cursor: pointer;
+ width:  40px;
+ height: 40px;
+ font-weight: normal;
+}
+
+.mio-bottone {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  outline: none;         /* elimina il bordo focus */
+  box-shadow: none;      /* elimina eventuali ombre */
+}
+
+.mio-bottone:focus {
+  outline: none;
+  box-shadow: none;      /* elimina ombra focus */
+}
+
+/* Nascondi la tabella di default 
+#dettagli {
+  display:         none;
+  margin-top:      10px;
+  border-collapse: collapse;
+}
+#dettagli th, #dettagli td {
+  border: 1px solid #888;
+  padding: 6px 12px;
+}
+*/
+ 
+.DetailPoolTab {
+    border-collapse: collapse;
+    width: 60%;
+    margin-left:50px;    
+ 
+ 
+}
+
+  .DetailPoolTab th  {
+    border: 1px solid #ccc;;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .DetailPoolTab th {
+    background-color: none;
+  }
+
+  .DetailPoolTab tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+
+/* pool header 0 col 0 - pool #f0f0f0 */
+.dph0-c0-poolAA {
+  font-size:     16px;
+  text-align:    left;
+  
+}

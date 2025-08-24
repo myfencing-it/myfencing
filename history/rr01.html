@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Tabella Pool</title>
+<style>
+  table.my-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    font-size: 12px;
+  }
+  th.PoolTabHeader1Cell {
+    font-weight: bold;
+  }
+  th.PoolTabHeader2Cell {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  td span.fi {
+    margin-right: 6px;
+  }
+  td:nth-child(1) {
+    min-width: 250px;
+    text-align: left;
+  }
+  td:nth-child(2) {
+    text-align: right;
+  }
+  td:nth-child(3) {
+    text-align: left;
+  }
+  td.won {
+    text-align: center;
+    font-weight: bold;
+  }
+  td.VM {
+    text-align: right;
+    font-weight: bold;
+  }
+  .green { color: green; }
+  .red { color: red; }
+</style>
+</head>
+<body>
+
+<table class="my-table">
+  <thead>
+    <!-- Header 1 -->
+    <tr>
+      <th class="PoolTabHeader1Cell">Pool 1</th>
+      <th class="PoolTabHeader1Cell" colspan="3">Streep 1 (rosso)</th>
+      <th class="PoolTabHeader1Cell" colspan="14" style="text-align:right;">time 10:00</th>
+    </tr>
+    <!-- Header 2 -->
+    <tr>
+      <th class="PoolTabHeader2Cell">Athleta</th>
+      <th class="PoolTabHeader2Cell">Rank</th>
+      <th class="PoolTabHeader2Cell">Club</th>
+      <th class="PoolTabHeader2Cell">1</th>
+      <th class="PoolTabHeader2Cell">2</th>
+      <th class="PoolTabHeader2Cell">3</th>
+      <th class="PoolTabHeader2Cell">4</th>
+      <th class="PoolTabHeader2Cell">5</th>
+      <th class="PoolTabHeader2Cell">6</th>
+      <th class="PoolTabHeader2Cell">7</th>
+      <th></th>
+      <th class="PoolTabHeader2Cell">TS</th>
+      <th class="PoolTabHeader2Cell">RS</th>
+      <th class="PoolTabHeader2Cell">Diff</th>
+      <th></th>
+      <th class="PoolTabHeader2Cell">V</th>
+      <th class="PoolTabHeader2Cell">V/M</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Riga fittizia 1 -->
+    <tr>
+      <td><span class="fi fi-it"></span>Mario Rossi</td>
+      <td>1</td>
+      <td>Club A</td>
+      <td class="green">V5</td>
+      <td class="red">D3</td>
+      <td class="green">V2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td></td>
+      <td>10</td>
+      <td>7</td>
+      <td class="green">3</td>
+      <td></td>
+      <td class="won">3</td>
+      <td class="VM">0.43</td>
+    </tr>
+    <!-- Riga fittizia 2 -->
+    <tr>
+      <td><span class="fi fi-fr"></span>Jean Dupont</td>
+      <td>2</td>
+      <td>Club B</td>
+      <td class="green">V4</td>
+      <td class="red">D2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td></td>
+      <td>6</td>
+      <td>2</td>
+      <td class="green">4</td>
+      <td></td>
+      <td class="won">1</td>
+      <td class="VM">0.33</td>
+    </tr>
+    <!-- Riga fittizia 3 -->
+    <tr>
+      <td><span class="fi fi-de"></span>Hans Müller</td>
+      <td>3</td>
+      <td>Club C</td>
+      <td class="red">D1</td>
+      <td class="green">V3</td>
+      <td class="green">V2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td></td>
+      <td>5</td>
+      <td>3</td>
+      <td class="green">2</td>
+      <td></td>
+      <td class="won">2</td>
+      <td class="VM">0.67</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2" style="text-align:left;">
+        <button>Details</button>
+      </td>
+      <td colspan="15" style="text-align:right;">
+        <button>Referee</button>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+
+</body>
+</html>

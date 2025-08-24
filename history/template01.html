@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>01Templ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+/* Barra titolo */
+.title-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #003366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+}
+
+.title-bar .center {
+
+      flex: 1;
+      text-align: center;
+      font-weight: bold;
+}
+title-bar {
+    position: sticky;
+    top: 0;
+}
+.title-bar .left {
+      width: 200px;
+      text-align: left;
+      cursor: pointer;
+    }
+    
+
+.title-bar .right {
+      width: 200px;
+      text-align: right;
+      cursor: pointer;
+    }    
+
+.title-content {
+    padding-top: 60px; 
+}
+
+/* esempio */
+    .title-barXX {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .menu-bar {
+      background-color: #34495e;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    .menu-bar button {
+      background: none;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .menu-bar button:hover {
+      background-color: #1abc9c;
+    }
+
+    .content {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <div class="menu-bar">
+    <button onclick="mostraContenuto('home')">Home</button>
+    <button onclick="mostraContenuto('servizi')">Servizi</button>
+    <button onclick="mostraContenuto('contatti')">Contatti</button>
+  </div>
+
+  <div class="content" id="contenuto">
+    Benvenuto nella Home!
+  </div>
+
+  <script>
+function MenuBar() {
+  const menu = document.createElement("div");
+  menu.className = "menu-bar";
+
+  const voci = [
+    { id: "home", label: "Home", contenuto: "Benvenuto nella Home!" },
+    { id: "servizi", label: "Servizi", contenuto: "Ecco i nostri servizi." },
+    { id: "contatti", label: "Contatti", contenuto: "Contattaci a info@esempio.it" }
+  ];
+
+  voci.forEach(voce => {
+    const btn = document.createElement("button");
+    btn.textContent = voce.label;
+    btn.onclick = () => mostraContenuto(voce.contenuto);
+    menu.appendChild(btn);
+  });
+
+  document.body.insertBefore(menu, document.body.children[1]); // subito dopo title-bar
+}
+
+    function mostraContenuto(sezione) {
+      const contenuto = document.getElementById('contenuto');
+      if (sezione === 'home') {
+        contenuto.innerHTML = 'Benvenuto nella Home!';
+      } else if (sezione === 'servizi') {
+        contenuto.innerHTML = 'Ecco i nostri servizi.';
+      } else if (sezione === 'contatti') {
+        contenuto.innerHTML = 'Contattaci a info@esempio.it';
+      }
+    }
+
+// ---------------------------------------------------------------------
+// Function TitleBar
+// ---------------------------------------------------------------------
+function TitleBar() {	
+  const t1 = "Categoria";    
+  const t2 = "Titolo Sito";  
+  const t3 = "01/01/2025"; 
+
+  const bar = document.createElement("div");
+        bar.className = "title-bar";
+  const left = document.createElement("div");
+        left.className   = "left";
+        left.textContent = t1;
+  const center = document.createElement("div");
+        center.className   = "center";
+        center.textContent = t2;
+  const right = document.createElement("div");
+        right.className = "right";
+
+  const spanDate = document.createElement("span");
+        spanDate.textContent       = t3;
+        spanDate.style.marginRight = "10px";
+
+  const img = document.createElement("img");
+        img.src          = 'images/fencing-logo.png';
+        img.alt          = "Logo";
+        img.style.height = "30px"; 
+        img.style.cursor = "pointer";
+
+        right.appendChild(spanDate);
+        right.appendChild(img);
+
+        bar.appendChild(left);
+        bar.appendChild(center);
+        bar.appendChild(right);
+
+        document.body.insertBefore(bar, document.body.firstChild);
+}
+
+TitleBar() 
+MenuBar() 
+  </script>
+
+</body>
+</html>
+

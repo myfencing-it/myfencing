@@ -1,0 +1,130 @@
+/* Container principale */
+.APoolContainer {
+  margin: 20px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Stile base della tabella */
+.APoolTab {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* Intestazioni */
+.APoolTab thead th {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Intestazione prima riga (Pool, Streep, Time) */
+.APoolTab thead tr:first-child th {
+  background-color: #34495e;
+  font-size: 16px;
+  padding: 12px 5px;
+}
+
+/* Celle speciali */
+.FFTabHeader2Cell {
+  background-color: #3d566e !important;
+}
+
+/* Righe del corpo */
+.APoolTab tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s;
+}
+
+.APoolTab tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.APoolTab tbody tr:hover {
+  background-color: #e9f7fe;
+}
+
+/* Celle del corpo */
+.APoolTab td {
+  padding: 8px 5px;
+  font-size: 13px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Colonne speciali */
+.FFTab-colAA {
+  text-align: left !important;
+  font-weight: 500;
+  min-width: 250px;
+}
+
+/* Bandiere */
+.fi {
+  width: 16px;
+  height: 12px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+/* Pulsanti nel footer */
+.FFTab-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.FFTab-button:hover {
+  background-color: #2980b9;
+}
+
+.FFTab-button i {
+  margin-right: 5px;
+}
+
+/* Stile per i valori */
+.APoolTab td[style*="color:green"] {
+  font-weight: bold;
+  color: #27ae60 !important;
+}
+
+.APoolTab td[style*="color:red"] {
+  font-weight: bold;
+  color: #e74c3c !important;
+}
+
+/* Cella evidenziata */
+.APoolTab td[style*="background-color: #007bff"] {
+  color: white !important;
+  font-weight: bold;
+}
+
+/* Footer */
+.APoolTab tfoot td {
+  background-color: #ecf0f1;
+  padding: 8px;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .APoolContainer {
+    overflow-x: auto;
+  }
+  
+  .APoolTab {
+    width: auto;
+    min-width: 100%;
+  }
+}

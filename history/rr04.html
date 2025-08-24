@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>2 Tabelle sotto la tabella principale</title>
+<link rel="stylesheet" href="css/pools-nuovo.css">
+</head>
+<body>
+<<div id="myPoolContainer"></div>
+
+<script>
+function createPoolTable(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  container.innerHTML = `
+    <table id="Table01" class="poolTable">
+      <thead>
+        <tr class="PTabH1">
+          <th class="PTabH1p">Pool 1</th>
+          <th class="PTabH1s" colspan="5">Streep 5 (rosso)</th>
+          <th class="PTabH1t" colspan="4">time 14:30</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="PTabH2CellA">Athleta</th>
+          <th class="PTabH2Cell">Rank</th>
+          <th class="PTabH2Cell">Club</th>
+          <th class="PTabH2Cell">1</th>
+          <th class="PTabH2Cell">2</th>
+          <th class="PTabH2Cell">3</th>
+          <th class="PTabH2Cell">4</th>
+          <th class="PTabH2Cell">5</th>
+          <th class="PTabH2Cell">6</th>
+          <th class="PTabH2Cell">7</th>
+          <th class="PTabH2Cempty"></th>
+          <th class="PTabH2Cell">TS</th>
+          <th class="PTabH2Cell">RS</th>
+          <th class="PTabH2Cell">Diff</th>
+          <th class="PTabH2Cempty"></th>
+          <th class="PTabH2Cell">V</th>
+          <th class="PTabH2Cell">V/M</th>
+        </tr>
+        ${Array.from({length: 6}).map(() => `
+          <tr>
+            <td>xx PISTOIA Mariana</td>
+            ${Array(16).fill('<td>6</td>').join('')}
+          </tr>
+        `).join('')}
+        <tr>
+          <td colspan="10" style="border: none; text-align:left;">
+            <button id="btnToggle1">Details</button>
+          </td>
+          <td style="border: none"></td>
+          <td colspan="6" style="border: none;text-align:right;">
+            <button id="btnToggle2">Referees</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="extraRow" class="extraTables hidden">
+      <div class="extraColumn">
+        <table id="extraTable1" class="extraTable extraTableLeft hidden">
+          <tr><td>1</td><td>PISTOIA Mariana</td><td>B'CHIR Nourane</td><td>5</td><td>4</td></tr>
+          <tr><td>2</td><td>PISTOIA Mariana</td><td>B'CHIR Nourane</td><td>5</td><td>4</td></tr>
+        </table>
+      </div>
+      <div class="extraColumn right">
+        <table id="extraTable2" class="extraTable extraTableRight hidden">
+          <tr><td>Referee</td><td>CELLER Pavol1</td></tr>
+          <tr><td>Referee</td><td>CELLER Pavol2</td></tr>
+        </table>
+      </div>
+    </div>
+  `;
+
+  function toggleTable(tableId) {
+    const table = document.getElementById(tableId);
+    table.classList.toggle("hidden");
+
+    const extraRow = document.getElementById("extraRow");
+    const t1 = document.getElementById("extraTable1");
+    const t2 = document.getElementById("extraTable2");
+
+    if (!t1.classList.contains("hidden") || !t2.classList.contains("hidden")) {
+      extraRow.classList.remove("hidden");
+    } else {
+      extraRow.classList.add("hidden");
+    }
+  }
+
+  document.getElementById("btnToggle1").addEventListener("click", () => toggleTable("extraTable1"));
+  document.getElementById("btnToggle2").addEventListener("click", () => toggleTable("extraTable2"));
+}
+createPoolTable('myPoolContainer');
+</script>
+
+</body>
+</html>

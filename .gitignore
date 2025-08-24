@@ -1,0 +1,20 @@
+# -----------------------------------
+# FFD 24/08/2025 14:59:42
+# git config --global core.autocrlf true
+# -----------------------------------
+# Ignora tutto
+#*
+
+# INCLUDI
+#!file1.txt
+#!css/file2.js
+
+# ESCLUDI
+*[\(\)]*                   # file con parentesi
+history/*                  # files dentro la cartella history
+*ridurre*
+*VECCHIO-BUONO*
+*datatables*
+*.psd
+*.pl
+  

@@ -1,0 +1,165 @@
+/*===========================================================
+== FFD v.1.0.0 - 27/07/2025 21:35:01                       ==
+== #003366 blue title                                      ==
+== #005599 blue menu
+== #005599 blue heading tabl
+== #0047AB NO NO
+== #f5f7fa; background cont-earea
+== #64748b title color
+===========================================================*/
+ 
+.content-inner {
+	border: 1px solid orange;
+}
+
+
+.event-schedule-title {
+  font-size:     1.5rem;
+  color:         #64748b;
+  text-align:    center;
+  font-weight:   normal; 
+  margin-bottom: 25px;
+}
+
+.event-schedule-grid  {
+  display:               grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap:                   1rem;
+}
+
+.schedule-container {
+  margin-top: 80px;
+  margin-left:25px; 
+  background-color:    #f5f7fa !important;
+
+  padding:       2rem;
+  border-radius: 16px;
+  box-shadow:    0 8px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 800px;
+  animation: fadeIn 0.4s ease;
+  /*margin-top: 50px; */
+  
+}
+
+.scheduled-card {
+  background:  #f1f5f9;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+ 
+.event-table {
+  width: 100%;
+  table-layout: fixed;  
+  border-collapse: collapse;
+}
+
+.img-live img {
+  width: 80px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.img-sx img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.col-img-sx   { width: 60px; }
+.col-img-team { width: 60px; }
+.col-img-live { width: 60px; }
+.col-text {}
+
+
+/* placeholder che mantiene la forma e si mimetizza con lo sfondo #f1f5f9 */
+.img-empty {
+  width: 60px;        
+  height: 30px;       
+  background-color: #f1f5f9;
+  display: block;
+  box-sizing: border-box;
+}
+
+.img-team img {
+  width: 40px;
+  height: 30px;
+  border-radius: 8px;
+  object-fit: cover;
+  padding: 4px;
+}
+
+.event-header {
+  font-size: 1.1rem;
+  color: #1e293b;
+  margin-bottom: 0.2rem;
+}
+
+.event-description {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: normal; 
+}
+
+/* --------------------
+ CSS - Race List #f5f7fa;
+-------------------- */
+
+
+.racelist-container {
+  margin-top: 80px;
+  margin-left:25px;
+  background: #f5f7fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 930px;
+  animation: fadeIn 0.4s ease;
+  max-height: calc(5 * (72px + 0.8rem)); /* altezza card + gap */
+  overflow-y: auto;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* -------------------------------------
+ CSS -  CARD con layout a griglia
+------------------------------------- */
+.event-card {
+  background: #f1f5f9;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.event-header strong {
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+/* Singola colonna */
+.event-list-single-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Animazione fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1);    }
+}

@@ -1,0 +1,49 @@
+    body {
+      font-family: sans-serif;
+      background: #f4f4f4;
+      margin: 20px;
+    }
+
+    .RankingTable-Container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .RankingTable {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .RankingTable-Header th {
+      background-color: #005599;
+      color: white;
+      text-align: center;
+      border: 1px solid #ccc;
+      height: 30px;
+      font-size: 14px;
+    }
+
+    .RankingTable-Wrapper {
+      height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+    }
+
+    .RankingTable-Body td {
+      border: 1px solid #ccc;
+      padding: 5px;
+      color: green;
+      font-size: 13px;
+      height: 25px;
+      text-align: center;
+    }
+
+    .RankingTable-Wrapper::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    .RankingTable-Wrapper::-webkit-scrollbar-thumb {
+      background-color: #888;
+    }
+
+

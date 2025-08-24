@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>01 WW</title>
+    <link rel="stylesheet" href="libs/flag-icons-main/css/flag-icons.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/all.css">
+    <link rel="stylesheet" href="css/myfencing-home03.css">
+
+    <link rel="stylesheet" href="css/myfencing-content-area-title.css">
+    <link rel="stylesheet" href="css/myfencing-event02.css">
+</head>
+<body>
+   <script src="data/dt-events-list.js"></script>
+   <script src="data/dt-fencing-home02.js"></script>
+
+<script>
+
+
+
+
+// ---------------------------------------------------------------------
+// Function TitleBar
+// ---------------------------------------------------------------------
+function TitleBar(tit) {
+
+  let bar = document.querySelector(".title-bar");
+  if (bar) {
+    const center = bar.querySelector(".center");
+    if (center) {
+      center.textContent = tit || atob("RmVuY2luZyBJdGFsaWFuIENoYW1waW9uc2hpcHM=");
+      return;
+    }
+  }
+
+  const logoSrc             = "images/fencing-logo.png";
+        bar                 = document.createElement("div");
+        bar.className       = "title-bar";
+
+  const left                = document.createElement("div");
+  left.className            = "left";
+  left.textContent          = "Season: " + ddgeneral.season;
+
+  const mytitle             = document.createElement("div");
+        mytitle.className   = "center";
+        mytitle.textContent = tit || atob("RmVuY2luZyBJdGFsaWFuIENoYW1waW9uc2hpcHM=");
+
+  const right               = document.createElement("div");
+        right.className     = "right";
+
+  let today = new Date();
+      today = today.toLocaleDateString('it-IT');
+
+  const label              = document.createElement("span");
+        label.className   = "label";
+  label.textContent = today;
+
+  const img = document.createElement("img");
+        img.src = logoSrc;
+        img.alt = "Logo";
+
+  right.appendChild(label);
+  right.appendChild(img);
+
+  bar.appendChild(left);
+  bar.appendChild(mytitle);
+  bar.appendChild(right);
+
+  document.body.prepend(bar);
+}; // end function TitleBar
+
+
+
+// ---------------------------------------------------------------------
+// Function FooterBar
+// ---------------------------------------------------------------------
+function FooterBar() {
+  const footer = document.createElement("div");
+  footer.className = "footer-bar";
+
+  const left = document.createElement("div");
+  left.className = "left";
+  left.textContent = atob("RmVuY2luZyBJdGFsaWFuIENoYW1waW9uc2hpcHM=");
+
+  const center = document.createElement("div");
+  center.className = "center";
+  center.textContent =atob("IkNyZWF0ZWQgYnkgRkRGIiANCg==");
+
+  const right = document.createElement("div");
+  right.className = "right";
+
+  footer.appendChild(left);
+  footer.appendChild(center);
+  footer.appendChild(right);
+
+  document.body.appendChild(footer);
+}; // end function FooterBar
+
+// ---------------------------------------------------------------------
+// Function Menu
+// ---------------------------------------------------------------------
+function Menu(menuItems, options = {}) {
+  // Container principale
+  const container = document.createElement("div");
+  container.classList.add("menu-bar");
+  document.body.appendChild(container);
+
+  const ul = document.createElement("ul");
+  ul.classList.add("menu-tabs");
+
+  const items = [];
+  menuItems.forEach(({ label, title = "", enabled = true, myfunc }) => {
+    const li = document.createElement("li");
+    li.textContent = label;
+    li.classList.add("menu-option");
+    if (!enabled) li.classList.add("disabled");
+    ul.appendChild(li);
+    items.push({ li, label, title, myfunc, enabled });
+  });
+
+  container.appendChild(ul);
+
+  let currentIndex = 0;
+
+  // Funzione per ottenere content-area (crea se non esiste)
+  function getContentArea() {
+    let contentArea = document.getElementById("content-area");
+    if (!contentArea) {
+      contentArea = document.createElement("div");
+      contentArea.id = "content-area";
+      contentArea.style.padding = "1rem";
+      contentArea.style.marginTop = "20px";
+      document.body.appendChild(contentArea);
+    }
+    return contentArea;
+  }
+
+  // Funzione per ottenere/creare il titolo sopra content-area
+  function getContentTitle() {
+    let titleElem = document.getElementById("content-title");
+    if (!titleElem) {
+      titleElem = document.createElement("h2");
+      titleElem.id = "content-title";
+      titleElem.style.margin = "0";
+      titleElem.style.padding = "0 1rem";
+      titleElem.style.position = "sticky";
+      titleElem.style.top           = "100px"; // sotto title-bar + menu
+      titleElem.style.backgroundColor = "#f5f7fa";
+      titleElem.style.zIndex = "900";
+      document.body.insertBefore(titleElem, getContentArea());
+    }
+    return titleElem;
+  }
+
+  // Imposta il titolo
+  function setTitle(newTitle) {
+    const titleElem = getContentTitle();
+    titleElem.textContent = newTitle || "";
+    titleElem.style.display = newTitle ? "block" : "none";
+  }
+
+  // Seleziona un tab
+  function selectItem(index) {
+    items.forEach(({ li }) => li.classList.remove("active"));
+
+    if (items[index] && items[index].enabled) {
+      items[index].li.classList.add("active");
+      currentIndex = index;
+
+      // Aggiorna titolo
+      setTitle(items[index].title);
+
+      const contentArea = getContentArea();
+      contentArea.innerHTML = "";
+      const { myfunc } = items[index];
+      if (typeof myfunc === "function") {
+        const content = myfunc();
+        if (content instanceof Node) contentArea.appendChild(content);
+        else if (typeof content === "string") contentArea.innerHTML = content;
+      }
+    }
+  }
+
+  // Click sui menu-item
+  items.forEach(({ li }, index) => {
+    li.addEventListener("click", () => {
+      if (!items[index].enabled) return;
+      selectItem(index);
+    });
+  });
+
+  // Navigazione tastiera
+  document.addEventListener("keydown", e => {
+    if (e.key === "ArrowRight") {
+      do { currentIndex = (currentIndex + 1) % items.length; } 
+      while (!items[currentIndex].enabled);
+      selectItem(currentIndex);
+    }
+    if (e.key === "ArrowLeft") {
+      do { currentIndex = (currentIndex - 1 + items.length) % items.length; } 
+      while (!items[currentIndex].enabled);
+      selectItem(currentIndex);
+    }
+  });
+
+  // Funzioni API
+  function enableMenuItem(label) {
+    const item = items.find(i => i.label === label);
+    if (item) { item.enabled = true; item.li.classList.remove("disabled"); }
+  }
+
+  function disableMenuItem(label) {
+    const item = items.find(i => i.label === label);
+    if (item) { 
+      item.enabled = false; 
+      item.li.classList.add("disabled"); 
+      if (item.li.classList.contains("active")) item.li.classList.remove("active");
+    }
+  }
+
+  // Avvio
+  const startIndex = (typeof options.defaultIndex === "number" &&
+    options.defaultIndex >= 0 && options.defaultIndex < items.length)
+    ? options.defaultIndex
+    : 0;
+
+  selectItem(startIndex);
+
+  return {
+    enableMenuItem,
+    disableMenuItem,
+    selectItem,
+    selectByLabel: label => {
+      const index = items.findIndex(i => i.label === label);
+      if (index !== -1) selectItem(index);
+    },
+    getCurrentIndex: () => currentIndex,
+    setTitle // espone anche setTitle per aggiornamenti dinamici
+  };
+}
+
+// ---------------------------------------------------------------------
+// Function loadData
+// ---------------------------------------------------------------------
+function loadData(id) {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = `data/dt-events-${id}.js`;
+    script.onload = () => resolve();
+    script.onerror = () => reject(new Error('Errore caricando script'));
+    document.head.appendChild(script);
+  });
+}
+
+
+// ---------------------------------------------------------------------
+// Function ClassificaFinale
+// ---------------------------------------------------------------------
+function Test01() {
+  if (!Array.isArray(giocatorib)) {
+    return '<p>Errore: dati classifica non disponibili.</p>';
+  }
+
+  let classificaHTML = `
+    <div class="classifica-container">
+      <h2>Classifica Finale</h2>
+      <div class="table-wrapper">
+        <table class="classifica-tabella">
+          <thead>
+            <tr>
+              <th>Posizione</th>
+              <th>Rank</th>
+              <th>Nome Atleta</th>
+              <th>Codice Club</th>
+              <th>Club</th>
+            </tr>
+          </thead>
+          <tbody>
+  `;
+
+  giocatorib.forEach(giocatore => {
+    classificaHTML += `
+      <tr>
+        <td>${giocatore.position}</td>
+        <td>${giocatore.rank}</td>
+        <td>${giocatore.athleta}</td>
+        <td>${giocatore.clubcode}</td>
+        <td>${giocatore.club}</td>
+      </tr>
+    `;
+  });
+
+  classificaHTML += `
+          </tbody>
+        </table>
+      </div>
+    </div>
+  `;
+
+  return classificaHTML;
+} // end function ClassificaFinale
+
+
+// ---------------------------------------------------------------------
+// Function RankingPools
+// ---------------------------------------------------------------------
+function Func01() {
+
+  const div = document.createElement("div");
+  div.classList.add("content-inner");
+
+
+     // titolo (puoi gestirlo anche con setTitle del menu se preferisci)
+     const title = document.createElement("h2");
+     title.textContent = "Ranking Pools";
+     div.appendChild(title);
+
+
+     // contenuto dinamico
+     let poolContent =  `<p><strong>Function func01 ff 305</strong></p>`;
+         poolContent += `<p><strong>Function func01</strong></p>`;
+         poolContent += `<p><strong>Function func01</strong></p>`;
+         poolContent += `<p><strong>Function func01</strong></p>`;
+         for (let i = 1; i <= 44; i++) {
+            poolContent += `RankingPools ${i}<br>`;
+         }
+
+     // contenitore principale
+
+     // contenitore scrollabile
+     const content = document.createElement("div");
+           content.classList.add("scrollable-content");
+           content.innerHTML = `EventID <br>` + poolContent;
+
+
+  div.appendChild(content);
+  return div;
+}
+function Func02() {
+
+  const div = document.createElement("div");
+//  div.classList.add("content-inner");
+
+     // titolo (puoi gestirlo anche con setTitle del menu se preferisci)
+     const title = document.createElement("h2");
+     title.textContent = "Ranking Pools";
+     div.appendChild(title);
+
+     // contenuto dinamico
+     let poolContent =  `<p><strong>Function func02</strong></p>`;
+         poolContent += `<p><strong>Function func02</strong></p>`;
+         poolContent += `<p><strong>Function func02</strong></p>`;
+         poolContent += `<p><strong>Function func02</strong></p>`;
+         for (let i = 1; i <= 44; i++) {
+            poolContent += `RankingPools ${i}<br>`;
+         }
+
+     // contenitore scrollabile
+     const content = document.createElement("div");
+           content.classList.add("scrollable-content");
+           content.innerHTML = `EventID <br>` + poolContent;
+
+
+  div.appendChild(content);
+  return div;
+}
+
+function Func03() {
+
+  const div = document.createElement("div");
+     div.classList.add("content-inner");
+
+     // titolo (puoi gestirlo anche con setTitle del menu se preferisci)
+     const title = document.createElement("h2");
+     title.textContent = "Ranking Pools";
+     div.appendChild(title);
+
+     // contenuto dinamico
+     let poolContent =  `<p><strong>Function func02</strong></p>`;
+         poolContent += `<p><strong>Function func02</strong></p>`;
+         poolContent += `<p><strong>Function func02</strong></p>`;
+         poolContent += `<p><strong>Function func02</strong></p>`;
+         for (let i = 1; i <= 44; i++) {
+            poolContent += `RankingPools ${i}<br>`;
+         }
+
+     // contenitore scrollabile
+     const content = document.createElement("div");
+           content.classList.add("scrollable-content");
+           content.innerHTML = `EventID <br>` + poolContent;
+
+
+  div.appendChild(content);
+  return div;
+}
+
+
+ 
+
+// ---------------------------------------------------------------------
+// Function GlobalRanking
+// ---------------------------------------------------------------------
+function GlobalRanking() {
+  console.log("184");
+
+  // inizializziamo la stringa
+  let poolContent = "";
+
+  // aggiungiamo i contenuti
+  for (let i = 1; i <= 24; i++) {
+      poolContent += `GlobalRanking ${i}<br>`;
+  }
+
+  // creiamo il contenitore
+  const div = document.createElement("div");
+  div.innerHTML = `EventID <br>` + poolContent;
+
+  return div;
+}
+
+// ---------------------------------------------------------------------
+// Function EventCategories
+// ---------------------------------------------------------------------
+function EventCategories() {
+  
+  const container = document.createElement("div");
+  container.className = "schedule-container";
+  menu.setTitle("EventCategories  (eventid "+ menuContext.eventId + ")");
+
+  if (!menuContext.eventId) {
+    container.textContent = "Seleziona prima un evento!";
+    return container;
+  }
+
+  const grid = document.createElement("div");
+  grid.className = "event-schedule-grid";
+  container.appendChild(grid);
+  
+
+  // Caricamento dati
+  loadData(menuContext.eventId).then(() => {
+    const html = eventcats.map(ev => `
+      <div class="scheduled-card" data-id="${ev.id}" data-title="${ev.title}">
+        <div class="event-header">
+          <strong>${ev.title}</strong>
+          <span class="event-description">(${ev.description})</span>
+        </div>
+        <small>${ev.date} ⏰ ${ev.time}</small>
+      </div>
+    `).join('');
+
+    grid.innerHTML = html;
+
+    // Click sulle card
+    grid.addEventListener("click", e => {
+      const card = e.target.closest(".scheduled-card");
+      if (!card) return;
+
+      menuContext.eventCategory = card.dataset.title;
+      console.log("Click card - eventCategory:", menuContext.eventCategory);
+
+      menu.enableMenuItem("Pools");
+      menu.selectByLabel("Pools");
+    });
+  });
+
+
+
+ 
+  return container;
+} // end function EventCategories1
+ 
+
+ 
+
+// ---------------------------------------------------------------------
+// Function GlobalRanking
+// ---------------------------------------------------------------------
+function GlobalRanking() {
+  console.log("184");
+
+  // inizializziamo la stringa
+  let poolContent = "";
+
+  // aggiungiamo i contenuti
+  for (let i = 1; i <= 24; i++) {
+      poolContent += `GlobalRanking ${i}<br>`;
+  }
+
+  // creiamo il contenitore
+  const div = document.createElement("div");
+  div.innerHTML = `EventID <br>` + poolContent;
+
+  return div;
+}
+// ---------------------------------------------------------------------
+// Function RaceList
+// ---------------------------------------------------------------------
+function RaceList() {
+
+  TitleBar();
+
+  // contenitore principale
+  const container = document.createElement("div");
+  container.className = "racelist-container scrollable-container";
+
+  const grid = document.createElement("div");
+  grid.className = "event-grid event-list-single-column";
+  grid.id = "event-list";
+  container.appendChild(grid);
+
+  // funzione helper per immagine o placeholder
+  const withImage = (cond, src, placeholder = `<div class="img-empty"></div>`) =>
+    cond ? `<img src="${src}">` : placeholder;
+
+  // genera HTML per ogni evento
+  grid.innerHTML = eventlist.map(ev => `
+    <div class="event-card" data-id="${ev.id}">
+      <table class="event-table">
+        <colgroup>
+          <col class="col-img-sx">
+          <col class="col-text">
+          <col class="col-img-team">
+          <col class="col-img-live">
+        </colgroup>
+        <tr>
+          <td class="img-sx">${withImage(ev.imgSx, ev.imgSx)}</td>
+          <td class="text-col">
+            <div class="event-header">
+              ${ev.date} - ${ev.location} - ${ev.title} - ${ev.category}
+            </div>
+            <span class="event-description">
+              Season: ${ev.season} - ${ev.description}
+            </span>
+          </td>
+          <td class="img-team">${withImage(ev.team, "images/team64.gif", `<img src="images/single64.gif">`)}</td>
+          <td class="img-live">${withImage(ev.live, "images/fencing-live05.gif")}</td>
+        </tr>
+      </table>
+    </div>
+  `).join("");
+
+  // gestore click sugli eventi
+  grid.addEventListener("click", e => {
+    const card = e.target.closest(".event-card");
+    if (!card) return;
+
+    const eventId = card.dataset.id;
+    const evento = eventlist.find(ev => String(ev.id) === String(eventId));
+    if (!evento) return;
+
+    menuContext.eventId = eventId;
+    menuContext.eventTitle = `${evento.location} - ${evento.title}`;
+    console.log("RaceList - Click evento con ID:", eventId);
+
+    menu.enableMenuItem("Categories");
+    menu.selectByLabel("Categories");
+
+    //const result = Categories();
+    const result = EventCategories();    
+    const contentArea = document.getElementById("content-area");
+    contentArea.innerHTML = "";
+
+    if (result instanceof Node) {
+      contentArea.appendChild(result);
+    } else if (typeof result === "string") {
+      contentArea.innerHTML = result;
+    } else {
+      contentArea.innerHTML = "<p>Contenuto non disponibile</p>";
+    }
+  });
+
+  return container;
+}
+
+// =====================================================================
+//             MAIN
+// =====================================================================
+const menuContext = { eventId: null,eventTitle: null, eventCategory: null};
+const menuItems = [
+  { label: "Home",              title: "",                 enabled: true,  myfunc: () => RaceList()   },
+  { label: "Athleta's Ranking", title: "GlobalRanking2",   enabled: true,  myfunc: GlobalRanking      },
+  { label: "Categories",        title: "EventCategories3", enabled: true,  myfunc: EventCategories    },
+  { label: "Pools",             title: "Pools",            enabled: false, myfunc: Test01             },
+  { label: "Ranking Pools",     title: "Ranking Pools",    enabled: false, myfunc: Test01             },
+  { label: "TableauA",          title: "TableauA",         enabled: false, myfunc: () => { /*...*/ }  },
+  { label: "TableauB",          title: "TableauB",         enabled: false, myfunc: () => { /*...*/ }  },
+  { label: "Final Ranking",     title: "Final Ranking",    enabled: false, myfunc: () => { /*...*/ }  },
+  { label: "Altro",             title: "Altro",            enabled: false, myfunc: () => EventCategories1() }
+];  
+
+window.menu = Menu(menuItems, { defaultIndex: 0 });
+window.menu.setTitle("");
+
+TitleBar();
+FooterBar();
+
+
+</script>
+</body>
+</html>
+ 

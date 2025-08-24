@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau01</title>
+    <link rel="stylesheet" href="libs/flag-icons-main/css/flag-icons.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/all.css">
+    <link rel="stylesheet" href="css/xxFFDstyle01.css">
+  <style>
+    table {
+      border-collapse: collapse;
+      margin-top: 10px;
+      table-layout: fixed;
+      width: 100%;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+      min-width: 150px; /* Colonne molto larghe */
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h3>Naviga tra le colonne:</h3>
+  <button onclick="moveLeft()">⬅️ Left</button>
+  <button onclick="moveRight()">Right ➡️</button>
+  <p>Colonne visibili da: <span id="startCol">9</span> a <span id="endCol">13</span></p>
+
+ 
+
+
+</body>
+<script src="data/bleau04.js"></script>
+<script src="tableau01.js"></script>
+</html>
