@@ -1,0 +1,161 @@
+{
+"01": {
+  "pool": [
+    { "atleta": "LA PORTA Valerio",                 "flag": "it", "rank": "7",    "value": ["NN","V5","V5","D2","V5","","V5","22","13"   ], "club": "MCSOC", "country":"ITA" },
+    { "atleta": "PRUDENTE Simone",                  "flag": "it", "rank": "116",  "value": ["D2","NN","D1","V5","D0","","V4","12","21"   ], "club": "RMAPP", "country":"ITA" },
+    { "atleta": "DELLA GATTA Simone",               "flag": "it", "rank": "106",  "value": ["D4","V5","NN","D2","V4","","V4","19","16"   ], "club": "ANCS" , "country":"ITA" },
+    { "atleta": "DE PASQUALE Tommaso",              "flag": "it", "rank": "73",   "value": ["V3","D4","V5","NN","D1","","V5","18","16"   ], "club": "TRCS" , "country":"ITA" },
+    { "atleta": "TOLA Francesco",                   "flag": "it", "rank": "39",   "value": ["D2","V5","D3","V5","NN","","V5","20","13"   ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "SERRA Lorenzo",                    "flag": "it", "rank": "33",   "value": ["A","A","A","A","A","NN","A","",""           ], "club": "RMCS" , "country":"ITA" },
+    { "atleta": "FIORENTINI Gabriele",              "flag": "it", "rank": "136",  "value": ["D2","D2","D2","D2","D3","","NN","11","23"   ], "club": "ANJES", "country":"ITA" }
+  ],
+  "details": [
+    ["LA PORTA Valerio"                 ,"DE PASQUALE Tommaso"              ,"D2" ,"V3" ],
+    ["TOLA Francesco"                   ,"PRUDENTE Simone"                  ,"V5" ,"D0" ],
+    ["DELLA GATTA Simone"               ,"SERRA Lorenzo"                    ,""   ,"A"  ],
+    ["FIORENTINI Gabriele"              ,"LA PORTA Valerio"                 ,"D2" ,"V5" ],
+    ["TOLA Francesco"                   ,"DE PASQUALE Tommaso"              ,"V5" ,"D1" ],
+    ["DELLA GATTA Simone"               ,"PRUDENTE Simone"                  ,"V5" ,"D1" ],
+    ["SERRA Lorenzo"                    ,"FIORENTINI Gabriele"              ,"A"  ,""   ],
+    ["TOLA Francesco"                   ,"LA PORTA Valerio"                 ,"D2" ,"V5" ],
+    ["DELLA GATTA Simone"               ,"DE PASQUALE Tommaso"              ,"D2" ,"V5" ],
+    ["SERRA Lorenzo"                    ,"PRUDENTE Simone"                  ,"A"  ,""   ],
+    ["TOLA Francesco"                   ,"FIORENTINI Gabriele"              ,"V5" ,"D3" ],
+    ["DELLA GATTA Simone"               ,"LA PORTA Valerio"                 ,"D4" ,"V5" ],
+    ["SERRA Lorenzo"                    ,"DE PASQUALE Tommaso"              ,"A"  ,""   ],
+    ["FIORENTINI Gabriele"              ,"PRUDENTE Simone"                  ,"D2" ,"V4" ],
+    ["DELLA GATTA Simone"               ,"TOLA Francesco"                   ,"V4" ,"D3" ],
+    ["SERRA Lorenzo"                    ,"LA PORTA Valerio"                 ,"A"  ,""   ],
+    ["PRUDENTE Simone"                  ,"DE PASQUALE Tommaso"              ,"V5" ,"D4" ],
+    ["DELLA GATTA Simone"               ,"FIORENTINI Gabriele"              ,"V4" ,"D2" ],
+    ["SERRA Lorenzo"                    ,"TOLA Francesco"                   ,"A"  ,""   ],
+    ["LA PORTA Valerio"                 ,"PRUDENTE Simone"                  ,"V5" ,"D2" ],
+    ["DE PASQUALE Tommaso"              ,"FIORENTINI Gabriele"              ,"V5" ,"D2" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "01", "streepnr": "8", "streepcolor": "N/A", "time": "12:00", "column": "Club"}
+},
+
+"02": {
+  "pool": [
+    { "atleta": "PROIETTI Riccardo",                "flag": "it", "rank": "11",   "value": ["NN","D4","V5","V5","V5","D1","V5","25","15" ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "SCANU Gabriele",                   "flag": "it", "rank": "31",   "value": ["V5","NN","D3","V5","V5","D3","V5","26","19" ], "club": "RMAPP", "country":"ITA" },
+    { "atleta": "ZAGAGLIONI Gabriele",              "flag": "it", "rank": "45",   "value": ["D2","V5","NN","V5","V5","D2","V5","24","16" ], "club": "TRCS" , "country":"ITA" },
+    { "atleta": "MARAZZI Edoardo Maria",            "flag": "it", "rank": "9999", "value": ["D0","D0","D2","NN","D4","D2","V5","13","27" ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "GAMBI Pietro",                     "flag": "it", "rank": "88",   "value": ["D3","D3","D0","V5","NN","D1","V5","17","25" ], "club": "ANCSM", "country":"ITA" },
+    { "atleta": "GABRIELLI Carlo",                  "flag": "it", "rank": "108",  "value": ["V5","V5","V5","V5","V5","NN","V5","30","10" ], "club": "ANJES", "country":"ITA" },
+    { "atleta": "DIVISO JARA Simon",                "flag": "it", "rank": "9999", "value": ["D0","D2","D1","D2","D1","D1","NN","7","30"  ], "club": "RMCAP", "country":"ITA" }
+  ],
+  "details": [
+    ["PROIETTI Riccardo"                ,"MARAZZI Edoardo Maria"            ,"V5" ,"D0" ],
+    ["GAMBI Pietro"                     ,"SCANU Gabriele"                   ,"D3" ,"V5" ],
+    ["ZAGAGLIONI Gabriele"              ,"GABRIELLI Carlo"                  ,"D2" ,"V5" ],
+    ["DIVISO JARA Simon"                ,"PROIETTI Riccardo"                ,"D0" ,"V5" ],
+    ["GAMBI Pietro"                     ,"MARAZZI Edoardo Maria"            ,"V5" ,"D4" ],
+    ["ZAGAGLIONI Gabriele"              ,"SCANU Gabriele"                   ,"V5" ,"D3" ],
+    ["GABRIELLI Carlo"                  ,"DIVISO JARA Simon"                ,"V5" ,"D1" ],
+    ["GAMBI Pietro"                     ,"PROIETTI Riccardo"                ,"D3" ,"V5" ],
+    ["ZAGAGLIONI Gabriele"              ,"MARAZZI Edoardo Maria"            ,"V5" ,"D2" ],
+    ["GABRIELLI Carlo"                  ,"SCANU Gabriele"                   ,"V5" ,"D3" ],
+    ["GAMBI Pietro"                     ,"DIVISO JARA Simon"                ,"V5" ,"D1" ],
+    ["ZAGAGLIONI Gabriele"              ,"PROIETTI Riccardo"                ,"D2" ,"V5" ],
+    ["GABRIELLI Carlo"                  ,"MARAZZI Edoardo Maria"            ,"V5" ,"D2" ],
+    ["DIVISO JARA Simon"                ,"SCANU Gabriele"                   ,"D2" ,"V5" ],
+    ["ZAGAGLIONI Gabriele"              ,"GAMBI Pietro"                     ,"V5" ,"D0" ],
+    ["GABRIELLI Carlo"                  ,"PROIETTI Riccardo"                ,"V5" ,"D1" ],
+    ["SCANU Gabriele"                   ,"MARAZZI Edoardo Maria"            ,"V5" ,"D0" ],
+    ["ZAGAGLIONI Gabriele"              ,"DIVISO JARA Simon"                ,"V5" ,"D1" ],
+    ["GABRIELLI Carlo"                  ,"GAMBI Pietro"                     ,"V5" ,"D1" ],
+    ["PROIETTI Riccardo"                ,"SCANU Gabriele"                   ,"D4" ,"V5" ],
+    ["MARAZZI Edoardo Maria"            ,"DIVISO JARA Simon"                ,"V5" ,"D2" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "02", "streepnr": "9", "streepcolor": "N/A", "time": "12:00", "column": "Club"}
+},
+
+"03": {
+  "pool": [
+    { "atleta": "ASSAAD Ghadi",                     "flag": "it", "rank": "77",   "value": ["NN","","V5","D4","D0","D3","V5","17","17"   ], "club": "RMAPP", "country":"ITA" },
+    { "atleta": "VIRGILI Tiziano",                  "flag": "it", "rank": "13",   "value": ["A","NN","A","A","A","A","A","",""           ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "MERLONGHI Odo",                    "flag": "it", "rank": "9999", "value": ["D0","","NN","D0","D2","D2","D0","4","25"    ], "club": "ANJES", "country":"ITA" },
+    { "atleta": "RICCIOTTI Joele",                  "flag": "it", "rank": "59",   "value": ["V5","","V5","NN","D2","D3","V5","20","18"   ], "club": "ANFAB", "country":"ITA" },
+    { "atleta": "BALDI Raffaello",                  "flag": "it", "rank": "18",   "value": ["V5","","V5","V5","NN","V5","V5","25","4"    ], "club": "TRCS" , "country":"ITA" },
+    { "atleta": "D'AMBROSIO Mattia",                "flag": "it", "rank": "110",  "value": ["V5","","V5","V5","D0","NN","D2","17","18"   ], "club": "APACC", "country":"ITA" },
+    { "atleta": "PERLINI Mattia",                   "flag": "it", "rank": "109",  "value": ["D2","","V5","D4","D0","V5","NN","16","17"   ], "club": "PSUNU", "country":"ITA" }
+  ],
+  "details": [
+    ["ASSAAD Ghadi"                     ,"RICCIOTTI Joele"                  ,"D4" ,"V5" ],
+    ["BALDI Raffaello"                  ,"VIRGILI Tiziano"                  ,""   ,"A"  ],
+    ["MERLONGHI Odo"                    ,"D'AMBROSIO Mattia"                ,"D2" ,"V5" ],
+    ["PERLINI Mattia"                   ,"ASSAAD Ghadi"                     ,"D2" ,"V5" ],
+    ["BALDI Raffaello"                  ,"RICCIOTTI Joele"                  ,"V5" ,"D2" ],
+    ["MERLONGHI Odo"                    ,"VIRGILI Tiziano"                  ,""   ,"A"  ],
+    ["D'AMBROSIO Mattia"                ,"PERLINI Mattia"                   ,"D2" ,"V5" ],
+    ["BALDI Raffaello"                  ,"ASSAAD Ghadi"                     ,"V5" ,"D0" ],
+    ["MERLONGHI Odo"                    ,"RICCIOTTI Joele"                  ,"D0" ,"V5" ],
+    ["D'AMBROSIO Mattia"                ,"VIRGILI Tiziano"                  ,""   ,"A"  ],
+    ["BALDI Raffaello"                  ,"PERLINI Mattia"                   ,"V5" ,"D0" ],
+    ["MERLONGHI Odo"                    ,"ASSAAD Ghadi"                     ,"D0" ,"V5" ],
+    ["D'AMBROSIO Mattia"                ,"RICCIOTTI Joele"                  ,"V5" ,"D3" ],
+    ["PERLINI Mattia"                   ,"VIRGILI Tiziano"                  ,""   ,"A"  ],
+    ["MERLONGHI Odo"                    ,"BALDI Raffaello"                  ,"D2" ,"V5" ],
+    ["D'AMBROSIO Mattia"                ,"ASSAAD Ghadi"                     ,"V5" ,"D3" ],
+    ["VIRGILI Tiziano"                  ,"RICCIOTTI Joele"                  ,"A"  ,""   ],
+    ["MERLONGHI Odo"                    ,"PERLINI Mattia"                   ,"D0" ,"V5" ],
+    ["D'AMBROSIO Mattia"                ,"BALDI Raffaello"                  ,"D0" ,"V5" ],
+    ["ASSAAD Ghadi"                     ,"VIRGILI Tiziano"                  ,""   ,"A"  ],
+    ["RICCIOTTI Joele"                  ,"PERLINI Mattia"                   ,"V5" ,"D4" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "03", "streepnr": "10", "streepcolor": "N/A", "time": "12:00", "column": "Club"}
+},
+
+"04": {
+  "pool": [
+    { "atleta": "OSTI Riccardo",                    "flag": "it", "rank": "23",   "value": ["NN","V5","D3","V5","V5","D3","V5","26","14" ], "club": "APACC", "country":"ITA" },
+    { "atleta": "ROMANO Blue",                      "flag": "it", "rank": "75",   "value": ["D1","NN","D1","D2","D3","D1","V5","13","27" ], "club": "RMCS" , "country":"ITA" },
+    { "atleta": "STIPA Mattia",                     "flag": "it", "rank": "9999", "value": ["V4","V5","NN","V5","D4","V5","V5","28","13" ], "club": "ANCS" , "country":"ITA" },
+    { "atleta": "STROPPA Nicolo'",                  "flag": "it", "rank": "74",   "value": ["D2","V5","D1","NN","D2","D1","V5","16","24" ], "club": "ANFAB", "country":"ITA" },
+    { "atleta": "LIBERATI Paolo",                   "flag": "it", "rank": "79",   "value": ["D2","V5","V5","V5","NN","V5","V5","27","20" ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "CARLOPPI Giorgio",                 "flag": "it", "rank": "14",   "value": ["V5","V5","D3","V5","D4","NN","V5","27","15" ], "club": "TRCS" , "country":"ITA" },
+    { "atleta": "DEL FRANCO Gabriele",              "flag": "it", "rank": "113",  "value": ["D0","D2","D0","D2","D2","D0","NN","6","30"  ], "club": "LTGGS", "country":"ITA" }
+  ],
+  "details": [
+    ["OSTI Riccardo"                    ,"STROPPA Nicolo'"                  ,"V5" ,"D2" ],
+    ["LIBERATI Paolo"                   ,"ROMANO Blue"                      ,"V5" ,"D3" ],
+    ["STIPA Mattia"                     ,"CARLOPPI Giorgio"                 ,"V5" ,"D3" ],
+    ["DEL FRANCO Gabriele"              ,"OSTI Riccardo"                    ,"D0" ,"V5" ],
+    ["LIBERATI Paolo"                   ,"STROPPA Nicolo'"                  ,"V5" ,"D2" ],
+    ["STIPA Mattia"                     ,"ROMANO Blue"                      ,"V5" ,"D1" ],
+    ["CARLOPPI Giorgio"                 ,"DEL FRANCO Gabriele"              ,"V5" ,"D0" ],
+    ["LIBERATI Paolo"                   ,"OSTI Riccardo"                    ,"D2" ,"V5" ],
+    ["STIPA Mattia"                     ,"STROPPA Nicolo'"                  ,"V5" ,"D1" ],
+    ["CARLOPPI Giorgio"                 ,"ROMANO Blue"                      ,"V5" ,"D1" ],
+    ["LIBERATI Paolo"                   ,"DEL FRANCO Gabriele"              ,"V5" ,"D2" ],
+    ["STIPA Mattia"                     ,"OSTI Riccardo"                    ,"V4" ,"D3" ],
+    ["CARLOPPI Giorgio"                 ,"STROPPA Nicolo'"                  ,"V5" ,"D1" ],
+    ["DEL FRANCO Gabriele"              ,"ROMANO Blue"                      ,"D2" ,"V5" ],
+    ["STIPA Mattia"                     ,"LIBERATI Paolo"                   ,"D4" ,"V5" ],
+    ["CARLOPPI Giorgio"                 ,"OSTI Riccardo"                    ,"V5" ,"D3" ],
+    ["ROMANO Blue"                      ,"STROPPA Nicolo'"                  ,"D2" ,"V5" ],
+    ["STIPA Mattia"                     ,"DEL FRANCO Gabriele"              ,"V5" ,"D0" ],
+    ["CARLOPPI Giorgio"                 ,"LIBERATI Paolo"                   ,"D4" ,"V5" ],
+    ["OSTI Riccardo"                    ,"ROMANO Blue"                      ,"V5" ,"D1" ],
+    ["STROPPA Nicolo'"                  ,"DEL FRANCO Gabriele"              ,"V5" ,"D2" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "04", "streepnr": "11", "streepcolor": "N/A", "time": "12:00", "column": "Club"}
+}
+}

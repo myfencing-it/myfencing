@@ -1,0 +1,51 @@
+{
+"01": {
+  "pool": [
+    { "atleta": "MUCO Kiren",                       "flag": "it", "rank": "5",    "value": ["NN","V5","V5","V5","V5","V5","25","5"       ], "club": "BSSCA", "country":"ITA" },
+    { "atleta": "LEO Sofia Filippa",                "flag": "it", "rank": "43",   "value": ["D0","NN","V5","V5","V5","V5","20","9"       ], "club": "MIDIF", "country":"ITA" },
+    { "atleta": "VISINI Ilaria",                    "flag": "it", "rank": "9999", "value": ["D1","D0","NN","D1","V5","D1","8","20"       ], "club": "BSLEO", "country":"ITA" },
+    { "atleta": "VALDAMERI Viola",                  "flag": "it", "rank": "44",   "value": ["D1","D1","V5","NN","V5","D1","13","16"      ], "club": "MICRI", "country":"ITA" },
+    { "atleta": "CONTI Livia",                      "flag": "it", "rank": "9999", "value": ["D0","D0","D0","D0","NN","D1","1","25"       ], "club": "COCOM", "country":"ITA" },
+    { "atleta": "DALL'AVA Sibilla",                 "flag": "it", "rank": "57",   "value": ["D3","D3","V5","V5","V5","NN","21","13"      ], "club": "VAPPR", "country":"ITA" }
+  ],
+  "details": [
+    ["MUCO Kiren"                       ,"LEO Sofia Filippa"                ,"V5" ,"D0" ],
+    ["VALDAMERI Viola"                  ,"VISINI Ilaria"                    ,"V5" ,"D1" ],
+    ["DALL'AVA Sibilla"                 ,"CONTI Livia"                      ,"V5" ,"D1" ],
+    ["VISINI Ilaria"                    ,"MUCO Kiren"                       ,"D1" ,"V5" ],
+    ["LEO Sofia Filippa"                ,"DALL'AVA Sibilla"                 ,"V5" ,"D3" ],
+    ["DALL'AVA Sibilla"                 ,"VALDAMERI Viola"                  ,"V5" ,"D1" ],
+    ["MUCO Kiren"                       ,"DALL'AVA Sibilla"                 ,"V5" ,"D3" ],
+    ["VISINI Ilaria"                    ,"CONTI Livia"                      ,"V5" ,"D0" ],
+    ["VALDAMERI Viola"                  ,"LEO Sofia Filippa"                ,"D1" ,"V5" ],
+    ["CONTI Livia"                      ,"MUCO Kiren"                       ,"D0" ,"V5" ],
+    ["DALL'AVA Sibilla"                 ,"VALDAMERI Viola"                  ,"V5" ,"D1" ],
+    ["LEO Sofia Filippa"                ,"VISINI Ilaria"                    ,"V5" ,"D0" ],
+    ["MUCO Kiren"                       ,"VALDAMERI Viola"                  ,"V5" ,"D1" ],
+    ["CONTI Livia"                      ,"LEO Sofia Filippa"                ,"D0" ,"V5" ],
+    ["VISINI Ilaria"                    ,"DALL'AVA Sibilla"                 ,"D1" ,"V5" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "01", "streepnr": "Blu", "streepcolor": "N/A", "time": "00:00", "column": "Club"}
+},
+
+"02": {
+  "pool": [
+    { "atleta": "SCOTTI Giorgia",                   "flag": "it", "rank": "53",   "value": ["NN","V5","D0","V5","V5","15","7"            ], "club": "VAPPR", "country":"ITA" },
+    { "atleta": "ZEROUAL Ines",                     "flag": "it", "rank": "134",  "value": ["D0","NN","D1","D0","V5","6","16"            ], "club": "VAPPR", "country":"ITA" },
+    { "atleta": "PUGNO Anita",                      "flag": "it", "rank": "6",    "value": ["V5","V5","NN","V5","V5","20","1"            ], "club": "COCOM", "country":"ITA" },
+    { "atleta": "INGRASSIA Guia Cecilia",           "flag": "it", "rank": "36",   "value": ["D2","V5","D0","NN","V5","12","10"           ], "club": "MICRI", "country":"ITA" },
+    { "atleta": "BIASETTI Azzurra",                 "flag": "it", "rank": "9999", "value": ["D0","D1","D0","D0","NN","1","20"            ], "club": "BSLEO", "country":"ITA" }
+  ],
+  "details": [
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "02", "streepnr": "Blu", "streepcolor": "N/A", "time": "00:00", "column": "Club"}
+}
+}

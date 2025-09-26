@@ -1,0 +1,121 @@
+{
+"01": {
+  "pool": [
+    { "atleta": "ALBERTI Francesco",                "flag": "it", "rank": "3",    "value": ["NN","V5","V5","D3","V5","V5","V5","28","12" ], "club": "BSSCA", "country":"ITA" },
+    { "atleta": "PIZZI Riccardo",                   "flag": "it", "rank": "9999", "value": ["D1","NN","V5","D1","V5","D2","V5","19","25" ], "club": "MIBRE", "country":"ITA" },
+    { "atleta": "CICCHIRILLO Nicolo'",              "flag": "it", "rank": "76",   "value": ["D4","D3","NN","V5","V5","V5","V5","27","20" ], "club": "BGTEN", "country":"ITA" },
+    { "atleta": "CALDERARA Giorgio Giovan",         "flag": "it", "rank": "13",   "value": ["V4","V5","D0","NN","V5","V5","V5","24","11" ], "club": "BSSAL", "country":"ITA" },
+    { "atleta": "MANNA Gabriele",                   "flag": "it", "rank": "71",   "value": ["D1","D3","D3","D2","NN","D3","D4","16","30" ], "club": "MICRI", "country":"ITA" },
+    { "atleta": "SOKOLOVSKII Mikhail",              "flag": "it", "rank": "19",   "value": ["D0","V5","D3","D0","V5","NN","V5","18","22" ], "club": "COCOM", "country":"ITA" },
+    { "atleta": "SPANO' Gabriele",                  "flag": "it", "rank": "185",  "value": ["D2","D4","D4","D0","V5","D2","NN","17","29" ], "club": "VAPPR", "country":"ITA" }
+  ],
+  "details": [
+    ["ALBERTI Francesco"                ,"CALDERARA Giorgio Giovan"         ,"D3" ,"V4" ],
+    ["MANNA Gabriele"                   ,"PIZZI Riccardo"                   ,"D3" ,"V5" ],
+    ["CICCHIRILLO Nicolo'"              ,"SOKOLOVSKII Mikhail"              ,"V5" ,"D3" ],
+    ["SPANO' Gabriele"                  ,"ALBERTI Francesco"                ,"D2" ,"V5" ],
+    ["MANNA Gabriele"                   ,"CALDERARA Giorgio Giovan"         ,"D2" ,"V5" ],
+    ["CICCHIRILLO Nicolo'"              ,"PIZZI Riccardo"                   ,"D3" ,"V5" ],
+    ["SOKOLOVSKII Mikhail"              ,"SPANO' Gabriele"                  ,"V5" ,"D2" ],
+    ["MANNA Gabriele"                   ,"ALBERTI Francesco"                ,"D1" ,"V5" ],
+    ["CICCHIRILLO Nicolo'"              ,"CALDERARA Giorgio Giovan"         ,"V5" ,"D0" ],
+    ["SOKOLOVSKII Mikhail"              ,"PIZZI Riccardo"                   ,"V5" ,"D2" ],
+    ["MANNA Gabriele"                   ,"SPANO' Gabriele"                  ,"D4" ,"V5" ],
+    ["CICCHIRILLO Nicolo'"              ,"ALBERTI Francesco"                ,"D4" ,"V5" ],
+    ["SOKOLOVSKII Mikhail"              ,"CALDERARA Giorgio Giovan"         ,"D0" ,"V5" ],
+    ["SPANO' Gabriele"                  ,"PIZZI Riccardo"                   ,"D4" ,"V5" ],
+    ["CICCHIRILLO Nicolo'"              ,"MANNA Gabriele"                   ,"V5" ,"D3" ],
+    ["SOKOLOVSKII Mikhail"              ,"ALBERTI Francesco"                ,"D0" ,"V5" ],
+    ["PIZZI Riccardo"                   ,"CALDERARA Giorgio Giovan"         ,"D1" ,"V5" ],
+    ["CICCHIRILLO Nicolo'"              ,"SPANO' Gabriele"                  ,"V5" ,"D4" ],
+    ["SOKOLOVSKII Mikhail"              ,"MANNA Gabriele"                   ,"V5" ,"D3" ],
+    ["ALBERTI Francesco"                ,"PIZZI Riccardo"                   ,"V5" ,"D1" ],
+    ["CALDERARA Giorgio Giovan"         ,"SPANO' Gabriele"                  ,"V5" ,"D0" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "01", "streepnr": "10", "streepcolor": "N/A", "time": "00:00", "column": "Club"}
+},
+
+"02": {
+  "pool": [
+    { "atleta": "AVALLONE Lorenzo",                 "flag": "it", "rank": "9999", "value": ["NN","D1","D0","D0","D0","V5","V5","11","24" ], "club": "COCOM", "country":"ITA" },
+    { "atleta": "LEVRINI Riccardo",                 "flag": "it", "rank": "4",    "value": ["V5","NN","V5","V5","V5","V5","V5","30","9"  ], "club": "BSSCA", "country":"ITA" },
+    { "atleta": "AMMIRATA Manfredi",                "flag": "it", "rank": "9999", "value": ["V5","D4","NN","D1","V5","V5","V5","25","14" ], "club": "MIBRE", "country":"ITA" },
+    { "atleta": "VERRI Gustavo",                    "flag": "it", "rank": "9999", "value": ["V5","D0","V5","NN","D3","V5","V5","23","15" ], "club": "COCOM", "country":"ITA" },
+    { "atleta": "FORLANI Tommaso",                  "flag": "it", "rank": "32",   "value": ["V5","D4","D0","V5","NN","V5","V5","24","14" ], "club": "MICRI", "country":"ITA" },
+    { "atleta": "BIANCHETTI Mattia",                "flag": "it", "rank": "175",  "value": ["D2","D0","D4","D0","D0","NN","D3","9","30"  ], "club": "BSLEO", "country":"ITA" },
+    { "atleta": "MARCHESE Nicolo'",                 "flag": "it", "rank": "184",  "value": ["D2","D0","D0","D4","D1","V5","NN","12","28" ], "club": "VAPPR", "country":"ITA" }
+  ],
+  "details": [
+    ["AVALLONE Lorenzo"                 ,"VERRI Gustavo"                    ,"D0" ,"V5" ],
+    ["FORLANI Tommaso"                  ,"LEVRINI Riccardo"                 ,"D4" ,"V5" ],
+    ["AMMIRATA Manfredi"                ,"BIANCHETTI Mattia"                ,"V5" ,"D4" ],
+    ["MARCHESE Nicolo'"                 ,"AVALLONE Lorenzo"                 ,"D2" ,"V5" ],
+    ["FORLANI Tommaso"                  ,"VERRI Gustavo"                    ,"V5" ,"D3" ],
+    ["AMMIRATA Manfredi"                ,"LEVRINI Riccardo"                 ,"D4" ,"V5" ],
+    ["BIANCHETTI Mattia"                ,"MARCHESE Nicolo'"                 ,"D3" ,"V5" ],
+    ["FORLANI Tommaso"                  ,"AVALLONE Lorenzo"                 ,"V5" ,"D0" ],
+    ["AMMIRATA Manfredi"                ,"VERRI Gustavo"                    ,"D1" ,"V5" ],
+    ["BIANCHETTI Mattia"                ,"LEVRINI Riccardo"                 ,"D0" ,"V5" ],
+    ["FORLANI Tommaso"                  ,"MARCHESE Nicolo'"                 ,"V5" ,"D1" ],
+    ["AMMIRATA Manfredi"                ,"AVALLONE Lorenzo"                 ,"V5" ,"D0" ],
+    ["BIANCHETTI Mattia"                ,"VERRI Gustavo"                    ,"D0" ,"V5" ],
+    ["MARCHESE Nicolo'"                 ,"LEVRINI Riccardo"                 ,"D0" ,"V5" ],
+    ["AMMIRATA Manfredi"                ,"FORLANI Tommaso"                  ,"V5" ,"D0" ],
+    ["BIANCHETTI Mattia"                ,"AVALLONE Lorenzo"                 ,"D2" ,"V5" ],
+    ["LEVRINI Riccardo"                 ,"VERRI Gustavo"                    ,"V5" ,"D0" ],
+    ["AMMIRATA Manfredi"                ,"MARCHESE Nicolo'"                 ,"V5" ,"D0" ],
+    ["BIANCHETTI Mattia"                ,"FORLANI Tommaso"                  ,"D0" ,"V5" ],
+    ["AVALLONE Lorenzo"                 ,"LEVRINI Riccardo"                 ,"D1" ,"V5" ],
+    ["VERRI Gustavo"                    ,"MARCHESE Nicolo'"                 ,"V5" ,"D4" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "02", "streepnr": "11", "streepcolor": "N/A", "time": "00:00", "column": "Club"}
+},
+
+"03": {
+  "pool": [
+    { "atleta": "GALVANI Giona",                    "flag": "it", "rank": "8",    "value": ["NN","D4","V5","V5","D4","V5","D3","26","24" ], "club": "COCOM", "country":"ITA" },
+    { "atleta": "SOMMELLA Tommaso",                 "flag": "it", "rank": "7",    "value": ["V5","NN","V5","V5","V5","V5","V5","30","11" ], "club": "VAPPR", "country":"ITA" },
+    { "atleta": "BALESTRIERI Leonardo",             "flag": "it", "rank": "14",   "value": ["D3","D4","NN","V5","V5","V5","D3","25","22" ], "club": "BSSCA", "country":"ITA" },
+    { "atleta": "BRIACCA Jacopo",                   "flag": "it", "rank": "9999", "value": ["D3","D0","D4","NN","D4","D2","D0","13","30" ], "club": "COCOM", "country":"ITA" },
+    { "atleta": "GALLINA Andrea",                   "flag": "it", "rank": "48",   "value": ["V5","D1","D2","V5","NN","V5","D2","20","27" ], "club": "BSLEO", "country":"ITA" },
+    { "atleta": "GAVA Lorenzo",                     "flag": "it", "rank": "82",   "value": ["D3","D0","D1","V5","D4","NN","D1","14","27" ], "club": "MICRI", "country":"ITA" },
+    { "atleta": "STAMPACCHIA Mattia",               "flag": "it", "rank": "10",   "value": ["V5","D2","V5","V5","V5","V5","NN","27","14" ], "club": "BGTEN", "country":"ITA" }
+  ],
+  "details": [
+    ["GALVANI Giona"                    ,"BRIACCA Jacopo"                   ,"V5" ,"D3" ],
+    ["GALLINA Andrea"                   ,"SOMMELLA Tommaso"                 ,"D1" ,"V5" ],
+    ["BALESTRIERI Leonardo"             ,"GAVA Lorenzo"                     ,"V5" ,"D1" ],
+    ["STAMPACCHIA Mattia"               ,"GALVANI Giona"                    ,"V5" ,"D3" ],
+    ["GALLINA Andrea"                   ,"BRIACCA Jacopo"                   ,"V5" ,"D4" ],
+    ["BALESTRIERI Leonardo"             ,"SOMMELLA Tommaso"                 ,"D4" ,"V5" ],
+    ["GAVA Lorenzo"                     ,"STAMPACCHIA Mattia"               ,"D1" ,"V5" ],
+    ["GALLINA Andrea"                   ,"GALVANI Giona"                    ,"V5" ,"D4" ],
+    ["BALESTRIERI Leonardo"             ,"BRIACCA Jacopo"                   ,"V5" ,"D4" ],
+    ["GAVA Lorenzo"                     ,"SOMMELLA Tommaso"                 ,"D0" ,"V5" ],
+    ["GALLINA Andrea"                   ,"STAMPACCHIA Mattia"               ,"D2" ,"V5" ],
+    ["BALESTRIERI Leonardo"             ,"GALVANI Giona"                    ,"D3" ,"V5" ],
+    ["GAVA Lorenzo"                     ,"BRIACCA Jacopo"                   ,"V5" ,"D2" ],
+    ["STAMPACCHIA Mattia"               ,"SOMMELLA Tommaso"                 ,"D2" ,"V5" ],
+    ["BALESTRIERI Leonardo"             ,"GALLINA Andrea"                   ,"V5" ,"D2" ],
+    ["GAVA Lorenzo"                     ,"GALVANI Giona"                    ,"D3" ,"V5" ],
+    ["SOMMELLA Tommaso"                 ,"BRIACCA Jacopo"                   ,"V5" ,"D0" ],
+    ["BALESTRIERI Leonardo"             ,"STAMPACCHIA Mattia"               ,"D3" ,"V5" ],
+    ["GAVA Lorenzo"                     ,"GALLINA Andrea"                   ,"D4" ,"V5" ],
+    ["GALVANI Giona"                    ,"SOMMELLA Tommaso"                 ,"D4" ,"V5" ],
+    ["BRIACCA Jacopo"                   ,"STAMPACCHIA Mattia"               ,"D0" ,"V5" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "03", "streepnr": "12", "streepcolor": "N/A", "time": "00:00", "column": "Club"}
+}
+}

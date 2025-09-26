@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>04 Home</title>
+    <link rel="stylesheet" href="libs/flag-icons-main/css/flag-icons.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/all.css">
+    <link rel="stylesheet" href="css/myfencing-home03.css">
+    <link rel="stylesheet" href="css/myfencing-pool03.css">
+    <link rel="stylesheet" href="css/myfencing-event02.css">
+</head>
+<body>
+   <script src="js/myfencing-pool04.js"></script>
+   
+<script>
+ 
+// ---------------------------------------------------------------------
+// Function TitleBar <script src="js/template06.js">   
+// ---------------------------------------------------------------------
+function TitleBar(tit) {
+
+  let bar = document.querySelector(".title-bar");
+  if (bar) {
+    const center = bar.querySelector(".center");
+    if (center) {
+      center.textContent = tit || atob("RmVuY2luZyBJdGFsaWFuIENoYW1waW9uc2hpcHM=");
+      return;
+    }
+  }
+
+  const logoSrc             = "images/fencing-logo.png";
+        bar                 = document.createElement("div");
+        bar.className       = "title-bar";
+
+  const left                = document.createElement("div");
+  left.className            = "left";
+  left.textContent          = "Season: " + ddgeneral.season;
+
+  const mytitle             = document.createElement("div");
+        mytitle.className   = "center";
+        mytitle.textContent = tit || atob("RmVuY2luZyBJdGFsaWFuIENoYW1waW9uc2hpcHM=");
+
+  const right               = document.createElement("div");
+        right.className     = "right";
+
+  let today = new Date();
+      today = today.toLocaleDateString('it-IT');
+
+  const label              = document.createElement("span");
+        label.className    = "label";
+  label.textContent        = today;
+
+  const img = document.createElement("img");
+        img.src = logoSrc;
+        img.alt = "Logo";
+
+  right.appendChild(label);
+  right.appendChild(img);
+
+  bar.appendChild(left);
+  bar.appendChild(mytitle);
+  bar.appendChild(right);
+
+  document.body.prepend(bar);
+}; // end function TitleBar
+
+// ---------------------------------------------------------------------
+// Function FooterBar
+// ---------------------------------------------------------------------
+function FooterBar() {
+  const footer       = document.createElement("div");
+  footer.className   = "footer-bar";
+
+  const left         = document.createElement("div");
+  left.className     = "left";
+  left.textContent   = atob("RmVuY2luZyBJdGFsaWFuIENoYW1waW9uc2hpcHM=");
+
+  const center       = document.createElement("div");
+  center.className   = "center";
+  center.textContent = atob("IkNyZWF0ZWQgYnkgRkRGIiANCg==");
+
+  const right        = document.createElement("div");
+  right.className    = "right";
+
+  footer.appendChild(left);
+  footer.appendChild(center);
+  footer.appendChild(right);
+
+  document.body.appendChild(footer);
+}; // end function FooterBar
+
+// ---------------------------------------------------------------------
+// Function Menu
+// ---------------------------------------------------------------------
+function Menu(menuItems, options = {}) {
+  // Container principale
+  const container = document.createElement("div");
+  container.classList.add("menu-bar");
+  document.body.appendChild(container);
+
+  const ul = document.createElement("ul");
+  ul.classList.add("menu-tabs");
+
+  const items = [];
+  menuItems.forEach(({ label, title = "", enabled = true, myfunc }) => {
+    const li = document.createElement("li");
+    li.textContent = label;
+    li.classList.add("menu-option");
+    if (!enabled) li.classList.add("disabled");
+    ul.appendChild(li);
+    items.push({ li, label, title, myfunc, enabled });
+  });
+
+  container.appendChild(ul);
+
+  let currentIndex = 0;
+
+  // Funzione per ottenere content-area (crea se non esiste)
+  function getContentArea() {
+    let contentArea = document.getElementById("content-area");
+    if (!contentArea) {
+      contentArea = document.createElement("div");
+      contentArea.id = "content-area";
+      contentArea.style.padding = "1rem";
+      contentArea.style.marginTop = "20px";
+      document.body.appendChild(contentArea);
+    }
+    return contentArea;
+  }
+
+  // Funzione per ottenere/creare il titolo sopra content-area
+  function getContentTitle() {
+    let titleElem = document.getElementById("content-title");
+    if (!titleElem) {
+      titleElem = document.createElement("h2");
+      titleElem.id = "content-title";
+      titleElem.style.margin = "0px 600px 0px 20px";
+      //titleElem.style.padding = "0 1rem";
+      titleElem.style.padding = "5px 0px 15px 80px";   
+      titleElem.style.position = "sticky";
+      titleElem.style.top           = "100px"; // sotto title-bar + menu
+      //titleElem.style.backgroundColor = "#f5f7fa";
+      titleElem.style.backgroundColor = "#f5f7fa";      
+      titleElem.style.color = "#64748b"; 
+      //titleElem.style.color = "red";
+      titleElem.style.textAlign = "center";
+      titleElem.style.fontSize = "18px";
+      //titleElem.style.border = "2px solid blue";
+      titleElem.style.zIndex = "900";
+      document.body.insertBefore(titleElem, getContentArea());
+    }
+    return titleElem;
+  }
+
+  function setTitle(newTitle) {
+    const titleElem = getContentTitle();
+    titleElem.textContent = newTitle || "";
+    titleElem.innerHTML = newTitle.replace(/\n/g, "<br>");
+    titleElem.style.display = newTitle ? "block" : "none";
+  }
+
+  function setTitle2(firstTitle, secondTitle) {
+    const titleElem = getContentTitle();
+    titleElem.innerHTML = "";
+  
+    if (!firstTitle && !secondTitle) {
+      titleElem.style.display = "none";
+      return;
+    }
+  
+    // Prima riga con font più grande
+    if (firstTitle) {
+      const firstSpan = document.createElement("span");
+      firstSpan.innerHTML = firstTitle;        // usa innerHTML invece di textContent
+      //firstSpan.style.fontSize = "1.2em";
+      //firstSpan.style.fontWeight = "bold";
+      firstSpan.style.marginBottom = "0.8em";
+      firstSpan.style.display = "block";
+      titleElem.appendChild(firstSpan);
+    }
+  
+    // Seconda riga
+    if (secondTitle) {
+      const secondSpan = document.createElement("span");
+      secondSpan.innerHTML = secondTitle;      // usa innerHTML qui anche
+      secondSpan.style.display = "block";
+      titleElem.appendChild(secondSpan);
+    }
+  
+    titleElem.style.display = "block";
+  }
+
+  // Seleziona un tab
+  function selectItem(index) {
+    items.forEach(({ li }) => li.classList.remove("active"));
+
+    if (items[index] && items[index].enabled) {
+      items[index].li.classList.add("active");
+      currentIndex = index;
+
+      // Aggiorna titolo
+      setTitle(items[index].title);
+
+      const contentArea = getContentArea();
+      contentArea.innerHTML = "";
+      const { myfunc } = items[index];
+      if (typeof myfunc === "function") {
+        const content = myfunc();
+        if (content instanceof Node) contentArea.appendChild(content);
+        else if (typeof content === "string") contentArea.innerHTML = content;
+      }
+    }
+  }
+
+  // Click sui menu-item
+  items.forEach(({ li }, index) => {
+    li.addEventListener("click", () => {
+      if (!items[index].enabled) return;
+      selectItem(index);
+    });
+  });
+
+  // Navigazione tastiera
+  document.addEventListener("keydown", e => {
+    if (e.key === "ArrowRight") {
+      do { currentIndex = (currentIndex + 1) % items.length; } 
+      while (!items[currentIndex].enabled);
+      selectItem(currentIndex);
+    }
+    if (e.key === "ArrowLeft") {
+      do { currentIndex = (currentIndex - 1 + items.length) % items.length; } 
+      while (!items[currentIndex].enabled);
+      selectItem(currentIndex);
+    }
+  });
+
+  // Funzioni API
+  function enableMenuItem(label) {
+    const item = items.find(i => i.label === label);
+    if (item) { item.enabled = true; item.li.classList.remove("disabled"); }
+  }
+
+  function disableMenuItem(label) {
+    const item = items.find(i => i.label === label);
+    if (item) { 
+      item.enabled = false; 
+      item.li.classList.add("disabled"); 
+      if (item.li.classList.contains("active")) item.li.classList.remove("active");
+    }
+  }
+
+  // Avvio
+  const startIndex = (typeof options.defaultIndex === "number" &&
+    options.defaultIndex >= 0 && options.defaultIndex < items.length)
+    ? options.defaultIndex
+    : 0;
+
+  selectItem(startIndex);
+
+  return {
+    enableMenuItem,
+    disableMenuItem,
+    selectItem,
+    selectByLabel: label => {
+      const index = items.findIndex(i => i.label === label);
+      if (index !== -1) selectItem(index);
+    },
+    getCurrentIndex: () => currentIndex,
+    setTitle,setTitle2  // espone anche setTitle per aggiornamenti dinamici
+  };
+} // end function Menu
+ 
+// ---------------------------------------------------------------------
+// Function loadData 
+// ---------------------------------------------------------------------
+function loadDataPool(id) {
+  const nomeFile = "data/dt-pools-" + menuContext.eventTag + "-" + id + ".json";
+  console.log("261  nomeFile", nomeFile);  
+  return fetch(nomeFile,{ cache: "no-store" })
+    .then(response => {
+  console.log("264  response.ok", response.ok);  
+      if (!response.ok) throw new Error("Errore HTTP " + response.status);
+        return response.json().then(data => {
+        console.log("264  response.json", data); // qui puoi fare il log in sicurezza
+        return data; // ritorni il JSON per il then successivo
+      });
+    });
+} // end function loadDataPool
+
+// ---------------------------------------------------------------------
+// Function loadDataEvents
+// ---------------------------------------------------------------------
+function loadDataEvents() {
+  const nomeFile = "data/dt-events-list.json";
+  return fetch(nomeFile,{ cache: "no-store" })
+    .then(response => {
+      if (!response.ok) throw new Error("Errore HTTP " + response.status);
+      return response.json();
+    });
+} // end function loadDataEvents
+
+// ---------------------------------------------------------------------
+// Function RankingPools
+// ---------------------------------------------------------------------
+function Func01() {
+
+  const div = document.createElement("div");
+  div.classList.add("content-inner");
+
+
+     // titolo (puoi gestirlo anche con setTitle del menu se preferisci)
+     const title = document.createElement("h2");
+     title.textContent = "Ranking Pools";
+     div.appendChild(title);
+
+
+     // contenuto dinamico
+     let poolContent =  `<p><strong>Function func01 ff 305</strong></p>`;
+         poolContent += `<p><strong>Function func01</strong></p>`;
+         poolContent += `<p><strong>Function func01</strong></p>`;
+         poolContent += `<p><strong>Function func01</strong></p>`;
+         for (let i = 1; i <= 44; i++) {
+            poolContent += `RankingPools ${i}<br>`;
+         }
+
+     // contenitore principale
+
+     // contenitore scrollabile
+     const content = document.createElement("div");
+           content.classList.add("scrollable-content");
+           content.innerHTML = `EventID <br>` + poolContent;
+
+
+  div.appendChild(content);
+  return div;
+} // end function Func01
+
+//---------------------------------------------------------------------
+//Function Pools
+// ---------------------------------------------------------------------
+function Pools() {
+
+  const container     = document.createElement("div");
+  container.className = "scroll-pool-container";
+  menu.setTitle2(menuContext.eventTitle + "- " + menuContext.eventCategory,"Pools");  
+  loadDataPool(menuContext.eventId)
+  .then(dati => {
+    Object.keys(dati).forEach(id => {
+      const tabella = createPoolTable(id, dati[id]);
+      container.appendChild(tabella);
+    });
+  })
+  .catch(err => {
+    console.error("488 Errore:", err);
+    container.innerHTML = `<p class='error'>Pools have not yet been prepared</p>`;
+  });   
+  return container;
+} // end function Pools
+
+// ---------------------------------------------------------------------
+// Function EventCategories
+// ---------------------------------------------------------------------
+function EventCategories() {
+
+  const container = document.createElement("div");
+  container.className = "schedule-container";
+  menu.setTitle2(menuContext.eventTitle,"Categories"); 
+  if (!menuContext.eventId) {
+    container.textContent = "Seleziona prima un evento!";
+    return container;
+  }
+  
+  const grid = document.createElement("div");
+  grid.className = "event-schedule-grid";
+  container.appendChild(grid);
+
+  const eventcats = menuContext.eventCategoriesList || [];
+
+  const html = eventcats.map(ev => `
+    <div class="scheduled-card" data-id="${ev.id}" data-title="${ev.title}" data-tag="${ev.tag}">
+      <div class="event-header">
+        <strong>${ev.title}</strong>
+        <span class="event-description">(${ev.description})</span>
+      </div>
+      <small>${ev.date} ⏰ ${ev.time} ${ev.tag}</small>
+    </div>
+  `).join('');
+
+  grid.innerHTML = html;
+
+  // Click sulle card
+  grid.addEventListener("click", e => {
+    const card = e.target.closest(".scheduled-card");
+    if (!card) return;
+
+    menuContext.eventCategory = card.dataset.title;
+    menuContext.eventTag      = card.dataset.tag;
+
+    console.log("Selezionato eventCategory:", menuContext.eventCategory);
+    console.log("Selezionato eventTag:",      menuContext.eventTag);
+
+    menu.enableMenuItem("Pools");  
+    menu.selectByLabel("Pools");
+  });
+
+  return container;
+} // end function EventCategories
+
+// ---------------------------------------------------------------------
+// Function GlobalRanking
+// ---------------------------------------------------------------------
+function GlobalRanking() {
+  console.log("184");
+
+
+  let poolContent = "";
+
+  // aggiungiamo i contenuti
+  for (let i = 1; i <= 24; i++) {
+      poolContent += `GlobalRanking ${i}<br>`;
+  }
+
+  // creiamo il contenitore
+  const div = document.createElement("div");
+  div.innerHTML = `EventID <br>` + poolContent;
+
+  return div;
+} // end function GlobalRanking
+
+// ---------------------------------------------------------------------
+// Function GlobalRanking1
+// ---------------------------------------------------------------------
+function GlobalRanking1() {
+  console.log("184");
+
+  // inizializziamo la stringa
+  let poolContent = "";
+
+  // aggiungiamo i contenuti
+  for (let i = 1; i <= 24; i++) {
+      poolContent += `GlobalRanking ${i}<br>`;
+  }
+
+  // creiamo il contenitore
+  const div = document.createElement("div");
+  div.innerHTML = `EventID <br>` + poolContent;
+
+  return div;
+} // end function GlobalRanking1
+// ---------------------------------------------------------------------
+// Function RaceList
+// ---------------------------------------------------------------------
+function RaceList() {
+
+  TitleBar();
+
+  // contenitore principale
+  const container = document.createElement("div");
+  container.className = "racelist-container scrollable-container";
+
+  const grid = document.createElement("div");
+  grid.className = "event-grid event-list-single-column";
+  grid.id = "event-list";
+  container.appendChild(grid);
+
+  // funzione helper per immagine o placeholder
+  const withImage = (cond, src, placeholder = `<div class="img-empty"></div>`) =>
+    cond ? `<img src="${src}">` : placeholder;
+
+  // carico i dati dal JSON
+  loadDataEvents()
+    .then(eventlist => {
+      // genera HTML per ogni evento
+      grid.innerHTML = eventlist.map(ev => `
+        <div class="event-card" data-id="${ev.id}">
+          <table class="event-table">
+            <colgroup>
+              <col class="col-img-sx">
+              <col class="col-text">
+              <col class="col-img-team">
+              <col class="col-img-live">
+            </colgroup>
+            <tr>
+              <td class="img-sx">${withImage(ev.imgSx, ev.imgSx)}</td>
+              <td class="text-col">
+                <div class="event-header">
+                  ${ev.date} - ${ev.location} - ${ev.title} - ${ev.category}
+                </div>
+                <span class="event-description">
+                  Season: ${ev.season} - ${ev.description}
+                </span>
+              </td>
+              <td class="img-team">
+                ${withImage(ev.team, "images/team64.gif", `<img src="images/single64.gif">`)}
+              </td>
+              <td class="img-live">
+                ${withImage(ev.live, "images/fencing-live05.gif")}
+              </td>
+            </tr>
+          </table>
+        </div>
+      `).join("");
+
+      // gestore click sugli eventi (ora con eventlist del JSON)
+      grid.addEventListener("click", e => {
+        const card = e.target.closest(".event-card");
+        if (!card) return;
+
+        const eventId = card.dataset.id;
+        const evento = eventlist.find(ev => String(ev.id) === String(eventId));
+        if (!evento) return;
+
+        menuContext.eventId = eventId;
+        menuContext.eventTitle = `${evento.location} - ${evento.title}`;
+        console.log("RaceList - Click evento con ID:", eventId);
+        menuContext.eventCategoriesList = evento.eventcats;
+        console.log("eventcats:", evento.eventcats);
+        console.log("eventCategoriesList:", menuContext.eventCategoriesList);        
+ 
+        menu.enableMenuItem("Categories");
+        menu.selectByLabel("Categories");
+
+        const result = EventCategories();
+        const contentArea = document.getElementById("content-area");
+        contentArea.innerHTML = "";
+
+        if (result instanceof Node) {
+          contentArea.appendChild(result);
+        } else if (typeof result === "string") {
+          contentArea.innerHTML = result;
+        } else {
+          contentArea.innerHTML = "<p>Contenuto non disponibile</p>";
+        }
+      });
+    })
+    .catch(err => {
+      console.error("Errore caricando eventi:", err);
+      grid.innerHTML = `<div class="error">Errore nel caricamento eventi</div>`;
+    });
+
+  return container;
+}
+
+
+//---------------------------------------------------------------------
+//Function Pippo
+// ---------------------------------------------------------------------
+function Pippo() {
+
+  const container     = document.createElement("div");
+  container.className = "scroll-pool-container";
+  menu.setTitle2("pluto","Pippo");  
+//  loadDataPool(menuContext.eventId)
+//  .then(dati => {
+//    Object.keys(dati).forEach(id => {
+//      const tabella = createPoolTable(id, dati[id]);
+//      container.appendChild(tabella);
+//    });
+//  })
+//  .catch(err => {
+//    console.error("488 Errore:", err);
+//    container.innerHTML = `<p class='error'>Pools have not yet been prepared</p>`;
+//  });   
+
+  // 3. Tabella
+  const Rtable = document.createElement("Rtable");
+  Rtable.style.borderCollapse = "collapse";
+  Rtable.style.width = "100%";
+
+  // Fissa la larghezza delle colonne
+  Rtable.style.RtableLayout = "fixed";
+
+  // 4. Intestazioni
+  const thead = document.createElement("thead");
+  const intestazioni = ["Pos", "Rank", "Athleta", "Club", "Clubname"];
+  const headerRow = document.createElement("tr");
+  intestazioni.forEach(testo => {
+    const th = document.createElement("th");
+    th.textContent = testo;
+    th.style.position= "sticky";
+    th.classList.add("FFDRankingHeaderTable");
+    headerRow.appendChild(th);
+  });
+  thead.appendChild(headerRow);
+  Rtable.appendChild(thead);
+
+  // 5. Corpo tabella
+  const tbody = document.createElement("tbody");
+   giocatorib.forEach(giocatore => {
+       const tr = document.createElement("tr");
+
+       const cpos = document.createElement("td");
+       cpos.textContent     = giocatore.position;
+       cpos.style.fontSize  = "13px";
+       cpos.style.textAlign = "right";
+       cpos.style.border    = "1px solid #ccc";
+       cpos.style.padding   = "5px";
+       cpos.style.minWidth  = "40px";
+       tr.appendChild(cpos); // Aggiungi al <tr>
+
+       const crank = document.createElement("td");
+       crank.textContent = giocatore.rank;
+       crank.style.minWidth  = "40px";
+       crank.style.fontSize  = "13px";
+       crank.style.textAlign = "right";
+       crank.style.border    = "1px solid #ccc";
+       crank.style.padding   = "5px";
+
+       tr.appendChild(crank);
+
+       if (giocatore.clubcode.startsWith("EE")) {
+           let cc = country.find(c => c.cio === giocatore.clubcode.slice(2, 5));
+           giocatore.flag=cc.flag;
+       };
+
+       const cathleta = document.createElement("td");
+             cathleta.style.minWidth  = "250px";
+             cathleta.style.fontSize  = "13px";
+             cathleta.style.textAlign = "left";
+             cathleta.style.border    = "1px solid #ccc";
+             cathleta.style.padding   = "5px";
+       const flag    = document.createElement("span");
+             flag.classList.add("fi", `fi-${giocatore.flag}`);
+             flag.style.marginRight = "6px";
+             cathleta.appendChild(flag);
+
+             const img = document.createElement("img");
+             img.style.height        = "16px";
+             img.style.marginRight   = "6px";
+             img.style.verticalAlign = "middle";
+             if (giocatore.position === 1) {
+               img.src = "../images/goldmedal64.gif";
+             } else if (giocatore.position === 2) {
+               img.src = "../images/silvermedal64.gif";
+             } else if (giocatore.position === 3) {
+               img.src = "../images/bronzemedal64.gif";
+             } else if (giocatore.position === 4) {
+               img.src = "../images/bronzemedal64.gif";
+             };
+             cathleta.appendChild(img);
+             cathleta.appendChild(document.createTextNode(giocatore.athleta));
+             tr.appendChild(cathleta);
+
+       const cclubc = document.createElement("td");
+             cclubc.textContent     = giocatore.clubcode;
+             cclubc.style.minWidth  = "70px";
+             cclubc.style.fontSize  = "13px";
+             cclubc.style.textAlign = "left";
+             cclubc.style.border    = "1px solid #ccc";
+             cclubc.style.padding   = "5px";
+             tr.appendChild(cclubc);
+
+       const cclub = document.createElement("td");
+             cclub.textContent     = giocatore.club;
+             cclub.style.fontSize  = "13px";
+             cclub.style.textAlign = "left";
+             cclub.style.border    = "1px solid #ccc";
+             cclub.style.padding   = "5px";
+             tr.appendChild(cclub);
+
+             tbody.appendChild(tr);
+   });
+
+   Rtable.appendChild(tbody);
+
+  // 6. Contenitore finale
+  scrollContainer.appendChild(Rtable);
+ // const container = document.createElement("div");
+  container.appendChild(titolo);
+  container.appendChild(scrollContainer);
+
+ 
+
+
+
+  return container;
+} // end function Pippo
+
+// ---------------------------------------------------------------------
+// Function ClassificaIniziale
+// ---------------------------------------------------------------------
+function ClassificaIniziale() {
+  // 1. Titolo
+  const titolo = document.createElement("h2");
+  titolo.textContent = "Classifica Iniziale";
+  titolo.classList.add("FFDRankingHeaderTitle");
+
+  // 2. Contenitore scrollabile per la tabella
+  const scrollContainer = document.createElement("div");
+        scrollContainer.style.maxHeight = "600px";
+        scrollContainer.style.overflowY = "auto";
+        scrollContainer.style.border    = "1px solid red";
+
+        scrollContainer.style.width       = "800px";   // o un'altra larghezza a tua scelta
+        scrollContainer.style.marginLeft  = "0";       // niente margine a sinistra
+        scrollContainer.style.marginRight = "auto";    // spinge tutto verso sinistra
+
+  // 3. Tabella
+  const Rtable = document.createElement("Rtable");
+  Rtable.style.borderCollapse = "collapse";
+  Rtable.style.width = "100%";
+
+  // Fissa la larghezza delle colonne
+  Rtable.style.RtableLayout = "fixed";
+
+  // 4. Intestazioni
+  const thead = document.createElement("thead");
+  const intestazioni = ["Pos", "Rank", "Athleta", "Club", "Clubname"];
+  const headerRow = document.createElement("tr");
+  intestazioni.forEach(testo => {
+    const th = document.createElement("th");
+    th.textContent = testo;
+    th.style.position= "sticky";
+    th.classList.add("FFDRankingHeaderTable");
+    headerRow.appendChild(th);
+  });
+  thead.appendChild(headerRow);
+  Rtable.appendChild(thead);
+
+  // 5. Corpo tabella
+  const tbody = document.createElement("tbody");
+   giocatorib.forEach(giocatore => {
+       const tr = document.createElement("tr");
+
+       const cpos = document.createElement("td");
+       cpos.textContent     = giocatore.position;
+       cpos.style.fontSize  = "13px";
+       cpos.style.textAlign = "right";
+       cpos.style.border    = "1px solid #ccc";
+       cpos.style.padding   = "5px";
+       cpos.style.minWidth  = "40px";
+       tr.appendChild(cpos); // Aggiungi al <tr>
+
+       const crank = document.createElement("td");
+       crank.textContent = giocatore.rank;
+       crank.style.minWidth  = "40px";
+       crank.style.fontSize  = "13px";
+       crank.style.textAlign = "right";
+       crank.style.border    = "1px solid #ccc";
+       crank.style.padding   = "5px";
+
+       tr.appendChild(crank);
+
+       if (giocatore.clubcode.startsWith("EE")) {
+           let cc = country.find(c => c.cio === giocatore.clubcode.slice(2, 5));
+           giocatore.flag=cc.flag;
+       };
+
+       const cathleta = document.createElement("td");
+             cathleta.style.minWidth  = "250px";
+             cathleta.style.fontSize  = "13px";
+             cathleta.style.textAlign = "left";
+             cathleta.style.border    = "1px solid #ccc";
+             cathleta.style.padding   = "5px";
+       const flag    = document.createElement("span");
+             flag.classList.add("fi", `fi-${giocatore.flag}`);
+             flag.style.marginRight = "6px";
+             cathleta.appendChild(flag);
+
+             const img = document.createElement("img");
+             img.style.height        = "16px";
+             img.style.marginRight   = "6px";
+             img.style.verticalAlign = "middle";
+             if (giocatore.position === 1) {
+               img.src = "../images/goldmedal64.gif";
+             } else if (giocatore.position === 2) {
+               img.src = "../images/silvermedal64.gif";
+             } else if (giocatore.position === 3) {
+               img.src = "../images/bronzemedal64.gif";
+             } else if (giocatore.position === 4) {
+               img.src = "../images/bronzemedal64.gif";
+             };
+             cathleta.appendChild(img);
+             cathleta.appendChild(document.createTextNode(giocatore.athleta));
+             tr.appendChild(cathleta);
+
+       const cclubc = document.createElement("td");
+             cclubc.textContent     = giocatore.clubcode;
+             cclubc.style.minWidth  = "70px";
+             cclubc.style.fontSize  = "13px";
+             cclubc.style.textAlign = "left";
+             cclubc.style.border    = "1px solid #ccc";
+             cclubc.style.padding   = "5px";
+             tr.appendChild(cclubc);
+
+       const cclub = document.createElement("td");
+             cclub.textContent     = giocatore.club;
+             cclub.style.fontSize  = "13px";
+             cclub.style.textAlign = "left";
+             cclub.style.border    = "1px solid #ccc";
+             cclub.style.padding   = "5px";
+             tr.appendChild(cclub);
+
+             tbody.appendChild(tr);
+   });
+
+   Rtable.appendChild(tbody);
+
+  // 6. Contenitore finale
+  scrollContainer.appendChild(Rtable);
+  const container = document.createElement("div");
+  container.appendChild(titolo);
+  container.appendChild(scrollContainer);
+
+  return container;
+}
+
+
+// =====================================================================
+//             MAIN
+// =====================================================================
+function MAIN() {}
+const ddgeneral = {season: "2025-2026"};
+const menuContext = { eventId: null,eventTitle: null, eventCategory: null,eventTag: null, eventCategoriesList: null};
+const menuItems = [
+  { label: "Home",              title: "",                 enabled: true,  myfunc: () => RaceList()   },
+  { label: "Athleta's Ranking", title: "GlobalRanking2",   enabled: true,  myfunc: Pippo      },
+  { label: "Categories",        title: "EventCategories3", enabled: true,  myfunc: EventCategories    },
+  { label: "Pools",             title: "Pools",            enabled: false, myfunc: Pools              },
+  { label: "Ranking Pools",     title: "Ranking Pools",    enabled: false, myfunc: Func01             },
+  { label: "TableauA",          title: "TableauA",         enabled: false, myfunc: () => { /*...*/ }  },
+  { label: "TableauB",          title: "TableauB",         enabled: false, myfunc: () => { /*...*/ }  },
+  { label: "Final Ranking",     title: "Final Ranking",    enabled: false, myfunc: () => { /*...*/ }  }
+];  
+
+window.menu = Menu(menuItems, { defaultIndex: 0 });
+//window.menu.setTitle("");
+window.menu.setTitle2();
+
+TitleBar();
+FooterBar();
+
+
+</script>
+</body>
+</html>
+ 

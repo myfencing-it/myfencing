@@ -1,0 +1,131 @@
+{
+            { "atleta": "MURATORI MEZZE Niccolò",           "flag": "it", "rank": "35",   "value": ["NN","V4","D1","V5","D2","D4","V5"], "club": "ARCS" , "country":"ITA" },
+            { "atleta": "BUONOMINI Luca",                   "flag": "it", "rank": "34",   "value": ["D3","NN","D1","V4","D1","V5","V5"], "club": "RMCAP", "country":"ITA" },
+            { "atleta": "STACCHIOTTI Diego",                "flag": "it", "rank": "1",    "value": ["V5","V5","NN","V5","V5","V5","V5"], "club": "ANJES", "country":"ITA" },
+            { "atleta": "CARUCCIO Lorenzo",                 "flag": "it", "rank": "89",   "value": ["D0","D2","D0","NN","D0","D4","D1"], "club": "TVCON", "country":"ITA" },
+            { "atleta": "COSTA Riccardo",                   "flag": "it", "rank": "153",  "value": ["V5","V5","D4","V5","NN","V5","V5"], "club": "LIACC", "country":"ITA" },
+            { "atleta": "FILOSOMI Filippo",                 "flag": "it", "rank": "151",  "value": ["V5","D2","D1","V5","D2","NN","D2"], "club": "GRSS" , "country":"ITA" },
+            { "atleta": "CHIARI Nicoló",                    "flag": "it", "rank": "90",   "value": ["D3","D0","D2","V5","D4","V5","NN"], "club": "BSLEO", "country":"ITA" }
+          ],
+
+            { "atleta": "CHIODA Lorenzo",                   "flag": "it", "rank": "86",   "value": ["NN","D2","D2","V5","D2","V5","V5"], "club": "BSLEO", "country":"ITA" },
+            { "atleta": "RICCI Nico",                       "flag": "it", "rank": "91",   "value": ["V5","NN","D3","D3","D3","D4","V5"], "club": "PICIO", "country":"ITA" },
+            { "atleta": "TURTULA Ennio",                    "flag": "it", "rank": "33",   "value": ["V5","V5","NN","D2","D2","V5","V5"], "club": "RGMOD", "country":"ITA" },
+            { "atleta": "BELLANI Andrea",                   "flag": "it", "rank": "36",   "value": ["D0","V5","V5","NN","D2","V5","V5"], "club": "PINAV", "country":"ITA" },
+            { "atleta": "PUGIOTTO Priyam",                  "flag": "it", "rank": "3",    "value": ["V5","V5","V5","V5","NN","V5","V5"], "club": "VEMES", "country":"ITA" },
+            { "atleta": "DI BARTOLO Tommaso",               "flag": "it", "rank": "154",  "value": ["D0","V5","D0","D0","D0","NN","V5"], "club": "SPCS" , "country":"ITA" },
+            { "atleta": "LENZI Niccolò",                    "flag": "it", "rank": "150",  "value": ["D3","D2","D1","D1","D1","D4","NN"], "club": "PIFIO", "country":"ITA" }
+          ],
+
+            { "atleta": "DELL ISOLA Gianmaria",             "flag": "it", "rank": "84",   "value": ["NN","D3","V5","D2","D0","D1","V5"], "club": "UDASU", "country":"ITA" },
+            { "atleta": "LENCI Pietro",                     "flag": "it", "rank": "32",   "value": ["V5","NN","V5","V2","D0","D0","V5"], "club": "LUTBB", "country":"ITA" },
+            { "atleta": "BAGATELLA Daniel",                 "flag": "it", "rank": "157",  "value": ["D2","D3","NN","V5","D0","D0","D0"], "club": "TORAM", "country":"ITA" },
+            { "atleta": "GUERRI Giulio",                    "flag": "it", "rank": "149",  "value": ["V5","D0","D1","NN","D2","D1","D4"], "club": "PICIO", "country":"ITA" },
+            { "atleta": "BELFIORE Jacopo",                  "flag": "it", "rank": "4",    "value": ["V5","V5","V5","V5","NN","D2","V5"], "club": "ANJES", "country":"ITA" },
+            { "atleta": "SCUCCIMARRA Giulio",               "flag": "it", "rank": "37",   "value": ["V5","V5","V5","V5","V5","NN","V5"], "club": "TVCS" , "country":"ITA" },
+            { "atleta": "PENNA Cristiano",                  "flag": "it", "rank": "92",   "value": ["D4","D1","V5","V5","D1","D4","NN"], "club": "SPCS" , "country":"ITA" }
+          ],
+
+            { "atleta": "GIOVANNETTI Mattia",               "flag": "it", "rank": "38",   "value": ["NN","D0","V5","V5","V5","V5","D2"], "club": "RMFRC", "country":"ITA" },
+            { "atleta": "MOLTENI Alessandro Fer",           "flag": "it", "rank": "5",    "value": ["V5","NN","V5","V5","V5","V5","V5"], "club": "BSSAL", "country":"ITA" },
+            { "atleta": "CODATO Giulio",                    "flag": "it", "rank": "93",   "value": ["D0","D0","NN","D4","V5","D2","V5"], "club": "VEDLF", "country":"ITA" },
+            { "atleta": "SARTI ATZORI Matteo",              "flag": "it", "rank": "31",   "value": ["D1","D0","V5","NN","V5","D3","D4"], "club": "CACUS", "country":"ITA" },
+            { "atleta": "GARRUBA Mattia",                   "flag": "it", "rank": "145",  "value": ["D1","D0","D0","D2","NN","V5","D1"], "club": "TOCHI", "country":"ITA" },
+            { "atleta": "BALDASSARI Valentino",             "flag": "it", "rank": "162",  "value": ["D1","D2","V5","V5","D4","NN","V5"], "club": "VAPPR", "country":"ITA" },
+            { "atleta": "PITTALIS Liam",                    "flag": "it", "rank": "82",   "value": ["V5","D1","D1","V5","V5","D2","NN"], "club": "MOPEN", "country":"ITA" }
+          ],
+
+            { "atleta": "REGIS Gioele",                     "flag": "it", "rank": "39",   "value": ["NN","V5","V5","V5","D0","V5","V5"], "club": "TOCHI", "country":"ITA" },
+            { "atleta": "ARRIGHI Federico",                 "flag": "it", "rank": "137",  "value": ["D3","NN","D3","D3","D1","V5","V5"], "club": "CODOC", "country":"ITA" },
+            { "atleta": "CHITTARO Riccardo",                "flag": "it", "rank": "76",   "value": ["D2","V5","NN","D4","D0","D0","V5"], "club": "UDASU", "country":"ITA" },
+            { "atleta": "DIDDI Pietro",                     "flag": "it", "rank": "30",   "value": ["D2","V5","V5","NN","D1","V5","V5"], "club": "SPCS" , "country":"ITA" },
+            { "atleta": "RICHARDS Zwannah",                 "flag": "it", "rank": "6",    "value": ["V5","V5","V5","V5","NN","V5","V5"], "club": "BRCS" , "country":"ITA" },
+            { "atleta": "BARZAGHI Alessandro",              "flag": "it", "rank": "164",  "value": ["D2","D2","V5","D0","D0","NN","D4"], "club": "COCOM", "country":"ITA" },
+            { "atleta": "COGGI Carlo",                      "flag": "it", "rank": "94",   "value": ["D3","D3","D3","D1","D1","V5","NN"], "club": "MOPEN", "country":"ITA" }
+          ],
+
+            { "atleta": "MONTI Ludovico",                   "flag": "it", "rank": "7",    "value": ["NN","V5","V5","V5","V5","D3","V5"], "club": "PSUNU", "country":"ITA" },
+            { "atleta": "AMMIRATA Flavio",                  "flag": "it", "rank": "29",   "value": ["D4","NN","V5","V5","V5","V5","V5"], "club": "COCOM", "country":"ITA" },
+            { "atleta": "MONOPOLI Francesco",               "flag": "it", "rank": "136",  "value": ["D1","D1","NN","V3","V5","D1","V5"], "club": "TOCHI", "country":"ITA" },
+            { "atleta": "ISIDORI Paolo Romano",             "flag": "it", "rank": "96",   "value": ["D1","D2","D1","NN","D4","D4","D3"], "club": "TOCH4", "country":"ITA" },
+            { "atleta": "DONETTI Valentino",                "flag": "it", "rank": "165",  "value": ["D1","D1","D0","V5","NN","D1","D4"], "club": "BOZIN", "country":"ITA" },
+            { "atleta": "GURRIERI Francesco",               "flag": "it", "rank": "41",   "value": ["V5","D4","V5","V5","V5","NN","D3"], "club": "RGACC", "country":"ITA" },
+            { "atleta": "MAGNANI Luca",                     "flag": "it", "rank": "74",   "value": ["D3","D1","D2","V4","V5","V4","NN"], "club": "RNARI", "country":"ITA" }
+          ],
+
+            { "atleta": "ALLAIS Pietro",                    "flag": "it", "rank": "27",   "value": ["NN","D3","D1","V5","V5","V5","V5"], "club": "TOCHI", "country":"ITA" },
+            { "atleta": "CHIARUGI Leonardo",                "flag": "it", "rank": "135",  "value": ["V5","NN","D1","V5","D4","D3","D3"], "club": "PICIO", "country":"ITA" },
+            { "atleta": "ALMICI Giogio Agostin",            "flag": "it", "rank": "8",    "value": ["V5","V5","NN","V5","V5","V5","V5"], "club": "BSSCA", "country":"ITA" },
+            { "atleta": "PUZZI Francesco",                  "flag": "it", "rank": "99",   "value": ["D1","D2","D1","NN","D3","V5","D3"], "club": "BSSAL", "country":"ITA" },
+            { "atleta": "BONOMO Alessandro",                "flag": "it", "rank": "42",   "value": ["D1","V5","D1","V5","NN","D4","V5"], "club": "PNSCP", "country":"ITA" },
+            { "atleta": "DALL'ORA Lorenzo",                 "flag": "it", "rank": "71",   "value": ["D0","V5","D0","D3","V5","NN","D1"], "club": "VEMES", "country":"ITA" },
+            { "atleta": "SENIS Gabriele",                   "flag": "it", "rank": "170",  "value": ["D0","V5","D3","V5","D0","V5","NN"], "club": "TOAUG", "country":"ITA" }
+          ],
+
+            { "atleta": "PICCITTO Francesco",               "flag": "it", "rank": "26",   "value": ["NN","V5","D2","V5","V5","V5","V5"], "club": "RGACC", "country":"ITA" },
+            { "atleta": "CROZZA Enea",                      "flag": "it", "rank": "176",  "value": ["D0","NN","D1","V5","D0","D2","D3"], "club": "PSUNU", "country":"ITA" },
+            { "atleta": "FIOCCA Simone",                    "flag": "it", "rank": "9",    "value": ["V5","V5","NN","V5","V5","V5","V5"], "club": "BSSAL", "country":"ITA" },
+            { "atleta": "FEI MENEGHIN Angelo",              "flag": "it", "rank": "132",  "value": ["D2","D1","D0","NN","D3","D0","D2"], "club": "TVCON", "country":"ITA" },
+            { "atleta": "SORBETTI Diego",                   "flag": "it", "rank": "100",  "value": ["D0","V5","D4","V5","NN","V5","V5"], "club": "MBMOZ", "country":"ITA" },
+            { "atleta": "VANNUCCINI Claudio",               "flag": "it", "rank": "64",   "value": ["D3","V5","D1","V5","D4","NN","V5"], "club": "PTSCH", "country":"ITA" },
+            { "atleta": "ROMANO Emanuele Sante",            "flag": "it", "rank": "43",   "value": ["D4","V5","D0","V5","D2","D1","NN"], "club": "TOCHI", "country":"ITA" }
+          ],
+
+            { "atleta": "OGLIARI Francesco",                "flag": "it", "rank": "131",  "value": ["NN","V5","V5","D1","","V5","D1"], "club": "VAPPR", "country":"ITA" },
+            { "atleta": "BALDUCCI Mattia",                  "flag": "it", "rank": "61",   "value": ["D3","NN","D2","D0","","V5","V5"], "club": "PSUNU", "country":"ITA" },
+            { "atleta": "ROSSI Gabriele",                   "flag": "it", "rank": "44",   "value": ["D2","V5","NN","D3","","V5","V5"], "club": "PNSCP", "country":"ITA" },
+            { "atleta": "SCHIANTARELLI Gabriel Nathan",     "flag": "it", "rank": "10",   "value": ["V5","V5","V5","NN","","V5","D4"], "club": "BSSCA", "country":"ITA" },
+            { "atleta": "UBOLDI Francesco",                 "flag": "it", "rank": "195",  "value": ["A","A","A","A","NN","A","A"], "club": "BSSAL", "country":"ITA" },
+            { "atleta": "BUSSONE Daniele",                  "flag": "it", "rank": "101",  "value": ["D0","D0","D0","D0","","NN","D1"], "club": "RMCAP", "country":"ITA" },
+            { "atleta": "PIAZZA Alessandro",                "flag": "it", "rank": "25",   "value": ["V5","D4","D4","V5","","V5","NN"], "club": "MIBRI", "country":"ITA" }
+          ],
+
+            { "atleta": "LI Giorgio",                       "flag": "it", "rank": "102",  "value": ["NN","A","A","A","A","A","A"], "club": "VAGAL", "country":"ITA" },
+            { "atleta": "ROSSO Carlo Fiorenz",              "flag": "it", "rank": "63",   "value": ["","NN","V5","D3","V5","D0","D0"], "club": "CNCS" , "country":"ITA" },
+            { "atleta": "SOPRANZI Marco",                   "flag": "it", "rank": "128",  "value": ["","D2","NN","D2","V5","V5","D4"], "club": "ANREC", "country":"ITA" },
+            { "atleta": "IARMOLIUK Bogdan",                 "flag": "it", "rank": "47",   "value": ["","V5","V5","NN","V5","V5","D2"], "club": "PSUNU", "country":"ITA" },
+            { "atleta": "GIANNETTO Ettore",                 "flag": "it", "rank": "184",  "value": ["","D0","D2","D0","NN","D0","D1"], "club": "RMFRC", "country":"ITA" },
+            { "atleta": "TOSCANINI Davide",                 "flag": "it", "rank": "24",   "value": ["","V5","D1","D3","V5","NN","V5"], "club": "ARCS" , "country":"ITA" },
+            { "atleta": "SOLIMENA Luca",                    "flag": "it", "rank": "11",   "value": ["","V5","V5","V5","V5","D3","NN"], "club": "PDCOM", "country":"ITA" }
+          ],
+
+            { "atleta": "FAMELI BAROSI Filippo",            "flag": "it", "rank": "127",  "value": ["NN","D0","D2","D3","D2","D0"], "club": "MNMAN", "country":"ITA" },
+            { "atleta": "AIME Umberto",                     "flag": "it", "rank": "12",   "value": ["V5","NN","V5","V5","V5","V5"], "club": "BSSAL", "country":"ITA" },
+            { "atleta": "PAVANELLO Mario",                  "flag": "it", "rank": "103",  "value": ["V3","D0","NN","D0","V5","D2"], "club": "VEDLF", "country":"ITA" },
+            { "atleta": "DE RE Ascanio",                    "flag": "it", "rank": "60",   "value": ["V5","D2","V5","NN","D3","D2"], "club": "PNSCP", "country":"ITA" },
+            { "atleta": "BATTISTON Achille",                "flag": "it", "rank": "45",   "value": ["V5","D2","D3","V5","NN","D2"], "club": "PDCOM", "country":"ITA" },
+            { "atleta": "EL RHRAIR HASI Malk",              "flag": "it", "rank": "22",   "value": ["V5","D3","V5","V5","V5","NN"], "club": "RMFRC", "country":"ITA" }
+          ],
+
+            { "atleta": "CAUDURO Adriano",                  "flag": "it", "rank": "120",  "value": ["NN","V5","D3","D0","D3","D2"], "club": "TVMON", "country":"ITA" },
+            { "atleta": "D'ABROSCA Tommaso",                "flag": "it", "rank": "107",  "value": ["D2","NN","D1","V5","D2","D0"], "club": "VAPPR", "country":"ITA" },
+            { "atleta": "EUSEBIO Jacopo",                   "flag": "it", "rank": "58",   "value": ["V5","V5","NN","V5","D0","D4"], "club": "MICRI", "country":"ITA" },
+            { "atleta": "DEL GRECO Dario",                  "flag": "it", "rank": "48",   "value": ["V5","D4","D1","NN","D3","D0"], "club": "LICS" , "country":"ITA" },
+            { "atleta": "HU YICHENG Alessandro",            "flag": "it", "rank": "21",   "value": ["V5","V5","V5","V5","NN","D1"], "club": "VEFOS", "country":"ITA" },
+            { "atleta": "BIANCHETTI Leonardo",              "flag": "it", "rank": "13",   "value": ["V5","V5","V5","V5","V5","NN"], "club": "BSSCA", "country":"ITA" }
+          ],
+
+            { "atleta": "GIACCONE Giacomo",                 "flag": "it", "rank": "109",  "value": ["NN","D0","D0","D1","V5","D0"], "club": "CNCS" , "country":"ITA" },
+            { "atleta": "GHION Giulio",                     "flag": "it", "rank": "59",   "value": ["V5","NN","V5","D2","V5","V5"], "club": "TVCAS", "country":"ITA" },
+            { "atleta": "ORIGGI Nicola",                    "flag": "it", "rank": "49",   "value": ["V5","D4","NN","V4","V5","D0"], "club": "MICRI", "country":"ITA" },
+            { "atleta": "LUCIS Mattia",                     "flag": "it", "rank": "20",   "value": ["V5","V5","D2","NN","V5","D3"], "club": "UDASU", "country":"ITA" },
+            { "atleta": "CESCON Edoardo",                   "flag": "it", "rank": "118",  "value": ["D3","D0","D2","D1","NN","D1"], "club": "TVCON", "country":"ITA" },
+            { "atleta": "SCATRAGLI Iacopo",                 "flag": "it", "rank": "14",   "value": ["V5","D4","V5","V5","V5","NN"], "club": "ARCS" , "country":"ITA" }
+          ],
+
+            { "atleta": "BERTOLOTTI BEL Alex",              "flag": "it", "rank": "52",   "value": ["NN","D1","D1","D1","V5","V5"], "club": "TVMON", "country":"ITA" },
+            { "atleta": "MAIORI Mattia",                    "flag": "it", "rank": "57",   "value": ["V5","NN","V5","V5","V5","D3"], "club": "GERAP", "country":"ITA" },
+            { "atleta": "MARMORINI Costantino",             "flag": "it", "rank": "19",   "value": ["V5","D4","NN","V5","V5","V5"], "club": "ARCS" , "country":"ITA" },
+            { "atleta": "MARCHITELLI Federico",             "flag": "it", "rank": "16",   "value": ["V5","D4","D3","NN","V5","V5"], "club": "FIRAG", "country":"ITA" },
+            { "atleta": "MAZARESE Andrea",                  "flag": "it", "rank": "117",  "value": ["D3","D3","D3","D3","NN","V5"], "club": "TOCH4", "country":"ITA" },
+            { "atleta": "MONTECCHI Lorenzo",                "flag": "it", "rank": "111",  "value": ["D0","V5","D0","D1","D1","NN"], "club": "MOPEN", "country":"ITA" }
+          ],
+
+            { "atleta": "DE ANTONIA Ettore",                "flag": "it", "rank": "116",  "value": ["NN","D3","V5","V5","V5","D2"], "club": "VEDLF", "country":"ITA" },
+            { "atleta": "ARCIPRETI Eugenio",                "flag": "it", "rank": "18",   "value": ["V5","NN","V5","V5","V5","V5"], "club": "PISCH", "country":"ITA" },
+            { "atleta": "MASETTI Mattia",                   "flag": "it", "rank": "113",  "value": ["D2","D2","NN","D1","D1","D1"], "club": "MOPEN", "country":"ITA" },
+            { "atleta": "DELL'EDERA Zeno",                  "flag": "it", "rank": "56",   "value": ["D3","D1","V5","NN","D3","D1"], "club": "RMCAP", "country":"ITA" },
+            { "atleta": "PICCHIURA Francesco",              "flag": "it", "rank": "55",   "value": ["D2","D0","V5","V5","NN","D3"], "club": "BOZIN", "country":"ITA" },
+            { "atleta": "LAURI Gianluigi",                  "flag": "it", "rank": "17",   "value": ["V5","D1","V5","V5","V5","NN"], "club": "MIBRE", "country":"ITA" }
+          ],
+

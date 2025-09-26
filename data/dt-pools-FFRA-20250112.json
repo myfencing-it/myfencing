@@ -1,0 +1,267 @@
+{
+"01": {
+  "pool": [
+    { "atleta": "FURCHI' Ludovica",                 "flag": "it", "rank": "44",   "value": ["NN","D2","D2","V5","V5","V5","V5","24","15" ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "TROMBETTI Maria Vittoria",         "flag": "it", "rank": "3",    "value": ["V5","NN","V5","V5","V5","V5","V5","30","9"  ], "club": "ANJES", "country":"ITA" },
+    { "atleta": "FODDI Alice",                      "flag": "it", "rank": "71",   "value": ["V5","D1","NN","V5","V5","V5","V5","26","12" ], "club": "LTGGS", "country":"ITA" },
+    { "atleta": "FIORANI Emma",                     "flag": "it", "rank": "143",  "value": ["D2","D2","D2","NN","V5","V5","D2","18","25" ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "GIORGINI Maria",                   "flag": "it", "rank": "136",  "value": ["D1","D2","D2","D2","NN","V5","D4","16","28" ], "club": "PSUNU", "country":"ITA" },
+    { "atleta": "MAGNANINI Agnese",                 "flag": "it", "rank": "202",  "value": ["D2","D0","D0","D3","D3","NN","D2","10","30" ], "club": "ANCSM", "country":"ITA" },
+    { "atleta": "PETRELLI Adele",                   "flag": "it", "rank": "208",  "value": ["D0","D2","D1","V5","V5","V5","NN","18","23" ], "club": "MCADR", "country":"ITA" }
+  ],
+  "details": [
+    ["FURCHI' Ludovica"                 ,"FIORANI Emma"                     ,"V5" ,"D2" ],
+    ["GIORGINI Maria"                   ,"TROMBETTI Maria Vittoria"         ,"D2" ,"V5" ],
+    ["FODDI Alice"                      ,"MAGNANINI Agnese"                 ,"V5" ,"D0" ],
+    ["PETRELLI Adele"                   ,"FURCHI' Ludovica"                 ,"D0" ,"V5" ],
+    ["GIORGINI Maria"                   ,"FIORANI Emma"                     ,"D2" ,"V5" ],
+    ["FODDI Alice"                      ,"TROMBETTI Maria Vittoria"         ,"D1" ,"V5" ],
+    ["MAGNANINI Agnese"                 ,"PETRELLI Adele"                   ,"D2" ,"V5" ],
+    ["GIORGINI Maria"                   ,"FURCHI' Ludovica"                 ,"D1" ,"V5" ],
+    ["FODDI Alice"                      ,"FIORANI Emma"                     ,"V5" ,"D2" ],
+    ["MAGNANINI Agnese"                 ,"TROMBETTI Maria Vittoria"         ,"D0" ,"V5" ],
+    ["GIORGINI Maria"                   ,"PETRELLI Adele"                   ,"D4" ,"V5" ],
+    ["FODDI Alice"                      ,"FURCHI' Ludovica"                 ,"V5" ,"D2" ],
+    ["MAGNANINI Agnese"                 ,"FIORANI Emma"                     ,"D3" ,"V5" ],
+    ["PETRELLI Adele"                   ,"TROMBETTI Maria Vittoria"         ,"D2" ,"V5" ],
+    ["FODDI Alice"                      ,"GIORGINI Maria"                   ,"V5" ,"D2" ],
+    ["MAGNANINI Agnese"                 ,"FURCHI' Ludovica"                 ,"D2" ,"V5" ],
+    ["TROMBETTI Maria Vittoria"         ,"FIORANI Emma"                     ,"V5" ,"D2" ],
+    ["FODDI Alice"                      ,"PETRELLI Adele"                   ,"V5" ,"D1" ],
+    ["MAGNANINI Agnese"                 ,"GIORGINI Maria"                   ,"D3" ,"V5" ],
+    ["FURCHI' Ludovica"                 ,"TROMBETTI Maria Vittoria"         ,"D2" ,"V5" ],
+    ["FIORANI Emma"                     ,"PETRELLI Adele"                   ,"D2" ,"V5" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "01", "streepnr": "12", "streepcolor": "N/A", "time": "09:00", "column": "Club"}
+},
+
+"02": {
+  "pool": [
+    { "atleta": "TONUCCI Aurora",                   "flag": "it", "rank": "131",  "value": ["NN","D4","V5","D1","","D2","D0","12","20"   ], "club": "PSUNU", "country":"ITA" },
+    { "atleta": "FURCHI' Giulia",                   "flag": "it", "rank": "48",   "value": ["V5","NN","V5","D1","","V5","D1","17","18"   ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "FAGO Melania",                     "flag": "it", "rank": "215",  "value": ["D0","D1","NN","D0","","V5","D0","6","22"    ], "club": "RMAPP", "country":"ITA" },
+    { "atleta": "CARIOTA Angelica",                 "flag": "it", "rank": "43",   "value": ["V5","V5","V5","NN","","V5","D2","22","9"    ], "club": "LTGGS", "country":"ITA" },
+    { "atleta": "SBARBARO Olivia",                  "flag": "it", "rank": "144",  "value": ["A","A","A","A","NN","A","A","",""           ], "club": "RMCS" , "country":"ITA" },
+    { "atleta": "PETRINI Bianca",                   "flag": "it", "rank": "189",  "value": ["V5","D3","D2","D2","","NN","D3","15","22"   ], "club": "MCADR", "country":"ITA" },
+    { "atleta": "PASQUALINI Arianna",               "flag": "it", "rank": "9",    "value": ["V5","V5","V5","V5","","V5","NN","25","6"    ], "club": "TRCS" , "country":"ITA" }
+  ],
+  "details": [
+    ["TONUCCI Aurora"                   ,"CARIOTA Angelica"                 ,"D1" ,"V5" ],
+    ["SBARBARO Olivia"                  ,"FURCHI' Giulia"                   ,"A"  ,""   ],
+    ["FAGO Melania"                     ,"PETRINI Bianca"                   ,"V5" ,"D2" ],
+    ["PASQUALINI Arianna"               ,"TONUCCI Aurora"                   ,"V5" ,"D0" ],
+    ["SBARBARO Olivia"                  ,"CARIOTA Angelica"                 ,"A"  ,""   ],
+    ["FAGO Melania"                     ,"FURCHI' Giulia"                   ,"D1" ,"V5" ],
+    ["PETRINI Bianca"                   ,"PASQUALINI Arianna"               ,"D3" ,"V5" ],
+    ["SBARBARO Olivia"                  ,"TONUCCI Aurora"                   ,"A"  ,""   ],
+    ["FAGO Melania"                     ,"CARIOTA Angelica"                 ,"D0" ,"V5" ],
+    ["PETRINI Bianca"                   ,"FURCHI' Giulia"                   ,"D3" ,"V5" ],
+    ["SBARBARO Olivia"                  ,"PASQUALINI Arianna"               ,"A"  ,""   ],
+    ["FAGO Melania"                     ,"TONUCCI Aurora"                   ,"D0" ,"V5" ],
+    ["PETRINI Bianca"                   ,"CARIOTA Angelica"                 ,"D2" ,"V5" ],
+    ["PASQUALINI Arianna"               ,"FURCHI' Giulia"                   ,"V5" ,"D1" ],
+    ["FAGO Melania"                     ,"SBARBARO Olivia"                  ,""   ,"A"  ],
+    ["PETRINI Bianca"                   ,"TONUCCI Aurora"                   ,"V5" ,"D2" ],
+    ["FURCHI' Giulia"                   ,"CARIOTA Angelica"                 ,"D1" ,"V5" ],
+    ["FAGO Melania"                     ,"PASQUALINI Arianna"               ,"D0" ,"V5" ],
+    ["PETRINI Bianca"                   ,"SBARBARO Olivia"                  ,""   ,"A"  ],
+    ["TONUCCI Aurora"                   ,"FURCHI' Giulia"                   ,"D4" ,"V5" ],
+    ["CARIOTA Angelica"                 ,"PASQUALINI Arianna"               ,"D2" ,"V5" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "02", "streepnr": "13", "streepcolor": "N/A", "time": "09:00", "column": "Club"}
+},
+
+"03": {
+  "pool": [
+    { "atleta": "PASQUALINO Sveva",                 "flag": "it", "rank": "10",   "value": ["NN","D2","V5","V5","V5","V5","22","11"      ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "PENSATO Ludovica",                 "flag": "it", "rank": "72",   "value": ["V5","NN","V5","V5","V5","V5","25","6"       ], "club": "ANREC", "country":"ITA" },
+    { "atleta": "CARCIONE Angelica",                "flag": "it", "rank": "182",  "value": ["D1","D2","NN","V5","D3","V5","16","22"      ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "POLGAR Dalia",                     "flag": "it", "rank": "129",  "value": ["D4","D1","D4","NN","D4","V5","18","22"      ], "club": "RMCS" , "country":"ITA" },
+    { "atleta": "SANT'ANGELO Ginevra",              "flag": "it", "rank": "148",  "value": ["D1","D1","V5","V5","NN","V5","17","18"      ], "club": "ANCS" , "country":"ITA" },
+    { "atleta": "PANTANETTI GON Greta",             "flag": "it", "rank": "251",  "value": ["D0","D0","D3","D2","D1","NN","6","25"       ], "club": "APACC", "country":"ITA" }
+  ],
+  "details": [
+    ["PASQUALINO Sveva"                 ,"PENSATO Ludovica"                 ,"D2" ,"V5" ],
+    ["POLGAR Dalia"                     ,"CARCIONE Angelica"                ,"D4" ,"V5" ],
+    ["PANTANETTI GON Greta"             ,"SANT'ANGELO Ginevra"              ,"D1" ,"V5" ],
+    ["CARCIONE Angelica"                ,"PASQUALINO Sveva"                 ,"D1" ,"V5" ],
+    ["PENSATO Ludovica"                 ,"PANTANETTI GON Greta"             ,"V5" ,"D0" ],
+    ["PANTANETTI GON Greta"             ,"POLGAR Dalia"                     ,"D2" ,"V5" ],
+    ["PASQUALINO Sveva"                 ,"PANTANETTI GON Greta"             ,"V5" ,"D0" ],
+    ["CARCIONE Angelica"                ,"SANT'ANGELO Ginevra"              ,"D3" ,"V5" ],
+    ["POLGAR Dalia"                     ,"PENSATO Ludovica"                 ,"D1" ,"V5" ],
+    ["SANT'ANGELO Ginevra"              ,"PASQUALINO Sveva"                 ,"D1" ,"V5" ],
+    ["PANTANETTI GON Greta"             ,"POLGAR Dalia"                     ,"D2" ,"V5" ],
+    ["PENSATO Ludovica"                 ,"CARCIONE Angelica"                ,"V5" ,"D2" ],
+    ["PASQUALINO Sveva"                 ,"POLGAR Dalia"                     ,"V5" ,"D4" ],
+    ["SANT'ANGELO Ginevra"              ,"PENSATO Ludovica"                 ,"D1" ,"V5" ],
+    ["CARCIONE Angelica"                ,"PANTANETTI GON Greta"             ,"V5" ,"D3" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "03", "streepnr": "17", "streepcolor": "N/A", "time": "09:00", "column": "Club"}
+},
+
+"04": {
+  "pool": [
+    { "atleta": "LUCCIOLA Giulia",                  "flag": "it", "rank": "18",   "value": ["NN","V5","V5","V5","D4","D1","V5","25","15" ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "NUNZIO Aurora",                    "flag": "it", "rank": "153",  "value": ["D3","NN","V5","D2","V5","D3","V5","23","19" ], "club": "RMCS" , "country":"ITA" },
+    { "atleta": "RICCIOTTI Emily",                  "flag": "it", "rank": "180",  "value": ["D2","D2","NN","V5","D1","D0","V5","15","22" ], "club": "ANFAB", "country":"ITA" },
+    { "atleta": "SLOMIANY Miriam",                  "flag": "it", "rank": "123",  "value": ["D0","V5","D2","NN","V5","D3","V5","20","21" ], "club": "RMCAP", "country":"ITA" },
+    { "atleta": "GREGANTI Alessia",                 "flag": "it", "rank": "73",   "value": ["V5","D2","V5","D3","NN","D1","V5","21","22" ], "club": "ANJES", "country":"ITA" },
+    { "atleta": "GENGHINI Lavinia",                 "flag": "it", "rank": "41",   "value": ["V5","V5","V5","V5","V5","NN","V5","30","8"  ], "club": "LTGGS", "country":"ITA" },
+    { "atleta": "DELLA CASA Letizia",               "flag": "it", "rank": "9999", "value": ["D0","D0","D0","D1","D2","D0","NN","3","30"  ], "club": "APACC", "country":"ITA" }
+  ],
+  "details": [
+    ["LUCCIOLA Giulia"                  ,"SLOMIANY Miriam"                  ,"V5" ,"D0" ],
+    ["GREGANTI Alessia"                 ,"NUNZIO Aurora"                    ,"D2" ,"V5" ],
+    ["RICCIOTTI Emily"                  ,"GENGHINI Lavinia"                 ,"D0" ,"V5" ],
+    ["DELLA CASA Letizia"               ,"LUCCIOLA Giulia"                  ,"D0" ,"V5" ],
+    ["GREGANTI Alessia"                 ,"SLOMIANY Miriam"                  ,"D3" ,"V5" ],
+    ["RICCIOTTI Emily"                  ,"NUNZIO Aurora"                    ,"D2" ,"V5" ],
+    ["GENGHINI Lavinia"                 ,"DELLA CASA Letizia"               ,"V5" ,"D0" ],
+    ["GREGANTI Alessia"                 ,"LUCCIOLA Giulia"                  ,"V5" ,"D4" ],
+    ["RICCIOTTI Emily"                  ,"SLOMIANY Miriam"                  ,"V5" ,"D2" ],
+    ["GENGHINI Lavinia"                 ,"NUNZIO Aurora"                    ,"V5" ,"D3" ],
+    ["GREGANTI Alessia"                 ,"DELLA CASA Letizia"               ,"V5" ,"D2" ],
+    ["RICCIOTTI Emily"                  ,"LUCCIOLA Giulia"                  ,"D2" ,"V5" ],
+    ["GENGHINI Lavinia"                 ,"SLOMIANY Miriam"                  ,"V5" ,"D3" ],
+    ["DELLA CASA Letizia"               ,"NUNZIO Aurora"                    ,"D0" ,"V5" ],
+    ["RICCIOTTI Emily"                  ,"GREGANTI Alessia"                 ,"D1" ,"V5" ],
+    ["GENGHINI Lavinia"                 ,"LUCCIOLA Giulia"                  ,"V5" ,"D1" ],
+    ["NUNZIO Aurora"                    ,"SLOMIANY Miriam"                  ,"D2" ,"V5" ],
+    ["RICCIOTTI Emily"                  ,"DELLA CASA Letizia"               ,"V5" ,"D0" ],
+    ["GENGHINI Lavinia"                 ,"GREGANTI Alessia"                 ,"V5" ,"D1" ],
+    ["LUCCIOLA Giulia"                  ,"NUNZIO Aurora"                    ,"V5" ,"D3" ],
+    ["SLOMIANY Miriam"                  ,"DELLA CASA Letizia"               ,"V5" ,"D1" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "04", "streepnr": "15", "streepcolor": "N/A", "time": "09:00", "column": "Club"}
+},
+
+"05": {
+  "pool": [
+    { "atleta": "CARLOTTI Martina",                 "flag": "it", "rank": "58",   "value": ["NN","V5","D0","V5","V5","V5","20","12"      ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "NEGREIROS BATI Sara",              "flag": "it", "rank": "104",  "value": ["D3","NN","V5","V5","V5","V5","23","16"      ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "BUSTI Aurora",                     "flag": "it", "rank": "20",   "value": ["V5","D4","NN","D2","V5","V5","21","10"      ], "club": "RMAPP", "country":"ITA" },
+    { "atleta": "DE PELLEGRINI Stella",             "flag": "it", "rank": "39",   "value": ["D2","D2","V5","NN","V5","V5","19","16"      ], "club": "RMCAP", "country":"ITA" },
+    { "atleta": "SERENELLI Alice",                  "flag": "it", "rank": "158",  "value": ["D0","D1","D0","D3","NN","D2","6","25"       ], "club": "ANCSM", "country":"ITA" },
+    { "atleta": "PINTUCCI Chiara",                  "flag": "it", "rank": "177",  "value": ["D2","D4","D0","D1","V5","NN","12","22"      ], "club": "ANREC", "country":"ITA" }
+  ],
+  "details": [
+    ["CARLOTTI Martina"                 ,"NEGREIROS BATI Sara"              ,"V5" ,"D3" ],
+    ["DE PELLEGRINI Stella"             ,"BUSTI Aurora"                     ,"V5" ,"D2" ],
+    ["PINTUCCI Chiara"                  ,"SERENELLI Alice"                  ,"V5" ,"D2" ],
+    ["BUSTI Aurora"                     ,"CARLOTTI Martina"                 ,"V5" ,"D0" ],
+    ["NEGREIROS BATI Sara"              ,"PINTUCCI Chiara"                  ,"V5" ,"D4" ],
+    ["PINTUCCI Chiara"                  ,"DE PELLEGRINI Stella"             ,"D1" ,"V5" ],
+    ["CARLOTTI Martina"                 ,"PINTUCCI Chiara"                  ,"V5" ,"D2" ],
+    ["BUSTI Aurora"                     ,"SERENELLI Alice"                  ,"V5" ,"D0" ],
+    ["DE PELLEGRINI Stella"             ,"NEGREIROS BATI Sara"              ,"D2" ,"V5" ],
+    ["SERENELLI Alice"                  ,"CARLOTTI Martina"                 ,"D0" ,"V5" ],
+    ["PINTUCCI Chiara"                  ,"DE PELLEGRINI Stella"             ,"D1" ,"V5" ],
+    ["NEGREIROS BATI Sara"              ,"BUSTI Aurora"                     ,"V5" ,"D4" ],
+    ["CARLOTTI Martina"                 ,"DE PELLEGRINI Stella"             ,"V5" ,"D2" ],
+    ["SERENELLI Alice"                  ,"NEGREIROS BATI Sara"              ,"D1" ,"V5" ],
+    ["BUSTI Aurora"                     ,"PINTUCCI Chiara"                  ,"V5" ,"D0" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "05", "streepnr": "16", "streepcolor": "N/A", "time": "09:00", "column": "Club"}
+},
+
+"06": {
+  "pool": [
+    { "atleta": "CAPITANELLI Claudia Zoe",          "flag": "it", "rank": "93",   "value": ["NN","D4","","D3","V5","V5","V5","22","15"   ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "PELATI Viola",                     "flag": "it", "rank": "176",  "value": ["V5","NN","","D0","D2","D2","V5","14","19"   ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "BADIALI Fabiola",                  "flag": "it", "rank": "27",   "value": ["A","A","NN","A","A","A","A","",""           ], "club": "ANSEN", "country":"ITA" },
+    { "atleta": "GOVERNATORI Melita",               "flag": "it", "rank": "35",   "value": ["V4","V5","","NN","V5","V3","V5","22","5"    ], "club": "ANJES", "country":"ITA" },
+    { "atleta": "MASSELLI Giulia",                  "flag": "it", "rank": "76",   "value": ["D3","V5","","D0","NN","V5","V5","18","17"   ], "club": "RMCAP", "country":"ITA" },
+    { "atleta": "SPINOSA Gaia",                     "flag": "it", "rank": "163",  "value": ["D2","V4","","D2","D3","NN","D4","15","20"   ], "club": "LTGGS", "country":"ITA" },
+    { "atleta": "SANTARELLI Sofia",                 "flag": "it", "rank": "42",   "value": ["D1","D1","","D0","D2","V5","NN","9","24"    ], "club": "ANCSM", "country":"ITA" }
+  ],
+  "details": [
+    ["CAPITANELLI Claudia Zoe"          ,"GOVERNATORI Melita"               ,"D3" ,"V4" ],
+    ["MASSELLI Giulia"                  ,"PELATI Viola"                     ,"V5" ,"D2" ],
+    ["BADIALI Fabiola"                  ,"SPINOSA Gaia"                     ,"A"  ,""   ],
+    ["SANTARELLI Sofia"                 ,"CAPITANELLI Claudia Zoe"          ,"D1" ,"V5" ],
+    ["MASSELLI Giulia"                  ,"GOVERNATORI Melita"               ,"D0" ,"V5" ],
+    ["BADIALI Fabiola"                  ,"PELATI Viola"                     ,"A"  ,""   ],
+    ["SPINOSA Gaia"                     ,"SANTARELLI Sofia"                 ,"D4" ,"V5" ],
+    ["MASSELLI Giulia"                  ,"CAPITANELLI Claudia Zoe"          ,"D3" ,"V5" ],
+    ["BADIALI Fabiola"                  ,"GOVERNATORI Melita"               ,"A"  ,""   ],
+    ["SPINOSA Gaia"                     ,"PELATI Viola"                     ,"V4" ,"D2" ],
+    ["MASSELLI Giulia"                  ,"SANTARELLI Sofia"                 ,"V5" ,"D2" ],
+    ["BADIALI Fabiola"                  ,"CAPITANELLI Claudia Zoe"          ,"A"  ,""   ],
+    ["SPINOSA Gaia"                     ,"GOVERNATORI Melita"               ,"D2" ,"V3" ],
+    ["SANTARELLI Sofia"                 ,"PELATI Viola"                     ,"D1" ,"V5" ],
+    ["BADIALI Fabiola"                  ,"MASSELLI Giulia"                  ,"A"  ,""   ],
+    ["SPINOSA Gaia"                     ,"CAPITANELLI Claudia Zoe"          ,"D2" ,"V5" ],
+    ["PELATI Viola"                     ,"GOVERNATORI Melita"               ,"D0" ,"V5" ],
+    ["BADIALI Fabiola"                  ,"SANTARELLI Sofia"                 ,"A"  ,""   ],
+    ["SPINOSA Gaia"                     ,"MASSELLI Giulia"                  ,"D3" ,"V5" ],
+    ["CAPITANELLI Claudia Zoe"          ,"PELATI Viola"                     ,"D4" ,"V5" ],
+    ["GOVERNATORI Melita"               ,"SANTARELLI Sofia"                 ,"V5" ,"D0" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "06", "streepnr": "17", "streepcolor": "N/A", "time": "09:00", "column": "Club"}
+},
+
+"07": {
+  "pool": [
+    { "atleta": "REGA Flora Fabiola",               "flag": "it", "rank": "169",  "value": ["NN","V5","D4","D1","D4","D3","D1","18","26" ], "club": "RMCS" , "country":"ITA" },
+    { "atleta": "FIORITO Anita",                    "flag": "it", "rank": "9999", "value": ["D1","NN","D0","D0","D3","D0","D0","4","30"  ], "club": "RMCAP", "country":"ITA" },
+    { "atleta": "PANTANETTI GON Gaia",              "flag": "it", "rank": "174",  "value": ["V5","V5","NN","D1","D3","D4","D1","19","24" ], "club": "APACC", "country":"ITA" },
+    { "atleta": "PERUSINI Lisa Sveva",              "flag": "it", "rank": "33",   "value": ["V5","V5","V5","NN","V5","V5","V5","30","7"  ], "club": "RMETR", "country":"ITA" },
+    { "atleta": "BALDUCCI Ludovica",                "flag": "it", "rank": "101",  "value": ["V5","V5","V5","D2","NN","V5","D2","24","24" ], "club": "ANJES", "country":"ITA" },
+    { "atleta": "PASSALACQUA Giulia",               "flag": "it", "rank": "89",   "value": ["V5","V5","V5","D0","D4","NN","D3","22","22" ], "club": "TRCS" , "country":"ITA" },
+    { "atleta": "MARTINELLI Flavia",                "flag": "it", "rank": "32",   "value": ["V5","V5","V5","D3","V5","V5","NN","28","12" ], "club": "RMFRC", "country":"ITA" }
+  ],
+  "details": [
+    ["REGA Flora Fabiola"               ,"PERUSINI Lisa Sveva"              ,"D1" ,"V5" ],
+    ["BALDUCCI Ludovica"                ,"FIORITO Anita"                    ,"V5" ,"D3" ],
+    ["PANTANETTI GON Gaia"              ,"PASSALACQUA Giulia"               ,"D4" ,"V5" ],
+    ["MARTINELLI Flavia"                ,"REGA Flora Fabiola"               ,"V5" ,"D1" ],
+    ["BALDUCCI Ludovica"                ,"PERUSINI Lisa Sveva"              ,"D2" ,"V5" ],
+    ["PANTANETTI GON Gaia"              ,"FIORITO Anita"                    ,"V5" ,"D0" ],
+    ["PASSALACQUA Giulia"               ,"MARTINELLI Flavia"                ,"D3" ,"V5" ],
+    ["BALDUCCI Ludovica"                ,"REGA Flora Fabiola"               ,"V5" ,"D4" ],
+    ["PANTANETTI GON Gaia"              ,"PERUSINI Lisa Sveva"              ,"D1" ,"V5" ],
+    ["PASSALACQUA Giulia"               ,"FIORITO Anita"                    ,"V5" ,"D0" ],
+    ["BALDUCCI Ludovica"                ,"MARTINELLI Flavia"                ,"D2" ,"V5" ],
+    ["PANTANETTI GON Gaia"              ,"REGA Flora Fabiola"               ,"V5" ,"D4" ],
+    ["PASSALACQUA Giulia"               ,"PERUSINI Lisa Sveva"              ,"D0" ,"V5" ],
+    ["MARTINELLI Flavia"                ,"FIORITO Anita"                    ,"V5" ,"D0" ],
+    ["PANTANETTI GON Gaia"              ,"BALDUCCI Ludovica"                ,"D3" ,"V5" ],
+    ["PASSALACQUA Giulia"               ,"REGA Flora Fabiola"               ,"V5" ,"D3" ],
+    ["FIORITO Anita"                    ,"PERUSINI Lisa Sveva"              ,"D0" ,"V5" ],
+    ["PANTANETTI GON Gaia"              ,"MARTINELLI Flavia"                ,"D1" ,"V5" ],
+    ["PASSALACQUA Giulia"               ,"BALDUCCI Ludovica"                ,"D4" ,"V5" ],
+    ["REGA Flora Fabiola"               ,"FIORITO Anita"                    ,"V5" ,"D1" ],
+    ["PERUSINI Lisa Sveva"              ,"MARTINELLI Flavia"                ,"V5" ,"D3" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "07", "streepnr": "18", "streepcolor": "N/A", "time": "09:00", "column": "Club"}
+}
+}

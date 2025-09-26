@@ -1,0 +1,105 @@
+{
+            { "atleta": "ZORZAN Karola Zoe",                "flag": "it", "rank": "57",   "value": ["NN","D2","D1","V5","D2","V5","V5"], "club": "MIBRE", "country":"ITA" },
+            { "atleta": "VANNI Margherita",                 "flag": "it", "rank": "1",    "value": ["V5","NN","V5","V5","V5","V5","V5"], "club": "PISCH", "country":"ITA" },
+            { "atleta": "FURCHI' Giulia",                   "flag": "it", "rank": "25",   "value": ["V5","D1","NN","D1","D1","V5","V5"], "club": "RMFRC", "country":"ITA" },
+            { "atleta": "SANTARELLI Sofia",                 "flag": "it", "rank": "24",   "value": ["D4","D1","V5","NN","V5","V5","V5"], "club": "ANCSM", "country":"ITA" },
+            { "atleta": "AVENTI Giulia Chiara",             "flag": "it", "rank": "53",   "value": ["V5","D1","V5","D1","NN","D2","V5"], "club": "VAGAL", "country":"ITA" },
+            { "atleta": "TEMPESTI Sofia",                   "flag": "it", "rank": "95",   "value": ["D1","D0","D0","D1","V5","NN","V5"], "club": "FIASE", "country":"ITA" },
+            { "atleta": "DISTANTE Marta",                   "flag": "it", "rank": "92",   "value": ["D1","D0","D1","D3","D1","D0","NN"], "club": "PDCOM", "country":"ITA" }
+          ],
+
+            { "atleta": "DRUSIAN Agata",                    "flag": "it", "rank": "91",   "value": ["NN","D4","D1","D3","D0","D0","D0"], "club": "FIRAG", "country":"ITA" },
+            { "atleta": "POLGAR Dalia",                     "flag": "it", "rank": "52",   "value": ["V5","NN","V5","D2","V5","D1","V5"], "club": "RMCS" , "country":"ITA" },
+            { "atleta": "MARCONCINI Greta",                 "flag": "it", "rank": "54",   "value": ["V5","D2","NN","D2","D0","D2","V5"], "club": "PISCH", "country":"ITA" },
+            { "atleta": "SENECA Anna",                      "flag": "it", "rank": "26",   "value": ["V5","V5","V5","NN","D2","D2","V5"], "club": "COCOM", "country":"ITA" },
+            { "atleta": "DE PELLEGRINI Stella",             "flag": "it", "rank": "23",   "value": ["V5","D4","V5","V5","NN","D3","V5"], "club": "RMCAP", "country":"ITA" },
+            { "atleta": "PROSDOCIMI Livia",                 "flag": "it", "rank": "2",    "value": ["V5","V5","V5","V5","V5","NN","V5"], "club": "PDCOM", "country":"ITA" },
+            { "atleta": "CIAPINI Letizia",                  "flag": "it", "rank": "97",   "value": ["V5","D2","D0","D3","D1","D1","NN"], "club": "LICS" , "country":"ITA" }
+          ],
+
+            { "atleta": "ROSINI Adelaide",                  "flag": "it", "rank": "3",    "value": ["NN","V5","V5","V5","V5","V5","V5"], "club": "BSSCA", "country":"ITA" },
+            { "atleta": "SEGATTO Francesca Mari",           "flag": "it", "rank": "22",   "value": ["D0","NN","V5","D2","V5","V5","V5"], "club": "TOCH4", "country":"ITA" },
+            { "atleta": "REGA Flora Fabiola",               "flag": "it", "rank": "58",   "value": ["D1","D2","NN","V3","D4","V5","V5"], "club": "RMCS" , "country":"ITA" },
+            { "atleta": "PANICHI Ludovica",                 "flag": "it", "rank": "100",  "value": ["D0","V5","D1","NN","D2","D1","D2"], "club": "FIACC", "country":"ITA" },
+            { "atleta": "CECCHERINI Caterina",              "flag": "it", "rank": "27",   "value": ["D2","D3","V5","V5","NN","V5","V5"], "club": "ARCS" , "country":"ITA" },
+            { "atleta": "SLOMIANY Miriam",                  "flag": "it", "rank": "51",   "value": ["D4","D2","D3","V5","D0","NN","V5"], "club": "RMCAP", "country":"ITA" },
+            { "atleta": "CIAPPONI Annasole",                "flag": "it", "rank": "90",   "value": ["D1","D3","D0","V4","D0","D4","NN"], "club": "MBMOZ", "country":"ITA" }
+          ],
+
+            { "atleta": "BERNAVA Francesca",                "flag": "it", "rank": "49",   "value": ["NN","D0","D0","D1","V5","V5","V5"], "club": "VAGAL", "country":"ITA" },
+            { "atleta": "LULLI Alice",                      "flag": "it", "rank": "21",   "value": ["V5","NN","D2","V4","V5","V5","D2"], "club": "VRBEN", "country":"ITA" },
+            { "atleta": "PASQUALINI Arianna",               "flag": "it", "rank": "4",    "value": ["V5","V5","NN","D4","D2","V5","V5"], "club": "TRCS" , "country":"ITA" },
+            { "atleta": "STANGANINI Alice",                 "flag": "it", "rank": "29",   "value": ["V5","D2","V5","NN","V5","V5","V3"], "club": "ARCS" , "country":"ITA" },
+            { "atleta": "DANIELE Giulia",                   "flag": "it", "rank": "105",  "value": ["D1","D3","V5","D3","NN","D3","V5"], "club": "VAPPR", "country":"ITA" },
+            { "atleta": "LOPALCO Virginia",                 "flag": "it", "rank": "89",   "value": ["D4","D1","D0","D2","V5","NN","D3"], "club": "BOZIN", "country":"ITA" },
+            { "atleta": "PANFILO Fosca Benedett",           "flag": "it", "rank": "59",   "value": ["D2","V5","D2","D1","D2","V5","NN"], "club": "VEFOS", "country":"ITA" }
+          ],
+
+            { "atleta": "PORTAS Emma",                      "flag": "it", "rank": "118",  "value": ["NN","V5","V5","D1","D2","D4","D1"], "club": "BSLEO", "country":"ITA" },
+            { "atleta": "VACCARO Viola",                    "flag": "it", "rank": "88",   "value": ["D2","NN","V5","D0","D3","D2","D0"], "club": "COCOM", "country":"ITA" },
+            { "atleta": "TONUCCI Aurora",                   "flag": "it", "rank": "61",   "value": ["D4","D4","NN","D4","D2","V5","V5"], "club": "PSUNU", "country":"ITA" },
+            { "atleta": "FERRO Rachele",                    "flag": "it", "rank": "47",   "value": ["V5","V5","V5","NN","D2","D3","D4"], "club": "MIDIF", "country":"ITA" },
+            { "atleta": "ROMANATO Elena",                   "flag": "it", "rank": "20",   "value": ["V5","V5","V5","V3","NN","V3","V5"], "club": "TVMOG", "country":"ITA" },
+            { "atleta": "COSTA Dalia",                      "flag": "it", "rank": "30",   "value": ["V5","V5","D4","V5","D2","NN","D2"], "club": "TVCON", "country":"ITA" },
+            { "atleta": "PONTELLO Livia",                   "flag": "it", "rank": "5",    "value": ["V5","V5","D2","V5","D2","V5","NN"], "club": "FIRAG", "country":"ITA" }
+          ],
+
+            { "atleta": "ROBUSTELLI Bianca",                "flag": "it", "rank": "120",  "value": ["NN","D1","D2","D1","D0","D0","D1"], "club": "VAGAL", "country":"ITA" },
+            { "atleta": "PASQUALINO Sveva",                 "flag": "it", "rank": "6",    "value": ["V5","NN","V5","V5","D1","V5","V5"], "club": "RMFRC", "country":"ITA" },
+            { "atleta": "SPINOSA Gaia",                     "flag": "it", "rank": "87",   "value": ["V5","D2","NN","V5","D2","D4","D4"], "club": "LTGGS", "country":"ITA" },
+            { "atleta": "SCRIBANO Viola",                   "flag": "it", "rank": "62",   "value": ["V5","D1","D1","NN","D0","D0","D1"], "club": "RGACC", "country":"ITA" },
+            { "atleta": "LORA Martina",                     "flag": "it", "rank": "19",   "value": ["V5","V5","V5","V5","NN","V5","V5"], "club": "VICS" , "country":"ITA" },
+            { "atleta": "BINOTTO Joy",                      "flag": "it", "rank": "44",   "value": ["V5","D3","V5","V5","D2","NN","D4"], "club": "PDCOM", "country":"ITA" },
+            { "atleta": "TUZZI Aurora",                     "flag": "it", "rank": "31",   "value": ["V5","D4","V5","V5","D0","V5","NN"], "club": "UDASU", "country":"ITA" }
+          ],
+
+            { "atleta": "PELATI Viola",                     "flag": "it", "rank": "86",   "value": ["NN","V5","D0","V5","D0","D1","V5"], "club": "RMFRC", "country":"ITA" },
+            { "atleta": "RICCIOTTI Emily",                  "flag": "it", "rank": "64",   "value": ["D4","NN","V5","D3","D3","D1","D2"], "club": "ANFAB", "country":"ITA" },
+            { "atleta": "PELLEGRINO Tatiana",               "flag": "it", "rank": "43",   "value": ["V5","D4","NN","V5","V5","D2","D1"], "club": "VRBEN", "country":"ITA" },
+            { "atleta": "BRUGNERA Ginevra",                 "flag": "it", "rank": "135",  "value": ["D2","V5","D2","NN","D2","D0","D2"], "club": "TVCON", "country":"ITA" },
+            { "atleta": "MASSELLI Giulia",                  "flag": "it", "rank": "32",   "value": ["V5","V5","D2","V5","NN","D4","V5"], "club": "RMCAP", "country":"ITA" },
+            { "atleta": "BORIN Zoe",                        "flag": "it", "rank": "18",   "value": ["V5","V5","V5","V5","V5","NN","D4"], "club": "VICS" , "country":"ITA" },
+            { "atleta": "ZOLA Cristina",                    "flag": "it", "rank": "7",    "value": ["D4","V5","V5","V5","D4","V5","NN"], "club": "PDCOM", "country":"ITA" }
+          ],
+
+            { "atleta": "PERRETTA Marta",                   "flag": "it", "rank": "65",   "value": ["NN","V5","D0","V5","D3","V5","D3"], "club": "FIASE", "country":"ITA" },
+            { "atleta": "SCOVOLO Francesca",                "flag": "it", "rank": "85",   "value": ["D0","NN","D2","V5","D1","V5","D1"], "club": "BSSEB", "country":"ITA" },
+            { "atleta": "BALLARIN Emma",                    "flag": "it", "rank": "8",    "value": ["V5","V5","NN","V5","V5","V5","V5"], "club": "VRBEN", "country":"ITA" },
+            { "atleta": "CINQUE Matilde",                   "flag": "it", "rank": "9999", "value": ["D1","D1","D0","NN","D0","D1","D0"], "club": "BSLEO", "country":"ITA" },
+            { "atleta": "PASSALACQUA Giulia",               "flag": "it", "rank": "42",   "value": ["V5","V5","D1","V5","NN","V5","D2"], "club": "TRCS" , "country":"ITA" },
+            { "atleta": "CIRILLO Ludovica",                 "flag": "it", "rank": "33",   "value": ["D2","D1","D1","V5","D1","NN","D2"], "club": "BSSCA", "country":"ITA" },
+            { "atleta": "GOVERNATORI Melita",               "flag": "it", "rank": "17",   "value": ["V5","V5","D3","V5","V5","V5","NN"], "club": "ANJES", "country":"ITA" }
+          ],
+
+            { "atleta": "PAILHAS Matilde",                  "flag": "it", "rank": "16",   "value": ["NN","V5","V5","V5","V5","D4"], "club": "SPCS" , "country":"ITA" },
+            { "atleta": "BUSTI Aurora",                     "flag": "it", "rank": "9",    "value": ["D4","NN","V5","V5","V5","V5"], "club": "RMAPP", "country":"ITA" },
+            { "atleta": "POMIATO Gaia",                     "flag": "it", "rank": "83",   "value": ["D4","D1","NN","V5","D3","D3"], "club": "VEMES", "country":"ITA" },
+            { "atleta": "GIORGINI Maria",                   "flag": "it", "rank": "68",   "value": ["D1","D0","D4","NN","D3","V5"], "club": "PSUNU", "country":"ITA" },
+            { "atleta": "ALLEGRI Giorgia",                  "flag": "it", "rank": "34",   "value": ["D2","D2","V5","V5","NN","V5"], "club": "BSSCA", "country":"ITA" },
+            { "atleta": "VOTO Sara",                        "flag": "it", "rank": "41",   "value": ["V5","D0","V5","D3","D4","NN"], "club": "MIBRE", "country":"ITA" }
+          ],
+
+            { "atleta": "FODDI Alice",                      "flag": "it", "rank": "35",   "value": ["NN","V5","D3","D2","D1","D2"], "club": "LTGGS", "country":"ITA" },
+            { "atleta": "RAZOARA Maria Isabella",           "flag": "it", "rank": "77",   "value": ["D1","NN","D1","D3","D3","D1"], "club": "BSSEB", "country":"ITA" },
+            { "atleta": "LEVRONE Giulia Maria",             "flag": "it", "rank": "70",   "value": ["V5","V5","NN","D1","V5","D2"], "club": "CNCS" , "country":"ITA" },
+            { "atleta": "CAVICCHIA Diana",                  "flag": "it", "rank": "40",   "value": ["V5","V5","V5","NN","D1","D3"], "club": "MSAPU", "country":"ITA" },
+            { "atleta": "SANDONA' Matilda",                 "flag": "it", "rank": "10",   "value": ["V5","V5","D4","V5","NN","V5"], "club": "VICS" , "country":"ITA" },
+            { "atleta": "JOVON Valentina",                  "flag": "it", "rank": "15",   "value": ["V5","V5","V5","V5","D1","NN"], "club": "VEMES", "country":"ITA" }
+          ],
+
+            { "atleta": "GREGANTI Alessia",                 "flag": "it", "rank": "39",   "value": ["NN","V5","D0","V5","V5","V5"], "club": "ANJES", "country":"ITA" },
+            { "atleta": "FACCHINI Nadia",                   "flag": "it", "rank": "36",   "value": ["D1","NN","D1","D1","V5","V5"], "club": "BSSEB", "country":"ITA" },
+            { "atleta": "CIANI Allegra",                    "flag": "it", "rank": "11",   "value": ["V5","V5","NN","V5","V5","V5"], "club": "FIACC", "country":"ITA" },
+            { "atleta": "GAUDINO Elisa",                    "flag": "it", "rank": "14",   "value": ["D4","V5","D1","NN","V5","V5"], "club": "SACS" , "country":"ITA" },
+            { "atleta": "SERENELLI Alice",                  "flag": "it", "rank": "73",   "value": ["D0","D2","D1","D0","NN","D4"], "club": "ANCSM", "country":"ITA" },
+            { "atleta": "ZHUKOVSKA Lina",                   "flag": "it", "rank": "82",   "value": ["D1","D2","D0","D1","V5","NN"], "club": "GOFRA", "country":"ITA" }
+          ],
+
+            { "atleta": "CORTESI Livia",                    "flag": "it", "rank": "38",   "value": ["NN","V5","D0","V5","D3","V5"], "club": "SICUS", "country":"ITA" },
+            { "atleta": "TARASCHI Cecilia",                 "flag": "it", "rank": "37",   "value": ["D3","NN","D1","V5","D3","V5"], "club": "MNMAN", "country":"ITA" },
+            { "atleta": "BRUGNERA Allegra",                 "flag": "it", "rank": "13",   "value": ["V5","V5","NN","V5","D4","V5"], "club": "TVMOG", "country":"ITA" },
+            { "atleta": "INGRAVALLE Chiara Olga Ma",        "flag": "it", "rank": "76",   "value": ["D1","D1","D1","NN","V5","V5"], "club": "TOCH4", "country":"ITA" },
+            { "atleta": "SPALLANZANI Ludovica",             "flag": "it", "rank": "12",   "value": ["V5","V5","V5","D4","NN","V5"], "club": "PISCH", "country":"ITA" },
+            { "atleta": "MANCUSO Alice",                    "flag": "it", "rank": "75",   "value": ["D3","D1","D0","D2","D4","NN"], "club": "MIBRE", "country":"ITA" }
+          ],
+

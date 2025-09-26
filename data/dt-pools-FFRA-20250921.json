@@ -1,0 +1,84 @@
+{
+"01": {
+  "pool": [
+    { "atleta": "ALLEGRI Giorgia",                  "flag": "it", "rank": "82",   "value": ["NN","V5","V5","D2","D4","V5","21","18"      ], "club": "BSSCA", "country":"ITA" },
+    { "atleta": "RIVA DUINA Cecilia",               "flag": "it", "rank": "126",  "value": ["D1","NN","V5","D2","D2","V5","15","17"      ], "club": "BSSCA", "country":"ITA" },
+    { "atleta": "MICHIELETTI Anna",                 "flag": "it", "rank": "93",   "value": ["D4","D2","NN","D1","V5","V5","17","19"      ], "club": "MIBRE", "country":"ITA" },
+    { "atleta": "SENECA Anna",                      "flag": "it", "rank": "19",   "value": ["V5","V5","V5","NN","V5","D0","20","10"      ], "club": "COCOM", "country":"ITA" },
+    { "atleta": "VACCARO Viola",                    "flag": "it", "rank": "139",  "value": ["V5","V5","D1","D0","NN","V5","16","18"      ], "club": "COCOM", "country":"ITA" },
+    { "atleta": "DANIELE Giulia",                   "flag": "it", "rank": "197",  "value": ["D3","D0","D3","V5","D2","NN","13","20"      ], "club": "VAPPR", "country":"ITA" }
+  ],
+  "details": [
+    ["ALLEGRI Giorgia"                  ,"RIVA DUINA Cecilia"               ,"V5" ,"D1" ],
+    ["SENECA Anna"                      ,"MICHIELETTI Anna"                 ,"V5" ,"D1" ],
+    ["DANIELE Giulia"                   ,"VACCARO Viola"                    ,"D2" ,"V5" ],
+    ["MICHIELETTI Anna"                 ,"ALLEGRI Giorgia"                  ,"D4" ,"V5" ],
+    ["RIVA DUINA Cecilia"               ,"DANIELE Giulia"                   ,"V5" ,"D0" ],
+    ["DANIELE Giulia"                   ,"SENECA Anna"                      ,"V5" ,"D0" ],
+    ["ALLEGRI Giorgia"                  ,"DANIELE Giulia"                   ,"V5" ,"D3" ],
+    ["MICHIELETTI Anna"                 ,"VACCARO Viola"                    ,"V5" ,"D1" ],
+    ["SENECA Anna"                      ,"RIVA DUINA Cecilia"               ,"V5" ,"D2" ],
+    ["VACCARO Viola"                    ,"ALLEGRI Giorgia"                  ,"V5" ,"D4" ],
+    ["DANIELE Giulia"                   ,"SENECA Anna"                      ,"V5" ,"D0" ],
+    ["RIVA DUINA Cecilia"               ,"MICHIELETTI Anna"                 ,"V5" ,"D2" ],
+    ["ALLEGRI Giorgia"                  ,"SENECA Anna"                      ,"D2" ,"V5" ],
+    ["VACCARO Viola"                    ,"RIVA DUINA Cecilia"               ,"V5" ,"D2" ],
+    ["MICHIELETTI Anna"                 ,"DANIELE Giulia"                   ,"V5" ,"D3" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "01", "streepnr": "Blu", "streepcolor": "N/A", "time": "00:00", "column": "Club"}
+},
+
+"02": {
+  "pool": [
+    { "atleta": "AVENTI Giulia Chiara",             "flag": "it", "rank": "122",  "value": ["NN","V5","V5","D3","D2","15","12"           ], "club": "VAPPR", "country":"ITA" },
+    { "atleta": "IEVA Emma",                        "flag": "it", "rank": "70",   "value": ["D0","NN","D2","D0","D3","5","20"            ], "club": "MICRI", "country":"ITA" },
+    { "atleta": "DI PINO Olivia",                   "flag": "it", "rank": "27",   "value": ["D2","V5","NN","V5","D4","16","12"           ], "club": "BSSCA", "country":"ITA" },
+    { "atleta": "ZORZAN Karola Zoe",                "flag": "it", "rank": "124",  "value": ["V5","V5","D0","NN","V5","15","10"           ], "club": "MIBRE", "country":"ITA" },
+    { "atleta": "BERNAVA Francesca",                "flag": "it", "rank": "84",   "value": ["V5","V5","V5","D2","NN","17","14"           ], "club": "COCOM", "country":"ITA" }
+  ],
+  "details": [
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "02", "streepnr": "Blu", "streepcolor": "N/A", "time": "00:00", "column": "Club"}
+},
+
+"03": {
+  "pool": [
+    { "atleta": "PIRONI Sophie",                    "flag": "it", "rank": "37",   "value": ["NN","V5","D1","D1","D3","V5","15","17"      ], "club": "COCOM", "country":"ITA" },
+    { "atleta": "GRASSO Cecilia",                   "flag": "it", "rank": "206",  "value": ["D2","NN","D1","D0","D0","V5","8","24"       ], "club": "COCOM", "country":"ITA" },
+    { "atleta": "CAMPADELLI Lisa",                  "flag": "it", "rank": "67",   "value": ["V5","V5","NN","D1","V5","V5","21","13"      ], "club": "VAPPR", "country":"ITA" },
+    { "atleta": "CIRILLO Ludovica",                 "flag": "it", "rank": "83",   "value": ["V5","V5","V5","NN","D1","V5","21","9"       ], "club": "BSSCA", "country":"ITA" },
+    { "atleta": "FERRO Rachele",                    "flag": "it", "rank": "102",  "value": ["V5","V5","D4","V5","NN","V5","24","10"      ], "club": "MIDIF", "country":"ITA" },
+    { "atleta": "LAGATTA Ludovica",                 "flag": "it", "rank": "187",  "value": ["D0","D4","D2","D2","D1","NN","9","25"       ], "club": "VAGAL", "country":"ITA" }
+  ],
+  "details": [
+    ["PIRONI Sophie"                    ,"GRASSO Cecilia"                   ,"V5" ,"D2" ],
+    ["CIRILLO Ludovica"                 ,"CAMPADELLI Lisa"                  ,"V5" ,"D1" ],
+    ["LAGATTA Ludovica"                 ,"FERRO Rachele"                    ,"D1" ,"V5" ],
+    ["CAMPADELLI Lisa"                  ,"PIRONI Sophie"                    ,"V5" ,"D1" ],
+    ["GRASSO Cecilia"                   ,"LAGATTA Ludovica"                 ,"V5" ,"D4" ],
+    ["LAGATTA Ludovica"                 ,"CIRILLO Ludovica"                 ,"D2" ,"V5" ],
+    ["PIRONI Sophie"                    ,"LAGATTA Ludovica"                 ,"V5" ,"D0" ],
+    ["CAMPADELLI Lisa"                  ,"FERRO Rachele"                    ,"V5" ,"D4" ],
+    ["CIRILLO Ludovica"                 ,"GRASSO Cecilia"                   ,"V5" ,"D0" ],
+    ["FERRO Rachele"                    ,"PIRONI Sophie"                    ,"V5" ,"D3" ],
+    ["LAGATTA Ludovica"                 ,"CIRILLO Ludovica"                 ,"D2" ,"V5" ],
+    ["GRASSO Cecilia"                   ,"CAMPADELLI Lisa"                  ,"D1" ,"V5" ],
+    ["PIRONI Sophie"                    ,"CIRILLO Ludovica"                 ,"D1" ,"V5" ],
+    ["FERRO Rachele"                    ,"GRASSO Cecilia"                   ,"V5" ,"D0" ],
+    ["CAMPADELLI Lisa"                  ,"LAGATTA Ludovica"                 ,"V5" ,"D2" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "03", "streepnr": "Blu", "streepcolor": "N/A", "time": "00:00", "column": "Club"}
+}
+}

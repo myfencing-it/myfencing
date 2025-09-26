@@ -1,0 +1,40 @@
+"01": {
+  pool: [
+    { atleta: "CAPONERA Gioia",                   flag: "it", rank: "9999", value: [NN;V5;V5;D3;D0;D2     ], club: "RMFRC" country:"ITA" },
+    { atleta: "PIERUCCI Stefania",                flag: "it", rank: "77",   value: [D2;NN;D1;D1;D0;D2     ], club: "MCADR" country:"ITA" },
+    { atleta: "RAIOLA Camilla",                   flag: "it", rank: "71",   value: [D3;V5;NN;D2;D2;D1     ], club: "TRCS"  country:"ITA" },
+    { atleta: "ISSINI Elisabetta",                flag: "it", rank: "35",   value: [V5;V5;V5;NN;D1;V5     ], club: "ANREC" country:"ITA" },
+    { atleta: "CAPRARI Emilia",                   flag: "it", rank: "3",    value: [V5;V5;V5;V5;NN;V5     ], club: "ANJES" country:"ITA" },
+    { atleta: "CIFERRI Lucrezia",                 flag: "it", rank: "32",   value: [V5;V5;V5;D4;D3;NN     ], club: "RMCAP" country:"ITA" }
+  ],
+
+"02": {
+  pool: [
+    { atleta: "FIASCHINI Maya",                   flag: "it", rank: "31",   value: [NN;V5;D2;V5;V5;V5     ], club: "TRCS"  country:"ITA" },
+    { atleta: "PASSAMONTE Sofia",                 flag: "it", rank: "74",   value: [D0;NN;D2;D0;V5;V5     ], club: "TRCS"  country:"ITA" },
+    { atleta: "RODOFILI Chiara",                  flag: "it", rank: "7",    value: [V5;V5;NN;D2;V5;V5     ], club: "RMFRC" country:"ITA" },
+    { atleta: "VASTO Giulia Sofia",               flag: "it", rank: "36",   value: [D4;V5;V5;NN;V5;V5     ], club: "LTGGS" country:"ITA" },
+    { atleta: "PANICCIÀ Akemi Chiara",            flag: "it", rank: "83",   value: [D1;D3;D1;D1;NN;D1     ], club: "APACC" country:"ITA" },
+    { atleta: "CASTALDO Margot",                  flag: "it", rank: "9999", value: [D1;D2;D0;D0;V5;NN     ], club: "RMCAP" country:"ITA" }
+  ],
+
+"03": {
+  pool: [
+    { atleta: "MAVIGLIA Valeria",                 flag: "it", rank: "9999", value: [NN;V5;D3;D1;D0;V5     ], club: "PSUNU" country:"ITA" },
+    { atleta: "GIORGETTI Elisa",                  flag: "it", rank: "62",   value: [D1;NN;D0;D1;D1;D4     ], club: "ANREC" country:"ITA" },
+    { atleta: "ZEMLIANA Sofia",                   flag: "it", rank: "49",   value: [V5;V5;NN;D0;D1;V5     ], club: "RMCS"  country:"ITA" },
+    { atleta: "FANASCA Vittoria",                 flag: "it", rank: "28",   value: [V5;V5;V5;NN;D4;V5     ], club: "RMFRC" country:"ITA" },
+    { atleta: "ROMAGNOLI Greta",                  flag: "it", rank: "10",   value: [V5;V5;V5;V5;NN;V5     ], club: "TRCS"  country:"ITA" },
+    { atleta: "REGINA Killari Sopha",             flag: "it", rank: "86",   value: [D2;V5;D4;D0;D0;NN     ], club: "ANCS"  country:"ITA" }
+  ],
+
+"04": {
+  pool: [
+    { atleta: "SABATINI Matilde",                 flag: "it", rank: "72",   value: [NN;D3;V5;V5;V5;D1     ], club: "TRCS"  country:"ITA" },
+    { atleta: "ANDRIANI Alice",                   flag: "it", rank: "26",   value: [V5;NN;V5;V5;V5;D3     ], club: "RMCAP" country:"ITA" },
+    { atleta: "PIERONI Alice",                    flag: "it", rank: "55",   value: [D4;D4;NN;D1;D3;D0     ], club: "MCSOC" country:"ITA" },
+    { atleta: "SMERILLI Sara",                    flag: "it", rank: "103",  value: [D2;D3;V3;NN;D0;D0     ], club: "APACC" country:"ITA" },
+    { atleta: "LOBERTO Alessandra",               flag: "it", rank: "61",   value: [D3;D1;V5;V5;NN;V5     ], club: "RMAPP" country:"ITA" },
+    { atleta: "LI BERGOLIS Maria Elena",          flag: "it", rank: "23",   value: [V5;V5;V5;V5;D4;NN     ], club: "ANJES" country:"ITA" }
+  ]
+}

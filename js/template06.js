@@ -28,56 +28,17 @@ function RaceList() {
     </div>
   `).join('');
 
+  // 👇 Inserisci PRIMA l’HTML
   grid.innerHTML = html;
 
-grid.addEventListener('click', e => {
-  console.log('35');  // Per test visivo
-  const card = e.target.closest('.event-card');
-  if (!card) return;
-
-  const id = card.dataset.id;
-  console.log('Hai cliccato sull\'evento con ID:', id);
-
-  // 1. Mostra tutte le voci di menu (ma disattiva auto-click iniziale)
-  createMenuBar(itemMenu.map(item => item.target), false);
-
-  // 2. Carica manualmente il contenuto desiderato (es. StartRankingPool)
-  const target = 'ranking'; // oppure 'pools', 'tableau' ecc. se vuoi cambiarlo
-  const fn = contentMap[target];
-  console.log('target', target);  
-
-  const contentArea = document.getElementById('content-area');
-  contentArea.innerHTML = '';
-
-  if (typeof fn === 'function') {
-    const result = fn();
-    if (result instanceof Node) {
-      console.log('riga 64', result);  
-
-      //TEST
-      //contentArea.appendChild(result);
-      console.log('Controllo nodo:', result.outerHTML);
-      contentArea.innerHTML = ''; // svuoto tutto per sicurezza
-      contentArea.innerHTML = result.outerHTML; // forzo come HTML      
-      
-    } else if (typeof result === 'string') {
-      console.log('riga 67');  
-      contentArea.innerHTML = result;
-    } else {
-      console.log('riga 70');  
-      contentArea.innerHTML = '<p>Contenuto non disponibile</p>';
-    }
-  } else {
-    contentArea.innerHTML = '<p>Funzione non trovata</p>';
-  }
-
-  // 3. Evidenzia la voce attiva nel menu
-  setTimeout(() => {
-    document.querySelector(`[data-target="${target}"]`)?.classList.add('active');
-  }, 0);
-});
-
-
+  // 👇 Poi aggiungi il listener dopo che le card sono nel DOM
+  grid.addEventListener('click', e => {
+    console.log('35');  // Per test visivo
+    const card = e.target.closest('.event-card');
+    if (!card) return;
+    const id = card.dataset.id;
+    console.log('Hai cliccato sull\'evento con ID:', id);
+  });
 
   return container;
 }; // end function RaceList
@@ -113,8 +74,6 @@ function ScheduledRaces() {
 
   return container;  
 }; // end function ScheduledRaces
-
-
 
 // ---------------------------------------------------------------------
 // Function ClassificaIniziale
@@ -247,68 +206,6 @@ function ClassificaIniziale() {
 }
 
 
-function altro() {
-  // 1. Titolo
-  const titolo = document.createElement("h2");
-  titolo.textContent = "Classifica Torneo";
-  titolo.style.marginBottom = "10px";
-
-  // 2. Tabella
-  const table = document.createElement("table");
-  table.style.borderCollapse = "collapse";
-  table.style.width = "100%";
-  table.style.border = "1px solid black";
-
-  const thead = document.createElement("thead");
-  const intestazioni = ["Posizione", "Squadra", "Punti"];
-  const headerRow = document.createElement("tr");
-  intestazioni.forEach(testo => {
-    const th = document.createElement("th");
-    th.textContent = testo;
-    th.style.border = "1px solid black";
-    th.style.padding = "8px";
-    th.style.backgroundColor = "#f2f2f2";
-    headerRow.appendChild(th);
-  });
-  thead.appendChild(headerRow);
-  table.appendChild(thead);
-
-  // 3. Corpo tabella
-  const tbody = document.createElement("tbody");
-  const dati = [
-    [1, "Squadra A", 15],
-    [2, "Squadra B", 12],
-    [3, "Squadra C", 10],
-    [1, "Squadra A", 15],
-    [2, "Squadra B", 12],
-    [3, "Squadra C", 10],
-    [1, "Squadra A", 15],
-    [2, "Squadra B", 12],
-    [3, "Squadra C", 10],
-    [1, "Squadra A", 15],
-    [2, "Squadra B", 12],
-    [3, "Squadra C", 10]
-  ];
-  dati.forEach(riga => {
-    const tr = document.createElement("tr");
-    riga.forEach(val => {
-      const td = document.createElement("td");
-      td.textContent = val;
-      td.style.border = "1px solid black";
-      td.style.padding = "8px";
-      tr.appendChild(td);
-    });
-    tbody.appendChild(tr);
-  });
-  table.appendChild(tbody);
-
-  // 4. Contenitore
-  const container = document.createElement("div");
-  container.appendChild(titolo);
-  container.appendChild(table);
-
-  return container; // 👈 ritorna il contenitore con titolo + tabella
-}
 
 
 function creaTabellaConTitolo() {
@@ -740,11 +637,10 @@ function TitleBar() {
   document.body.prepend(bar);
 }; // end function TitleBar
 
- 
 // ---------------------------------------------------------------------
 // Function createMenuBar
 // ---------------------------------------------------------------------
-function createMenuBar00() {
+function createMenuBar() {
   const menu = document.createElement('div');
   menu.className = 'menu-bar';
 
@@ -803,207 +699,15 @@ function createMenuBar00() {
 
 }; // end function createMenuBar
 
-
-// Funzione aggiornata per creare/rimuovere il menu
-function createMenuBar01(visibleTargets = ['home', 'ranking']) {
-  // Rimuovo vecchio menu se presente
-  if (currentMenu) currentMenu.remove();
-
-  const menu = document.createElement('div');
-  menu.className = 'menu-bar';
-
-
-
-//function createMenuBar(visibleTargets = ['home', 'ranking']) {
-//  const menu = document.createElement('div');
-//  menu.className = 'menu-bar';
-
-  const tabs = document.createElement('nav');
-  tabs.className = 'menu-tabs';
-
-  const extraTargets = ['pools', 'rankingpools', 'tableau', 'altro', 'finalranking'];
-
-  itemMenu.forEach(opt => {
-    // Mostra solo se incluso nei target visibili
-    if (!visibleTargets.includes(opt.target)) return;
-
-    const div = document.createElement('div');
-    div.className = 'menu-option';
-    div.setAttribute('data-target', opt.target);
-    div.textContent = opt.name;
-
-    div.addEventListener('click', () => {
-      const contentArea = document.getElementById('content-area');
-      const fnOrHTML = contentMap[opt.target];
-
-      // Pulisci area contenuto
-      contentArea.innerHTML = '';
-
-      // Carica contenuto
-      if (typeof fnOrHTML === 'function') {
-        const result = fnOrHTML();
-        if (result instanceof Node) {
-          contentArea.appendChild(result);
-        } else if (typeof result === 'string') {
-          contentArea.innerHTML = result;
-        } else {
-          contentArea.innerHTML = '<p>Contenuto non disponibile</p>';
-        }
-      } else if (typeof fnOrHTML === 'string') {
-        contentArea.innerHTML = fnOrHTML;
-      } else {
-        contentArea.innerHTML = '<p>Contenuto non disponibile</p>';
-      }
-
-      // Evidenzia la voce attiva
-      document.querySelectorAll('.menu-option').forEach(el => el.classList.remove('active'));
-      div.classList.add('active');
-
-      // Se clicchiamo una voce "extra", rigenera il menu completo
-      if (extraTargets.includes(opt.target)) {
-        const menuParent = document.querySelector('.menu-bar');
-        if (menuParent) menuParent.remove();
-
-        // Mostra TUTTI i menu (basato su itemMenu)
-        const allTargets = itemMenu.map(item => item.target);
-        createMenuBar(allTargets);
-
-        // Imposta attiva quella cliccata (simula click)
-        setTimeout(() => {
-          document.querySelector(`[data-target="${opt.target}"]`)?.click();
-        }, 0);
-      }
-    });
-
-    tabs.appendChild(div);
-  });
-
-//  menu.appendChild(tabs);
-//  document.body.appendChild(menu);
-//
-//  // Crea content-area se non esiste
-//  let contentArea = document.getElementById('content-area');
-//  if (!contentArea) {
-//    contentArea = document.createElement('div');
-//    contentArea.id = 'content-area';
-//    document.body.appendChild(contentArea);
-//  }
-//
-//  // Simula click sul primo elemento visibile
-//  setTimeout(() => {
-//    document.querySelector('.menu-option')?.click();
-//  }, 0);
-//}
-
-menu.appendChild(tabs);
-  document.body.appendChild(menu);
-
-  // Memorizza riferimento al menu corrente
-  currentMenu = menu;
-
-  // Crea content-area se non esiste
-  let contentArea = document.getElementById('content-area');
-  if (!contentArea) {
-    contentArea = document.createElement('div');
-    contentArea.id = 'content-area';
-    document.body.appendChild(contentArea);
-  }
-
-  // Simula click sul primo elemento visibile
-  setTimeout(() => {
-    document.querySelector('.menu-option')?.click();
-  }, 0);
-}
-
-function createMenuBar(visibleTargets = ['home', 'ranking']) {
-  // Rimuovo vecchio menu se presente
-  if (currentMenu) currentMenu.remove();
-
-  const menu = document.createElement('div');
-  menu.className = 'menu-bar';
-
-  const tabs = document.createElement('nav');
-  tabs.className = 'menu-tabs';
-
-  const extraTargets = ['pools', 'rankingpools', 'tableau', 'altro', 'finalranking'];
-
-  itemMenu.forEach(opt => {
-    if (!visibleTargets.includes(opt.target)) return;
-
-    const div = document.createElement('div');
-    div.className = 'menu-option';
-    div.setAttribute('data-target', opt.target);
-    div.textContent = opt.name;
-
-    div.addEventListener('click', () => {
-      const contentArea = document.getElementById('content-area');
-      const fnOrHTML = contentMap[opt.target];
-
-      contentArea.innerHTML = '';
-
-      if (typeof fnOrHTML === 'function') {
-        const result = fnOrHTML();
-        if (result instanceof Node) {
-          contentArea.appendChild(result);
-        } else if (typeof result === 'string') {
-          contentArea.innerHTML = result;
-        } else {
-          contentArea.innerHTML = '<p>Contenuto non disponibile</p>';
-        }
-      } else if (typeof fnOrHTML === 'string') {
-        contentArea.innerHTML = fnOrHTML;
-      } else {
-        contentArea.innerHTML = '<p>Contenuto non disponibile</p>';
-      }
-
-      document.querySelectorAll('.menu-option').forEach(el => el.classList.remove('active'));
-      div.classList.add('active');
-
-      // Se clicchiamo una voce "extra", rigenera il menu completo
-      if (extraTargets.includes(opt.target)) {
-        if (currentMenu) currentMenu.remove();
-        const allTargets = itemMenu.map(item => item.target);
-        createMenuBar(allTargets);
-        setTimeout(() => {
-          document.querySelector(`[data-target="${opt.target}"]`)?.click();
-        }, 0);
-      }
-    });
-
-    tabs.appendChild(div);
-  });
-
-  menu.appendChild(tabs);
-  document.body.appendChild(menu);
-
-  currentMenu = menu;
-
-  let contentArea = document.getElementById('content-area');
-  if (!contentArea) {
-    contentArea = document.createElement('div');
-    contentArea.id = 'content-area';
-    document.body.appendChild(contentArea);
-  }
-
-  setTimeout(() => {
-    document.querySelector('.menu-option')?.click();
-  }, 0);
-}
-
-
 // =====================================================================
 //             MAIN
 // =====================================================================
-// Riferimento globale per contenere il menu (per rimuoverlo facilmente)
-let currentMenu = null;
-
 const itemMenu = [
   { name: "Home",         target: "home" },
-  { name: "Athleta Ranking",       target: "ranking" },
+  { name: "Ranking",       target: "ranking" },
   { name: "Pools",         target: "pools" },
   { name: "Ranking Pools", target: "rankingpools" },
   { name: "Tableau",       target: "tableau" },
-  { name: "altro",         target: "altro" },  
   { name: "Final Ranking", target: "finalranking" }
 ];
 
@@ -1013,14 +717,12 @@ const contentMap = {
   pools:        Gironi,
   rankingpools: creaTabellaConTitolo,
   tableau:      ScheduledRaces,   
-  altro:        altro,
   finalranking: FinalRanking
 };
 
 // Inizializza tutto
 window.addEventListener('DOMContentLoaded', () => {
   TitleBar();      // Crea la barra del titolo
-  //createMenuBar(); // Crea il menu e attiva il caricamento dei contenuti
-  createMenuBar(['home', 'ranking']);
+  createMenuBar(); // Crea il menu e attiva il caricamento dei contenuti
 });
 

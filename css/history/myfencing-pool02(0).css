@@ -1,0 +1,223 @@
+/*---------------------------------------------------------------------
+// Author: Fabio D Filippone
+// History:
+// FFD - 06/07/2025 23:13:16 - v.1.0.0
+// FFD - 23/07/2025 21:58:47 - v.1.1.3
+// FFD - 19/08/2025 09:22:57 - v.1.2
+# colore ufficiale 
+# 003366
+# 399CFF
+# 007bff
+# 3498db 007bff
+
+== #003366 blue title                                      ==
+== #005599 blue menu
+== #005599 blue heading tabl
+== #0047AB NO NO
+// 20/08/2025 08:50:06 sostituisco  #007bff; con #005599
+// -------------------------------------------------------------------/*
+
+
+
+/* ------------------------------------------
+    Extra Table
+--------------------------------------------- */
+
+.scroll-pool-container {
+  width: 980px;        /* larghezza fissa */
+margin-top: 80px; /* altezza del menu */
+/*margin-bottom: 80px;  altezza del menu */
+
+height: calc(100vh - 180px); /* altezza viewport meno menu/topbar */
+  overflow-y: auto;    /* scroll verticale se necessario */
+  border: 1px solid #ccc;
+
+
+}
+
+
+.hidden { display: none;}
+
+.extraTables {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 10px auto 30px auto;
+}
+
+.extraTable {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  padding: 5px;
+  font-style: normal;
+  font-size: 13px;
+}
+
+.extraTable th,
+.extraTable td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+  font-size: 13px;
+  min-width: 25px;
+}
+
+/* Differenze di layout */
+.extraTableLeft  { margin-left:  20px; }
+.extraTableRight { margin-right: 35px; }
+
+/* ------------------------------------------
+    Container principale
+--------------------------------------------- */
+.PoolContainer {
+  border-spacing: 0;
+  font-family: sans-serif;
+  font-size:     14px;
+  color:          black;
+  padding:        5px;
+  margin-left:   10px;
+  margin-bottom: 30px;
+  border-radius:  6px;
+  box-shadow:   0 8px 20px rgba(0,0,0,0.1);
+  max-width:     900px;
+  border: 2px solid red;
+}
+
+/* ------------------------------------------
+    Table principale
+--------------------------------------------- */
+table.poolTable {
+  margin-top:      20px;
+  margin-left:     20px;
+  border-collapse: collapse;
+/*  border: 1px solid red;*/
+}
+
+table.poolTable th,
+table.poolTable td {
+  border:      1px solid #ccc;
+  padding:     5px;
+  min-width:  25px;
+  text-align: right;
+}
+
+.PTabH1 {
+  color:      #005599;
+  font-size:  14px;
+  font-style: italic;
+}
+
+.PTabH1p {
+  border:     none !important;
+  text-align: left;
+  font-style: normal;
+}
+
+.PTabH1s {
+  border:     none !important;
+  text-align: left;
+  font-style: italic;
+}
+
+.PTabH1t {
+  border:     none !important;
+  text-align: right;
+  font-style: italic;
+}
+
+.PTabH2 {
+  background-color: #005599;
+  color:            white;
+}
+
+.PTabH2Cell  {
+  background-color: #005599;
+  color:            white;
+  text-align:       center !important;
+  font-size:        14px;
+  height:           20px;
+  min-width:        35px;
+}
+
+.PTabH2CellA {
+  background-color: #005599;
+  text-align:       center !important;
+  color:            white;
+  font-size:        14px;
+  height:           20px;
+  width:            200px;
+}
+
+.PTabH2Cempty {
+  height:        20px;
+  min-width:     10px;
+  color:         red;
+  border-top:    none !important;
+  border-bottom: none !important;
+}
+
+
+.PTabRCempty {
+  border-top:    none !important;
+  border-bottom: none !important;
+}
+
+.DTabH, .RTabH {
+  background-color: #005599;
+  color:            white;
+  font-weight:      bold;
+}
+
+.BlankCell {
+  background-color: #005599;
+}
+
+
+
+/* --------------------
+ Button on tab footer
+-------------------- */
+.PoolTab-button {
+  background-color: #005599;
+  color:            white;
+  border:           1px solid #005599;
+  border-radius:    6px;
+  width:            35px;
+  height:           35px;
+  display:          flex;     /* centra */
+  align-items:      center;   /* verticale */
+  justify-content:  center;   /* orizzontale */
+  cursor:           pointer;
+  transition:       all 0.3s;
+  margin-top:       5px;
+}
+
+.PoolTab-button.left {
+  float: left;
+  border: none !important;
+}
+
+.PoolTab-button.right {
+  float: right;
+}
+
+.PoolTab-button:hover {
+  background-color: #c0392b;
+}
+
+.PoolTab-button i {
+  font-size:  20px;
+  margin:      0;  
+}
+
+.no-border-btn {
+  border: none !important;
+  padding: 0   !important;;
+}
+.PoolTab-button img {
+  width:      24px;
+  height:     24px;
+  object-fit: contain; /* mantiene proporzioni senza distorcere */
+  display:    block;   /* evita margini indesiderati */
+  margin:     0;
+}

@@ -1,0 +1,150 @@
+{
+"01": {
+  "pool": [
+    { "atleta": "LANARI Keira",                     "flag": "it", "rank": "57",   "value": ["NN","V5","V5","V5","V5","20","11"           ], "club": "ANCSM", "country":"ITA" },
+    { "atleta": "ANGELINO Rebecca",                 "flag": "it", "rank": "3",    "value": ["D3","NN","V5","V5","V5","18","7"            ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "CARMIGNANI Flavia",                "flag": "it", "rank": "92",   "value": ["D2","D0","NN","D2","D4","8","20"            ], "club": "RMAPP", "country":"ITA" },
+    { "atleta": "PISTOLA Giulia",                   "flag": "it", "rank": "50",   "value": ["D2","D2","V5","NN","V5","14","13"           ], "club": "ANJES", "country":"ITA" },
+    { "atleta": "TODOROVIC Mihaila",                "flag": "it", "rank": "93",   "value": ["D4","D0","V5","D1","NN","10","19"           ], "club": "RMCS" , "country":"ITA" }
+  ],
+  "details": [
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "01", "streepnr": "7", "streepcolor": "N/A", "time": "15:30", "column": "Club"}
+},
+
+"02": {
+  "pool": [
+    { "atleta": "SCARDINI Vittoria",                "flag": "it", "rank": "55",   "value": ["NN","V5","V5","D4","D2","V5","21","16"      ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "SECCHIAROLI Naima",                "flag": "it", "rank": "29",   "value": ["D3","NN","V5","V5","D0","V5","18","10"      ], "club": "PSUNU", "country":"ITA" },
+    { "atleta": "PADOVAN Vittoria",                 "flag": "it", "rank": "9999", "value": ["D0","D0","NN","D3","D0","D2","5","25"       ], "club": "RMCAP", "country":"ITA" },
+    { "atleta": "CARE Anna",                        "flag": "it", "rank": "95",   "value": ["V5","D0","V5","NN","D1","D2","13","20"      ], "club": "ANSEN", "country":"ITA" },
+    { "atleta": "MERIZIOLA Beatrice",               "flag": "it", "rank": "8",    "value": ["V5","V5","V5","V5","NN","V5","25","6"       ], "club": "TRCS" , "country":"ITA" },
+    { "atleta": "ROCCHETTI Chiara",                 "flag": "it", "rank": "83",   "value": ["D3","D0","V5","V3","D3","NN","14","19"      ], "club": "ANJES", "country":"ITA" }
+  ],
+  "details": [
+    ["SCARDINI Vittoria"                ,"SECCHIAROLI Naima"                ,"V5" ,"D3" ],
+    ["CARE Anna"                        ,"PADOVAN Vittoria"                 ,"V5" ,"D3" ],
+    ["ROCCHETTI Chiara"                 ,"MERIZIOLA Beatrice"               ,"D3" ,"V5" ],
+    ["PADOVAN Vittoria"                 ,"SCARDINI Vittoria"                ,"D0" ,"V5" ],
+    ["SECCHIAROLI Naima"                ,"ROCCHETTI Chiara"                 ,"V5" ,"D0" ],
+    ["ROCCHETTI Chiara"                 ,"CARE Anna"                        ,"V3" ,"D2" ],
+    ["SCARDINI Vittoria"                ,"ROCCHETTI Chiara"                 ,"V5" ,"D3" ],
+    ["PADOVAN Vittoria"                 ,"MERIZIOLA Beatrice"               ,"D0" ,"V5" ],
+    ["CARE Anna"                        ,"SECCHIAROLI Naima"                ,"D0" ,"V5" ],
+    ["MERIZIOLA Beatrice"               ,"SCARDINI Vittoria"                ,"V5" ,"D2" ],
+    ["ROCCHETTI Chiara"                 ,"CARE Anna"                        ,"V3" ,"D2" ],
+    ["SECCHIAROLI Naima"                ,"PADOVAN Vittoria"                 ,"V5" ,"D0" ],
+    ["SCARDINI Vittoria"                ,"CARE Anna"                        ,"D4" ,"V5" ],
+    ["MERIZIOLA Beatrice"               ,"SECCHIAROLI Naima"                ,"V5" ,"D0" ],
+    ["PADOVAN Vittoria"                 ,"ROCCHETTI Chiara"                 ,"D2" ,"V5" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "02", "streepnr": "8", "streepcolor": "N/A", "time": "15:30", "column": "Club"}
+},
+
+"03": {
+  "pool": [
+    { "atleta": "PRODOSMO Matilde",                 "flag": "it", "rank": "13",   "value": ["NN","V5","V5","V5","D4","V5","24","8"       ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "CIARIMBOLI Emma",                  "flag": "it", "rank": "21",   "value": ["D2","NN","V5","V5","V5","V5","22","8"       ], "club": "ANJES", "country":"ITA" },
+    { "atleta": "SACCONI Claudia Maria",            "flag": "it", "rank": "87",   "value": ["D0","D0","NN","V5","D3","D4","12","24"      ], "club": "RMCS" , "country":"ITA" },
+    { "atleta": "COSTA Rebecca",                    "flag": "it", "rank": "9999", "value": ["D1","D0","D4","NN","D2","D1","8","25"       ], "club": "RMCAP", "country":"ITA" },
+    { "atleta": "ZACCHEI Gaia",                     "flag": "it", "rank": "60",   "value": ["V5","D2","V5","V5","NN","V5","22","15"      ], "club": "ANSEN", "country":"ITA" },
+    { "atleta": "DI GIUSEPPE Martina",              "flag": "it", "rank": "99",   "value": ["D0","D1","V5","V5","D1","NN","12","20"      ], "club": "RMAPP", "country":"ITA" }
+  ],
+  "details": [
+    ["PRODOSMO Matilde"                 ,"CIARIMBOLI Emma"                  ,"V5" ,"D2" ],
+    ["COSTA Rebecca"                    ,"SACCONI Claudia Maria"            ,"D4" ,"V5" ],
+    ["DI GIUSEPPE Martina"              ,"ZACCHEI Gaia"                     ,"D1" ,"V5" ],
+    ["SACCONI Claudia Maria"            ,"PRODOSMO Matilde"                 ,"D0" ,"V5" ],
+    ["CIARIMBOLI Emma"                  ,"DI GIUSEPPE Martina"              ,"V5" ,"D1" ],
+    ["DI GIUSEPPE Martina"              ,"COSTA Rebecca"                    ,"V5" ,"D1" ],
+    ["PRODOSMO Matilde"                 ,"DI GIUSEPPE Martina"              ,"V5" ,"D0" ],
+    ["SACCONI Claudia Maria"            ,"ZACCHEI Gaia"                     ,"D3" ,"V5" ],
+    ["COSTA Rebecca"                    ,"CIARIMBOLI Emma"                  ,"D0" ,"V5" ],
+    ["ZACCHEI Gaia"                     ,"PRODOSMO Matilde"                 ,"V5" ,"D4" ],
+    ["DI GIUSEPPE Martina"              ,"COSTA Rebecca"                    ,"V5" ,"D1" ],
+    ["CIARIMBOLI Emma"                  ,"SACCONI Claudia Maria"            ,"V5" ,"D0" ],
+    ["PRODOSMO Matilde"                 ,"COSTA Rebecca"                    ,"V5" ,"D1" ],
+    ["ZACCHEI Gaia"                     ,"CIARIMBOLI Emma"                  ,"D2" ,"V5" ],
+    ["SACCONI Claudia Maria"            ,"DI GIUSEPPE Martina"              ,"D4" ,"V5" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "03", "streepnr": "9", "streepcolor": "N/A", "time": "15:30", "column": "Club"}
+},
+
+"04": {
+  "pool": [
+    { "atleta": "PIRRACCHIO Francesca",             "flag": "it", "rank": "80",   "value": ["NN","V5","D1","D2","D2","V5","15","19"      ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "SISTO Ludovica",                   "flag": "it", "rank": "137",  "value": ["D4","NN","D1","D0","V5","V5","15","18"      ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "PARENTI Agata",                    "flag": "it", "rank": "14",   "value": ["V5","V5","NN","V5","V5","V5","25","4"       ], "club": "MCSOC", "country":"ITA" },
+    { "atleta": "PALLOZZI Diamante",                "flag": "it", "rank": "18",   "value": ["V5","V5","D1","NN","V5","V5","21","8"       ], "club": "TRCS" , "country":"ITA" },
+    { "atleta": "POTENZIANI Virginia",              "flag": "it", "rank": "67",   "value": ["V5","D2","D1","D1","NN","V5","14","18"      ], "club": "ANCSM", "country":"ITA" },
+    { "atleta": "SILLA Enrica",                     "flag": "it", "rank": "126",  "value": ["D0","D1","D0","D0","D1","NN","2","25"       ], "club": "APACC", "country":"ITA" }
+  ],
+  "details": [
+    ["PIRRACCHIO Francesca"             ,"SISTO Ludovica"                   ,"V5" ,"D4" ],
+    ["PALLOZZI Diamante"                ,"PARENTI Agata"                    ,"D1" ,"V5" ],
+    ["SILLA Enrica"                     ,"POTENZIANI Virginia"              ,"D1" ,"V5" ],
+    ["PARENTI Agata"                    ,"PIRRACCHIO Francesca"             ,"V5" ,"D1" ],
+    ["SISTO Ludovica"                   ,"SILLA Enrica"                     ,"V5" ,"D1" ],
+    ["SILLA Enrica"                     ,"PALLOZZI Diamante"                ,"D0" ,"V5" ],
+    ["PIRRACCHIO Francesca"             ,"SILLA Enrica"                     ,"V5" ,"D0" ],
+    ["PARENTI Agata"                    ,"POTENZIANI Virginia"              ,"V5" ,"D1" ],
+    ["PALLOZZI Diamante"                ,"SISTO Ludovica"                   ,"V5" ,"D0" ],
+    ["POTENZIANI Virginia"              ,"PIRRACCHIO Francesca"             ,"V5" ,"D2" ],
+    ["SILLA Enrica"                     ,"PALLOZZI Diamante"                ,"D0" ,"V5" ],
+    ["SISTO Ludovica"                   ,"PARENTI Agata"                    ,"D1" ,"V5" ],
+    ["PIRRACCHIO Francesca"             ,"PALLOZZI Diamante"                ,"D2" ,"V5" ],
+    ["POTENZIANI Virginia"              ,"SISTO Ludovica"                   ,"D2" ,"V5" ],
+    ["PARENTI Agata"                    ,"SILLA Enrica"                     ,"V5" ,"D0" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "04", "streepnr": "10", "streepcolor": "N/A", "time": "15:30", "column": "Club"}
+},
+
+"05": {
+  "pool": [
+    { "atleta": "PERGOLIZZI Bianca Maria P",        "flag": "it", "rank": "118",  "value": ["NN","V5","D0","D1","D2","D4","12","22"      ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "CONTI Olivia",                     "flag": "it", "rank": "129",  "value": ["D2","NN","D1","D1","D4","D2","10","25"      ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "TATTOLO Vittoria",                 "flag": "it", "rank": "15",   "value": ["V5","V5","NN","D0","V5","V5","20","9"       ], "club": "ANCS" , "country":"ITA" },
+    { "atleta": "LINTOZZI Flaminia",                "flag": "it", "rank": "16",   "value": ["V5","V5","V5","NN","V5","V5","25","3"       ], "club": "RMCS" , "country":"ITA" },
+    { "atleta": "GIULIODORI Viola",                 "flag": "it", "rank": "73",   "value": ["V5","V5","D3","D0","NN","V5","18","20"      ], "club": "ANCSM", "country":"ITA" },
+    { "atleta": "MAZZOTTI Galatea Rebecc",          "flag": "it", "rank": "78",   "value": ["V5","V5","D0","D1","D4","NN","15","21"      ], "club": "CHTEA", "country":"ITA" }
+  ],
+  "details": [
+    ["PERGOLIZZI Bianca Maria P"        ,"CONTI Olivia"                     ,"V5" ,"D2" ],
+    ["LINTOZZI Flaminia"                ,"TATTOLO Vittoria"                 ,"V5" ,"D0" ],
+    ["MAZZOTTI Galatea Rebecc"          ,"GIULIODORI Viola"                 ,"D4" ,"V5" ],
+    ["TATTOLO Vittoria"                 ,"PERGOLIZZI Bianca Maria P"        ,"V5" ,"D0" ],
+    ["CONTI Olivia"                     ,"MAZZOTTI Galatea Rebecc"          ,"D2" ,"V5" ],
+    ["MAZZOTTI Galatea Rebecc"          ,"LINTOZZI Flaminia"                ,"D1" ,"V5" ],
+    ["PERGOLIZZI Bianca Maria P"        ,"MAZZOTTI Galatea Rebecc"          ,"D4" ,"V5" ],
+    ["TATTOLO Vittoria"                 ,"GIULIODORI Viola"                 ,"V5" ,"D3" ],
+    ["LINTOZZI Flaminia"                ,"CONTI Olivia"                     ,"V5" ,"D1" ],
+    ["GIULIODORI Viola"                 ,"PERGOLIZZI Bianca Maria P"        ,"V5" ,"D2" ],
+    ["MAZZOTTI Galatea Rebecc"          ,"LINTOZZI Flaminia"                ,"D1" ,"V5" ],
+    ["CONTI Olivia"                     ,"TATTOLO Vittoria"                 ,"D1" ,"V5" ],
+    ["PERGOLIZZI Bianca Maria P"        ,"LINTOZZI Flaminia"                ,"D1" ,"V5" ],
+    ["GIULIODORI Viola"                 ,"CONTI Olivia"                     ,"V5" ,"D4" ],
+    ["TATTOLO Vittoria"                 ,"MAZZOTTI Galatea Rebecc"          ,"V5" ,"D0" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "05", "streepnr": "11", "streepcolor": "N/A", "time": "15:30", "column": "Club"}
+}
+}

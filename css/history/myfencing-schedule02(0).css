@@ -1,0 +1,33 @@
+/*===========================================================
+== FFD v.1.0.0 - 27/07/2025 21:35:01                       ==
+== #003366 blue title                                      ==
+== #005599 blue menu
+== #005599 blue heading tabl
+== #0047AB NO NO
+== #f5f7fa; background cont-earea
+== #64748b title color
+===========================================================*/
+
+/* -------------------------------------
+ CSS -  CARD con layout a griglia lightblue #f1f5f9;
+------------------------------------- */
+.schedule-card {
+  background: lightblue;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.schedule-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.schedule-card strong {
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+ 
