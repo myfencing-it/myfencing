@@ -1,0 +1,16 @@
+Collega il repository locale al repository remoto (se non è già collegato):
+git remote add origin <URL-del-repo-remoto>
+git remote add origin https://github.com/tuo-utente/tuo-repo.git
+
+
+git add .
+git add --all
+git status
+git commit -m "update"
+
+
+Se è la prima volta che invii al repository remoto, puoi usare:
+git push -u origin main
+
+
+git push
