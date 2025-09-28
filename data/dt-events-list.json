@@ -42,7 +42,7 @@
   ]
   },
   {
-    "id": "2025092801",
+    "id": "20250928",
     "location": "Busto Arsizio (VA)",
     "title": "Memoria Cesare Vigo - 2<sup>a</sup> Edizione",
     "date": "28/09/2025",
@@ -52,6 +52,7 @@
     "team": false,
     "live": false,
     "imgSx": "images/cr-lombardia.png",
+    "sourceurl": "https://www.4fence.it/CRLombardia/Risultati/2025-09-28-27_Busto_Arsizio_(VA)_-_MEMORIAL_CESARE_VAGO/",    
     "eventcats": [
       { "title": "Fioretto Ragazze/Allieve", "date": "2025-09-27", "time": "08:45", "description": "2013-2012", "tag": "FFRA" },
       { "title": "Fioretto Ragazzi/Allievi", "date": "2025-09-28", "time": "08:45", "description": "2013-2012", "tag": "FMRA" }

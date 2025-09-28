@@ -1,0 +1,279 @@
+{
+"01": {
+  "pool": [
+    { "atleta": "BUONOMINI Luca",                   "flag": "it", "rank": "50",   "value": ["NN","D0","D0","V5","V5","V5","D0","15","19" ], "club": "RMCAP", "country":"ITA" },
+    { "atleta": "IAQUINTA Davide Rocco",            "flag": "it", "rank": "2",    "value": ["V5","NN","V5","V5","V5","V5","V5","30","6"  ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "SOLIMENA Luca",                    "flag": "it", "rank": "41",   "value": ["V5","D3","NN","V5","V5","D4","V5","27","15" ], "club": "PDCOM", "country":"ITA" },
+    { "atleta": "MARTUCCI Nicolo'",                 "flag": "it", "rank": "299",  "value": ["D1","D0","D1","NN","V5","V5","D1","13","25" ], "club": "MICRI", "country":"ITA" },
+    { "atleta": "VENTURA Samuel",                   "flag": "it", "rank": "322",  "value": ["D2","D0","D1","D4","NN","V5","D2","14","28" ], "club": "MIBRE", "country":"ITA" },
+    { "atleta": "CHITTARO Riccardo",                "flag": "it", "rank": "128",  "value": ["D1","D0","V5","D1","D3","NN","D3","13","29" ], "club": "UDASU", "country":"ITA" },
+    { "atleta": "FERRARI Riccardo",                 "flag": "it", "rank": "127",  "value": ["V5","D3","D3","V5","V5","V5","NN","26","16" ], "club": "VRBEN", "country":"ITA" }
+  ],
+  "details": [
+    ["BUONOMINI Luca"                   ,"MARTUCCI Nicolo'"                 ,"V5" ,"D1" ],
+    ["VENTURA Samuel"                   ,"IAQUINTA Davide Rocco"            ,"D0" ,"V5" ],
+    ["SOLIMENA Luca"                    ,"CHITTARO Riccardo"                ,"D4" ,"V5" ],
+    ["FERRARI Riccardo"                 ,"BUONOMINI Luca"                   ,"V5" ,"D0" ],
+    ["VENTURA Samuel"                   ,"MARTUCCI Nicolo'"                 ,"D4" ,"V5" ],
+    ["SOLIMENA Luca"                    ,"IAQUINTA Davide Rocco"            ,"D3" ,"V5" ],
+    ["CHITTARO Riccardo"                ,"FERRARI Riccardo"                 ,"D3" ,"V5" ],
+    ["VENTURA Samuel"                   ,"BUONOMINI Luca"                   ,"D2" ,"V5" ],
+    ["SOLIMENA Luca"                    ,"MARTUCCI Nicolo'"                 ,"V5" ,"D1" ],
+    ["CHITTARO Riccardo"                ,"IAQUINTA Davide Rocco"            ,"D0" ,"V5" ],
+    ["VENTURA Samuel"                   ,"FERRARI Riccardo"                 ,"D2" ,"V5" ],
+    ["SOLIMENA Luca"                    ,"BUONOMINI Luca"                   ,"V5" ,"D0" ],
+    ["CHITTARO Riccardo"                ,"MARTUCCI Nicolo'"                 ,"D1" ,"V5" ],
+    ["FERRARI Riccardo"                 ,"IAQUINTA Davide Rocco"            ,"D3" ,"V5" ],
+    ["SOLIMENA Luca"                    ,"VENTURA Samuel"                   ,"V5" ,"D1" ],
+    ["CHITTARO Riccardo"                ,"BUONOMINI Luca"                   ,"D1" ,"V5" ],
+    ["IAQUINTA Davide Rocco"            ,"MARTUCCI Nicolo'"                 ,"V5" ,"D0" ],
+    ["SOLIMENA Luca"                    ,"FERRARI Riccardo"                 ,"V5" ,"D3" ],
+    ["CHITTARO Riccardo"                ,"VENTURA Samuel"                   ,"D3" ,"V5" ],
+    ["BUONOMINI Luca"                   ,"IAQUINTA Davide Rocco"            ,"D0" ,"V5" ],
+    ["MARTUCCI Nicolo'"                 ,"FERRARI Riccardo"                 ,"D1" ,"V5" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "01", "streepnr": "3", "streepcolor": "N/A", "time": "09:00", "column": "Club"}
+},
+
+"02": {
+  "pool": [
+    { "atleta": "D'ACRI Alessandro",                "flag": "it", "rank": "134",  "value": ["NN","V5","D2","D2","D0","V5","D3","17","22" ], "club": "VAPPR", "country":"ITA" },
+    { "atleta": "CHIARI Nicolo'",                   "flag": "it", "rank": "55",   "value": ["D0","NN","D2","D2","D3","D0","D2","9","30"  ], "club": "BSLEO", "country":"ITA" },
+    { "atleta": "PAGNAN Giovanni",                  "flag": "it", "rank": "113",  "value": ["V5","V5","NN","D3","V5","V5","D4","27","17" ], "club": "PDCOM", "country":"ITA" },
+    { "atleta": "PUGIOTTO Priyam",                  "flag": "it", "rank": "4",    "value": ["V5","V5","V5","NN","D4","V5","D2","26","21" ], "club": "VEMES", "country":"ITA" },
+    { "atleta": "KLACMAN Filip",                    "flag": "sk", "rank": "9999", "value": ["V5","V5","D1","V5","NN","D1","V5","22","19" ], "club": "EESVK", "country":"ITA" },
+    { "atleta": "FILIPPONE Francesco Karol",        "flag": "it", "rank": "39",   "value": ["D2","V5","D2","D4","V5","NN","D4","22","21" ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "ARORA Maxmilian Andras Ashok",     "flag": "us", "rank": "225",  "value": ["V5","V5","V5","V5","D2","V5","NN","27","20" ], "club": "COCOM", "country":"ITA" }
+  ],
+  "details": [
+    ["D'ACRI Alessandro"                ,"PUGIOTTO Priyam"                  ,"D2" ,"V5" ],
+    ["KLACMAN Filip"                    ,"CHIARI Nicolo'"                   ,"V5" ,"D3" ],
+    ["PAGNAN Giovanni"                  ,"FILIPPONE Francesco Karol"        ,"V5" ,"D2" ],
+    ["ARORA Maxmilian Andras Ashok"     ,"D'ACRI Alessandro"                ,"V5" ,"D3" ],
+    ["KLACMAN Filip"                    ,"PUGIOTTO Priyam"                  ,"V5" ,"D4" ],
+    ["PAGNAN Giovanni"                  ,"CHIARI Nicolo'"                   ,"V5" ,"D2" ],
+    ["FILIPPONE Francesco Karol"        ,"ARORA Maxmilian Andras Ashok"     ,"D4" ,"V5" ],
+    ["KLACMAN Filip"                    ,"D'ACRI Alessandro"                ,"V5" ,"D0" ],
+    ["PAGNAN Giovanni"                  ,"PUGIOTTO Priyam"                  ,"D3" ,"V5" ],
+    ["FILIPPONE Francesco Karol"        ,"CHIARI Nicolo'"                   ,"V5" ,"D0" ],
+    ["KLACMAN Filip"                    ,"ARORA Maxmilian Andras Ashok"     ,"V5" ,"D2" ],
+    ["PAGNAN Giovanni"                  ,"D'ACRI Alessandro"                ,"V5" ,"D2" ],
+    ["FILIPPONE Francesco Karol"        ,"PUGIOTTO Priyam"                  ,"D4" ,"V5" ],
+    ["ARORA Maxmilian Andras Ashok"     ,"CHIARI Nicolo'"                   ,"V5" ,"D2" ],
+    ["PAGNAN Giovanni"                  ,"KLACMAN Filip"                    ,"V5" ,"D1" ],
+    ["FILIPPONE Francesco Karol"        ,"D'ACRI Alessandro"                ,"D2" ,"V5" ],
+    ["CHIARI Nicolo'"                   ,"PUGIOTTO Priyam"                  ,"D2" ,"V5" ],
+    ["PAGNAN Giovanni"                  ,"ARORA Maxmilian Andras Ashok"     ,"D4" ,"V5" ],
+    ["FILIPPONE Francesco Karol"        ,"KLACMAN Filip"                    ,"V5" ,"D1" ],
+    ["D'ACRI Alessandro"                ,"CHIARI Nicolo'"                   ,"V5" ,"D0" ],
+    ["PUGIOTTO Priyam"                  ,"ARORA Maxmilian Andras Ashok"     ,"D2" ,"V5" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "02", "streepnr": "5", "streepcolor": "N/A", "time": "09:00", "column": "Club"}
+},
+
+"03": {
+  "pool": [
+    { "atleta": "TELLAROLI Fabio",                  "flag": "it", "rank": "214",  "value": ["NN","D2","V5","V5","V5","D4","21","17"      ], "club": "BSLEO", "country":"ITA" },
+    { "atleta": "AIME Umberto",                     "flag": "it", "rank": "6",    "value": ["V5","NN","V5","V5","V5","V5","25","10"      ], "club": "BSSAL", "country":"ITA" },
+    { "atleta": "RECALCATI Enrico",                 "flag": "it", "rank": "109",  "value": ["D3","D3","NN","D4","V5","D4","19","21"      ], "club": "MICRI", "country":"ITA" },
+    { "atleta": "DONNA Giordano",                   "flag": "it", "rank": "38",   "value": ["D3","D2","V5","NN","V5","D2","17","19"      ], "club": "BSSEB", "country":"ITA" },
+    { "atleta": "D'ABROSCA Tommaso",                "flag": "it", "rank": "145",  "value": ["D1","D0","D1","D0","NN","D1","3","25"       ], "club": "VAPPR", "country":"ITA" },
+    { "atleta": "MAZZUCATO MEZZ Ettore",            "flag": "it", "rank": "56",   "value": ["V5","D3","V5","V5","V5","NN","23","16"      ], "club": "PDCOM", "country":"ITA" }
+  ],
+  "details": [
+    ["TELLAROLI Fabio"                  ,"AIME Umberto"                     ,"D2" ,"V5" ],
+    ["DONNA Giordano"                   ,"RECALCATI Enrico"                 ,"V5" ,"D4" ],
+    ["MAZZUCATO MEZZ Ettore"            ,"D'ABROSCA Tommaso"                ,"V5" ,"D1" ],
+    ["RECALCATI Enrico"                 ,"TELLAROLI Fabio"                  ,"D3" ,"V5" ],
+    ["AIME Umberto"                     ,"MAZZUCATO MEZZ Ettore"            ,"V5" ,"D3" ],
+    ["MAZZUCATO MEZZ Ettore"            ,"DONNA Giordano"                   ,"V5" ,"D2" ],
+    ["TELLAROLI Fabio"                  ,"MAZZUCATO MEZZ Ettore"            ,"D4" ,"V5" ],
+    ["RECALCATI Enrico"                 ,"D'ABROSCA Tommaso"                ,"V5" ,"D1" ],
+    ["DONNA Giordano"                   ,"AIME Umberto"                     ,"D2" ,"V5" ],
+    ["D'ABROSCA Tommaso"                ,"TELLAROLI Fabio"                  ,"D1" ,"V5" ],
+    ["MAZZUCATO MEZZ Ettore"            ,"DONNA Giordano"                   ,"V5" ,"D2" ],
+    ["AIME Umberto"                     ,"RECALCATI Enrico"                 ,"V5" ,"D3" ],
+    ["TELLAROLI Fabio"                  ,"DONNA Giordano"                   ,"V5" ,"D3" ],
+    ["D'ABROSCA Tommaso"                ,"AIME Umberto"                     ,"D0" ,"V5" ],
+    ["RECALCATI Enrico"                 ,"MAZZUCATO MEZZ Ettore"            ,"D4" ,"V5" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "03", "streepnr": "6", "streepcolor": "N/A", "time": "09:00", "column": "Club"}
+},
+
+"04": {
+  "pool": [
+    { "atleta": "ROMANO Lorenzo",                   "flag": "it", "rank": "108",  "value": ["NN","D0","D4","V5","D2","V5","16","23"      ], "club": "MIPIT", "country":"ITA" },
+    { "atleta": "RAPPAZZO Giulio",                  "flag": "it", "rank": "63",   "value": ["V5","NN","V5","D3","V5","V5","23","11"      ], "club": "TVMOG", "country":"ITA" },
+    { "atleta": "VENTURINI Francesco",              "flag": "it", "rank": "149",  "value": ["V5","D1","NN","V3","D1","D4","14","21"      ], "club": "VAPPR", "country":"ITA" },
+    { "atleta": "SCHIANTARELLI Gabriel Nathan",     "flag": "it", "rank": "8",    "value": ["D4","V5","D2","NN","D0","V5","16","20"      ], "club": "BSSCA", "country":"ITA" },
+    { "atleta": "CURCI Gian Marco",                 "flag": "it", "rank": "30",   "value": ["V5","D4","V5","V5","NN","V5","24","9"       ], "club": "FIRAG", "country":"ITA" },
+    { "atleta": "GENITONI Alessandro",              "flag": "it", "rank": "211",  "value": ["D4","D1","V5","D4","D1","NN","15","24"      ], "club": "MIBRE", "country":"ITA" }
+  ],
+  "details": [
+    ["ROMANO Lorenzo"                   ,"RAPPAZZO Giulio"                  ,"D0" ,"V5" ],
+    ["SCHIANTARELLI Gabriel Nathan"     ,"VENTURINI Francesco"              ,"D2" ,"V3" ],
+    ["GENITONI Alessandro"              ,"CURCI Gian Marco"                 ,"D1" ,"V5" ],
+    ["VENTURINI Francesco"              ,"ROMANO Lorenzo"                   ,"V5" ,"D4" ],
+    ["RAPPAZZO Giulio"                  ,"GENITONI Alessandro"              ,"V5" ,"D1" ],
+    ["GENITONI Alessandro"              ,"SCHIANTARELLI Gabriel Nathan"     ,"D4" ,"V5" ],
+    ["ROMANO Lorenzo"                   ,"GENITONI Alessandro"              ,"V5" ,"D4" ],
+    ["VENTURINI Francesco"              ,"CURCI Gian Marco"                 ,"D1" ,"V5" ],
+    ["SCHIANTARELLI Gabriel Nathan"     ,"RAPPAZZO Giulio"                  ,"V5" ,"D3" ],
+    ["CURCI Gian Marco"                 ,"ROMANO Lorenzo"                   ,"V5" ,"D2" ],
+    ["GENITONI Alessandro"              ,"SCHIANTARELLI Gabriel Nathan"     ,"D4" ,"V5" ],
+    ["RAPPAZZO Giulio"                  ,"VENTURINI Francesco"              ,"V5" ,"D1" ],
+    ["ROMANO Lorenzo"                   ,"SCHIANTARELLI Gabriel Nathan"     ,"V5" ,"D4" ],
+    ["CURCI Gian Marco"                 ,"RAPPAZZO Giulio"                  ,"D4" ,"V5" ],
+    ["VENTURINI Francesco"              ,"GENITONI Alessandro"              ,"D4" ,"V5" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "04", "streepnr": "8", "streepcolor": "N/A", "time": "09:00", "column": "Club"}
+},
+
+"05": {
+  "pool": [
+    { "atleta": "GHEORGHIU Francesco",              "flag": "it", "rank": "212",  "value": ["NN","D4","D3","D4","D1","D1","13","25"      ], "club": "MICRI", "country":"ITA" },
+    { "atleta": "LUCIS Mattia",                     "flag": "it", "rank": "65",   "value": ["V5","NN","D2","D3","D3","D0","13","24"      ], "club": "UDASU", "country":"ITA" },
+    { "atleta": "CAFIERO Giorgio",                  "flag": "it", "rank": "9",    "value": ["V5","V5","NN","V5","V5","V5","25","7"       ], "club": "MIBRE", "country":"ITA" },
+    { "atleta": "FILIPPINI Jacopo Saul",            "flag": "it", "rank": "163",  "value": ["V5","V5","D0","NN","D0","D2","12","22"      ], "club": "VAPPR", "country":"ITA" },
+    { "atleta": "CAMURRI Andrea",                   "flag": "it", "rank": "105",  "value": ["V5","V5","D0","V5","NN","D3","18","14"      ], "club": "MNMAN", "country":"ITA" },
+    { "atleta": "FIOCCA Simone",                    "flag": "it", "rank": "29",   "value": ["V5","V5","D2","V5","V5","NN","22","11"      ], "club": "BSSAL", "country":"ITA" }
+  ],
+  "details": [
+    ["GHEORGHIU Francesco"              ,"LUCIS Mattia"                     ,"D4" ,"V5" ],
+    ["FILIPPINI Jacopo Saul"            ,"CAFIERO Giorgio"                  ,"D0" ,"V5" ],
+    ["FIOCCA Simone"                    ,"CAMURRI Andrea"                   ,"V5" ,"D3" ],
+    ["CAFIERO Giorgio"                  ,"GHEORGHIU Francesco"              ,"V5" ,"D3" ],
+    ["LUCIS Mattia"                     ,"FIOCCA Simone"                    ,"D0" ,"V5" ],
+    ["FIOCCA Simone"                    ,"FILIPPINI Jacopo Saul"            ,"V5" ,"D2" ],
+    ["GHEORGHIU Francesco"              ,"FIOCCA Simone"                    ,"D1" ,"V5" ],
+    ["CAFIERO Giorgio"                  ,"CAMURRI Andrea"                   ,"V5" ,"D0" ],
+    ["FILIPPINI Jacopo Saul"            ,"LUCIS Mattia"                     ,"V5" ,"D3" ],
+    ["CAMURRI Andrea"                   ,"GHEORGHIU Francesco"              ,"V5" ,"D1" ],
+    ["FIOCCA Simone"                    ,"FILIPPINI Jacopo Saul"            ,"V5" ,"D2" ],
+    ["LUCIS Mattia"                     ,"CAFIERO Giorgio"                  ,"D2" ,"V5" ],
+    ["GHEORGHIU Francesco"              ,"FILIPPINI Jacopo Saul"            ,"D4" ,"V5" ],
+    ["CAMURRI Andrea"                   ,"LUCIS Mattia"                     ,"V5" ,"D3" ],
+    ["CAFIERO Giorgio"                  ,"FIOCCA Simone"                    ,"V5" ,"D2" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "05", "streepnr": "9", "streepcolor": "N/A", "time": "09:00", "column": "Club"}
+},
+
+"06": {
+  "pool": [
+    { "atleta": "MONTI Ludovico",                   "flag": "it", "rank": "10",   "value": ["NN","V5","V5","V5","V5","V5","25","5"       ], "club": "PSUNU", "country":"ITA" },
+    { "atleta": "BALDASSARI Valentino",             "flag": "it", "rank": "195",  "value": ["D0","NN","V5","D4","D1","D2","12","22"      ], "club": "VAPPR", "country":"ITA" },
+    { "atleta": "DELL ISOLA Gianmaria",             "flag": "it", "rank": "150",  "value": ["D1","D2","NN","D2","D1","D3","9","25"       ], "club": "UDASU", "country":"ITA" },
+    { "atleta": "EUSEBIO Jacopo",                   "flag": "it", "rank": "88",   "value": ["D0","V5","V5","NN","V5","D0","15","19"      ], "club": "MICRI", "country":"ITA" },
+    { "atleta": "PIAZZA Alessandro",                "flag": "it", "rank": "66",   "value": ["D2","V5","V5","D3","NN","D2","17","17"      ], "club": "MIBRI", "country":"ITA" },
+    { "atleta": "BIANCHETTI Leonardo",              "flag": "it", "rank": "20",   "value": ["D2","V5","V5","V5","V5","NN","22","12"      ], "club": "BSSCA", "country":"ITA" }
+  ],
+  "details": [
+    ["MONTI Ludovico"                   ,"BALDASSARI Valentino"             ,"V5" ,"D0" ],
+    ["EUSEBIO Jacopo"                   ,"DELL ISOLA Gianmaria"             ,"V5" ,"D2" ],
+    ["BIANCHETTI Leonardo"              ,"PIAZZA Alessandro"                ,"V5" ,"D2" ],
+    ["DELL ISOLA Gianmaria"             ,"MONTI Ludovico"                   ,"D1" ,"V5" ],
+    ["BALDASSARI Valentino"             ,"BIANCHETTI Leonardo"              ,"D2" ,"V5" ],
+    ["BIANCHETTI Leonardo"              ,"EUSEBIO Jacopo"                   ,"V5" ,"D0" ],
+    ["MONTI Ludovico"                   ,"BIANCHETTI Leonardo"              ,"V5" ,"D2" ],
+    ["DELL ISOLA Gianmaria"             ,"PIAZZA Alessandro"                ,"D1" ,"V5" ],
+    ["EUSEBIO Jacopo"                   ,"BALDASSARI Valentino"             ,"V5" ,"D4" ],
+    ["PIAZZA Alessandro"                ,"MONTI Ludovico"                   ,"D2" ,"V5" ],
+    ["BIANCHETTI Leonardo"              ,"EUSEBIO Jacopo"                   ,"V5" ,"D0" ],
+    ["BALDASSARI Valentino"             ,"DELL ISOLA Gianmaria"             ,"V5" ,"D2" ],
+    ["MONTI Ludovico"                   ,"EUSEBIO Jacopo"                   ,"V5" ,"D0" ],
+    ["PIAZZA Alessandro"                ,"BALDASSARI Valentino"             ,"V5" ,"D1" ],
+    ["DELL ISOLA Gianmaria"             ,"BIANCHETTI Leonardo"              ,"D3" ,"V5" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "06", "streepnr": "10", "streepcolor": "N/A", "time": "09:00", "column": "Club"}
+},
+
+"07": {
+  "pool": [
+    { "atleta": "ALMICI Giogio Agostin",            "flag": "it", "rank": "13",   "value": ["NN","V5","V5","V5","V5","D2","22","15"      ], "club": "BSSCA", "country":"ITA" },
+    { "atleta": "COSTA Riccardo",                   "flag": "it", "rank": "203",  "value": ["D4","NN","V5","D4","V5","D1","19","23"      ], "club": "LIACC", "country":"ITA" },
+    { "atleta": "OGLIARI Francesco",                "flag": "it", "rank": "179",  "value": ["D3","D4","NN","D4","D3","D4","18","25"      ], "club": "VAPPR", "country":"ITA" },
+    { "atleta": "MAIORI Mattia",                    "flag": "it", "rank": "67",   "value": ["D3","V5","V5","NN","V5","V5","23","19"      ], "club": "GERAP", "country":"ITA" },
+    { "atleta": "ORIGGI Nicola",                    "flag": "it", "rank": "79",   "value": ["D0","D4","V5","D3","NN","D3","15","23"      ], "club": "MICRI", "country":"ITA" },
+    { "atleta": "MATOLA Niccolo'",                  "flag": "it", "rank": "22",   "value": ["V5","V5","V5","D3","V5","NN","23","15"      ], "club": "RMFRC", "country":"ITA" }
+  ],
+  "details": [
+    ["ALMICI Giogio Agostin"            ,"COSTA Riccardo"                   ,"V5" ,"D4" ],
+    ["MAIORI Mattia"                    ,"OGLIARI Francesco"                ,"V5" ,"D4" ],
+    ["MATOLA Niccolo'"                  ,"ORIGGI Nicola"                    ,"V5" ,"D3" ],
+    ["OGLIARI Francesco"                ,"ALMICI Giogio Agostin"            ,"D3" ,"V5" ],
+    ["COSTA Riccardo"                   ,"MATOLA Niccolo'"                  ,"D1" ,"V5" ],
+    ["MATOLA Niccolo'"                  ,"MAIORI Mattia"                    ,"D3" ,"V5" ],
+    ["ALMICI Giogio Agostin"            ,"MATOLA Niccolo'"                  ,"D2" ,"V5" ],
+    ["OGLIARI Francesco"                ,"ORIGGI Nicola"                    ,"D3" ,"V5" ],
+    ["MAIORI Mattia"                    ,"COSTA Riccardo"                   ,"V5" ,"D4" ],
+    ["ORIGGI Nicola"                    ,"ALMICI Giogio Agostin"            ,"D0" ,"V5" ],
+    ["MATOLA Niccolo'"                  ,"MAIORI Mattia"                    ,"D3" ,"V5" ],
+    ["COSTA Riccardo"                   ,"OGLIARI Francesco"                ,"V5" ,"D4" ],
+    ["ALMICI Giogio Agostin"            ,"MAIORI Mattia"                    ,"V5" ,"D3" ],
+    ["ORIGGI Nicola"                    ,"COSTA Riccardo"                   ,"D4" ,"V5" ],
+    ["OGLIARI Francesco"                ,"MATOLA Niccolo'"                  ,"D4" ,"V5" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "07", "streepnr": "11", "streepcolor": "N/A", "time": "09:00", "column": "Club"}
+},
+
+"08": {
+  "pool": [
+    { "atleta": "PIRAS Giorgio",                    "flag": "it", "rank": "193",  "value": ["NN","D4","V5","D3","D0","D2","14","22"      ], "club": "RMFRC", "country":"ITA" },
+    { "atleta": "CAMPANALE Alessandro",             "flag": "it", "rank": "77",   "value": ["V5","NN","V5","V5","D3","D0","18","18"      ], "club": "MBMOZ", "country":"ITA" },
+    { "atleta": "IMBRICI Nicolo'",                  "flag": "it", "rank": "184",  "value": ["D2","D0","NN","D2","D2","D0","6","25"       ], "club": "COCOM", "country":"ITA" },
+    { "atleta": "BALLARINI Mauro",                  "flag": "it", "rank": "71",   "value": ["V5","D4","V5","NN","D4","D2","20","20"      ], "club": "RMCAP", "country":"ITA" },
+    { "atleta": "PENZO Gabriel",                    "flag": "it", "rank": "19",   "value": ["V5","V5","V5","V5","NN","V5","25","12"      ], "club": "LICS" , "country":"ITA" },
+    { "atleta": "MOLTENI Alessandro Fer",           "flag": "it", "rank": "16",   "value": ["V5","V5","V5","V5","D3","NN","23","9"       ], "club": "BSSAL", "country":"ITA" }
+  ],
+  "details": [
+    ["PIRAS Giorgio"                    ,"CAMPANALE Alessandro"             ,"D4" ,"V5" ],
+    ["BALLARINI Mauro"                  ,"IMBRICI Nicolo'"                  ,"V5" ,"D2" ],
+    ["MOLTENI Alessandro Fer"           ,"PENZO Gabriel"                    ,"D3" ,"V5" ],
+    ["IMBRICI Nicolo'"                  ,"PIRAS Giorgio"                    ,"D2" ,"V5" ],
+    ["CAMPANALE Alessandro"             ,"MOLTENI Alessandro Fer"           ,"D0" ,"V5" ],
+    ["MOLTENI Alessandro Fer"           ,"BALLARINI Mauro"                  ,"V5" ,"D2" ],
+    ["PIRAS Giorgio"                    ,"MOLTENI Alessandro Fer"           ,"D2" ,"V5" ],
+    ["IMBRICI Nicolo'"                  ,"PENZO Gabriel"                    ,"D2" ,"V5" ],
+    ["BALLARINI Mauro"                  ,"CAMPANALE Alessandro"             ,"D4" ,"V5" ],
+    ["PENZO Gabriel"                    ,"PIRAS Giorgio"                    ,"V5" ,"D0" ],
+    ["MOLTENI Alessandro Fer"           ,"BALLARINI Mauro"                  ,"V5" ,"D2" ],
+    ["CAMPANALE Alessandro"             ,"IMBRICI Nicolo'"                  ,"V5" ,"D0" ],
+    ["PIRAS Giorgio"                    ,"BALLARINI Mauro"                  ,"D3" ,"V5" ],
+    ["PENZO Gabriel"                    ,"CAMPANALE Alessandro"             ,"V5" ,"D3" ],
+    ["IMBRICI Nicolo'"                  ,"MOLTENI Alessandro Fer"           ,"D0" ,"V5" ]
+  ],
+  "referees": [
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"},
+        { "role": "Referee", "referee": "N/A", "flag": "it", "country": "ITA"}
+  ],
+  "datapool": {"nr": "08", "streepnr": "12", "streepcolor": "N/A", "time": "09:00", "column": "Club"}
+}
+}
