@@ -30,8 +30,8 @@
 .schedule-container {
   margin-top: 80px;
   margin-left:25px; 
-  /*background-color:    #f5f7fa !important; */
-  background-color:    #f5f7fa !important;
+  /*background-color:    red !important; */
+  background-color: #f5f7ff !important;
 
   padding:       2rem;
   border-radius: 16px;
@@ -108,7 +108,7 @@
 .schedule-description {
   font-size: 1.05rem;
   color: #64748b;
-  font-weight: italic; 
+  font-style: italic;
   padding-left: 11ch;
 }
 

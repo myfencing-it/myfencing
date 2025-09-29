@@ -28,8 +28,8 @@
   margin-top: 80px;             /* altezza del menu */
   height: calc(100vh - 180px);  /* altezza viewport meno menu/topbar */
   overflow-y: auto;             /* scroll verticale se necessario */
-  border: 1px solid #ccc;
-
+ 
+/*  border: 1px solid #ccc; */
 
 }
 
@@ -152,6 +152,8 @@ table.poolTable td {
   color:         red;
   border-top:    none !important;
   border-bottom: none !important;
+  border-right:  none !important; 
+  border-left:   none !important;   
 }
 
 

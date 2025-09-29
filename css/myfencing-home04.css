@@ -1,52 +1,15 @@
-/*===========================================================
-== FFD v.1.0.0 - 27/07/2025 21:35:01                       ==
-== #003366 blue title                                      ==
-== #005599 blue menu
-== #005599 blue heading tabl
-== #0047AB NO NO
-== content area #f4f4f4;
-===========================================================*/
-
-/* --------------------
- General
--------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  /* box-sizing: border-box;*/
-  
-}
-
+/*==========================================================
+// Author: Fabio D Filippone
+// History:
+// FFD - 29/09/2025 09:14:06 - v.1.0  Responsive Version
+   MAIN LAYOUT - Responsive Version
+========================================================== */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: sans-serif;
   background: #f4f4f4;
-}
-
-header {
-  height: 60px; /* esempio */
-  background: #333;
-  color: white;
-  display: flex;
-  align-items: center;
-  padding-left: 1rem;
-}
-
-/* ----------------------------------
-  Content Area (tra menu e footer)
- ---------------------------------- */
-#content-area {
-  position: fixed;
-  top: 100px; /* somma di header + menu */
-  bottom: 30px; /* altezza footer */
-  left: 0;
-  right: 0;
-  padding: 1rem;
-  /*background: red;*/
-   background: #f4f4f4;
-  overflow-y: auto; /* scroll solo dentro il content   */
 }
 
 /* --------------------
@@ -80,6 +43,7 @@ header {
   font-weight: bold;
   flex: 1;
   justify-content: center;
+  text-align: center;
 }
 
 .title-bar .right img {
@@ -97,8 +61,11 @@ header {
   width: 100%;
   height: 40px;
   background-color: #005599;
-  z-index: 999;
+  display: flex;
+  align-items: center;
   padding-left: 20px;
+  z-index: 999;
+  overflow-x: auto;           /* scroll orizzontale su mobile */
 }
 
 .menu-tabs {
@@ -109,17 +76,19 @@ header {
   gap: 2rem;
   padding-left: 1rem;
   list-style: none;
+  white-space: nowrap;        /* evita che vada a capo */
 }
 
 .menu-option {
   color: white;
   cursor: pointer;
   padding: 5px 10px;
+  flex-shrink: 0;             /* non comprimere troppo */
 }
 
 .menu-option.disabled {
   opacity: 0.5;
-  pointer-events: none; /* opzionale: impedisce il click del tutto */
+  pointer-events: none;
 }
 
 .menu-option:hover {
@@ -140,7 +109,6 @@ header {
   align-items: center;
   background-color: #003366;
   color: white;
-
   position: fixed;
   bottom: 0;
   left: 0;
@@ -148,6 +116,7 @@ header {
   height: 30px;
   font-size: 11px;
   font-style: italic;
+  padding: 0 1rem;
 }
 
 .footer-bar .left,
@@ -159,15 +128,78 @@ header {
 
 .footer-bar .left {
   text-align: left;
-  margin-left:30px;
-  font-size: 16px !important;
+  font-size: 14px;
 }
 
 .footer-bar .right {
   text-align: right;
-  margin-right:50px;
-  font-size: 16px !important;
+  font-size: 14px;
 }
 
- 
+/* ==========================================================
+    Responsive Design
+========================================================== */
 
+/* Tablet */
+@media (max-width: 768px) {
+  .title-bar {
+    height: 50px;
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+
+  .title-bar .center {
+    font-size: 1rem;
+  }
+
+  .menu-bar {
+    height: 36px;
+    padding-left: 10px;
+  }
+
+  .menu-tabs {
+    gap: 1rem;
+  }
+}
+
+/* Smartphone */
+@media (max-width: 600px) {
+  .title-bar {
+    height: 50px;
+    padding: 0 0.5rem;
+  }
+
+  .title-bar .left,
+  .title-bar .right {
+    font-size: 0.85rem;
+  }
+
+  .title-bar .right img {
+    height: 24px;
+    margin-left: 6px;
+  }
+
+  .menu-bar {
+    height: auto;             /* si adatta */
+    padding: 4px 0;
+  }
+
+  .menu-tabs {
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .menu-option {
+    padding: 4px 6px;
+  }
+
+  .footer-bar {
+    font-size: 10px;
+    height: 26px;
+  }
+
+  .footer-bar .left,
+  .footer-bar .right {
+    font-size: 12px !important;
+  }
+}
