@@ -1,0 +1,298 @@
+// ---------------------------------------------------------------------
+// Author: Fabio D Filippone
+// History:
+// FFD - 06/07/2025 23:13:16 - v.1.0.0
+// FFD - 23/07/2025 21:58:47 - v.1.1.3
+// FFD - 19/08/2025 09:22:57 - v.1.2
+// ---------------------------------------------------------------------
+
+//---------------------------------------------------------------------
+//Function helper - Creare elemento con classe/testo
+// ---------------------------------------------------------------------
+function createEl(tag, options = {}) {
+  const el = document.createElement(tag);
+
+  if (options.class)   el.className   = options.class;
+  if (options.text)    el.textContent = options.text;
+  if (options.colspan) el.colSpan     = options.colspan;
+  if (options.id)      el.id          = options.id;
+  if (options.html)    el.innerHTML   = options.html;
+
+  // Applica lo style se passato
+  if (options.style) {
+    for (const [key, value] of Object.entries(options.style)) {
+      el.style[key] = value;
+    }
+  }
+
+  return el;
+}; // end function createEl
+
+//----------------------------------------------------------------------
+//Function createPoolTable
+//         dati[id] -> poolData
+// ---------------------------------------------------------------------
+function createPoolTable(id, poolData) {
+  const container = createEl("div", { class: "PoolContainer" });
+
+  // --------------
+  // 01 Tab Header
+  // --------------
+  //const { streepnr, streepcolor } = poolData.datapool;
+  //const streep = streepcolor ? streepnr + " (" + streepcolor + ")" : streepnr;
+  
+  const { streepnr, streepcolor,time } = poolData.datapool;
+  const colore = (streepcolor && streepcolor !== "N/A") ? streepcolor : undefined;
+  const streep = colore ? streepnr + " (" + colore + ")" : streepnr;
+ 
+  const table = createEl("table", { id: `Table-${id}`, class: "poolTable" });
+  const thead = document.createElement("thead");
+  const Ptbody = document.createElement("tbody");
+
+  const trHead = createEl("tr", { class: "PTabH1" });
+  trHead.append(
+    createEl("th", { class: "PTabH1p", text: "Pool "   + id,                 style: { textAlign: "left" } }),
+    createEl("th", { class: "PTabH1s", text: "Streep " + streep, colspan: 5, style: { textAlign: "left" } }),
+    createEl("th", { class: "PTabH1t", text: "time " + time,       colspan: 4 })
+  );
+  thead.appendChild(trHead);
+
+  // --------------
+  // 02 Tab Header
+  // --------------
+  const trCols    = document.createElement("tr");
+  const colChoice = poolData.datapool.column;
+  //console("65 " + rowpool.value.length);
+  
+  const headerCells = [{ text: "Athleta", class: "PTabH2CellA" },{ text: "Rank" }, { text: colChoice },{ text: "1" }, { text: "2" }, { text: "3" },{ text: "4" }, { text: "5" }, { text: "6" }, { text: "7" },{ class: "PTabH2Cempty" },{ text: "TS" }, { text: "RS" }, { text: "Diff" },{ class: "PTabH2Cempty" },{ text: "V" }, { text: "V/M" }];
+  headerCells.forEach(c =>
+    trCols.appendChild(createEl("th", { class: c.class || "PTabH2Cell", text: c.text || "" }))
+  );
+  Ptbody.appendChild(trCols);
+
+  // --------------
+  // 03 Tab Body
+  // --------------
+  poolData.pool.forEach((rowpool, index) => {
+    const tr = document.createElement("tr");
+    const td = document.createElement("td");
+          td.style.minWidth = "235px";
+          td.style.textAlign = "left";
+    const flag = document.createElement("span");
+          flag.classList.add("fi", `fi-${rowpool.flag.toLowerCase()}`);
+          flag.style.marginRight = "6px";
+          td.appendChild(flag);
+          td.appendChild(document.createTextNode(rowpool.atleta));
+          tr.appendChild(td);
+
+          tr.appendChild(createEl("td", { text: rowpool.rank.toString() }));
+      let colVal = colChoice === "Country" ? rowpool.country :
+                   colChoice === "Club"    ? rowpool.club : "";
+          tr.appendChild(createEl("td", { text: colVal, style: { minWidth: "50px", textAlign: "left" } }));
+
+      let won = 0;
+      let divisore = (rowpool.value.length - 3);
+          for (let i = 0; i < rowpool.value.length - 2; i++) {
+            
+            let val = rowpool.value[i];
+            let colore = val.startsWith("V") ? "green" : val.startsWith("D") ? "red" : "black";
+            if (val.startsWith("V")) won++;
+            val = val.slice(1);
+if (val === "" ) {
+  divisore--;
+val='-';
+}
+
+
+
+            	
+            if (index === i) { tr.appendChild(createEl("td", { style: { backgroundColor: "#007bff" } })) }
+            else { 
+              tr.appendChild(createEl("td", { text: val, style: { textAlign: "center", color: colore }}));
+            };
+          } // end for let i
+
+  // Separatore
+  const SpaziVuoti = Math.max(0, 10 - rowpool.value.length);
+     for (let i = 0; i < SpaziVuoti; i++) {tr.appendChild(createEl("td", { text: "", class: "PTabRCempty" }));};
+
+  // TS RS
+     let ts=rowpool.value[rowpool.value.length - 2];
+     let rs=rowpool.value[rowpool.value.length - 1];     
+        if (ts === "") ts="-";
+        if (rs === "") rs="-";        
+
+     tr.appendChild(createEl("td", { text: ts.toString() }));
+     tr.appendChild(createEl("td", { text: rs.toString() }));
+//      if (rowpool.value[rowpool.value.length - 2] === "") {
+//         tr.appendChild(createEl("td", { text: "-"}));
+//      } else {
+//         tr.appendChild(createEl("td", { text: rowpool.value[rowpool.value.length - 2].toString() }));
+//      }
+//      if (rowpool.value[rowpool.value.length - 1] === "") {
+//         tr.appendChild(createEl("td", { text: "-"}));
+//      } else {
+//        tr.appendChild(createEl("td", { text: rowpool.value[rowpool.value.length - 1].toString() }));
+//      }
+  // Diff
+  //let delta  = rowpool.value[rowpool.value.length - 2] - rowpool.value[rowpool.value.length - 1];
+    let delta;
+ 
+     console.log ("142 ts=",ts);    
+     console.log ("142 tr=",rs);         
+        if (ts === "-" || rs === "-") { 
+            tr.appendChild(createEl("td", {text: "-"}));        	  
+        } else {
+        	  delta = ts - rs;
+            let colore = delta < 0 ? "red" : "green";
+            tr.appendChild(createEl("td", {text: delta.toString(),style: { color: colore}}));
+        }
+  
+
+     
+     tr.appendChild(createEl("td", { text: "", class: "PTabRCempty" }));
+     //tr.appendChild(createEl("td", { text: divisore.toString() }));
+  
+  // V Won
+        if (ts === "-" || rs === "-") { 
+            tr.appendChild(createEl("td", {text: "-"}));        	  
+        } else {  
+         tr.appendChild(createEl("td", { text: won.toString() }));
+        }
+  // V/M
+  let vm;
+
+      if (divisore > 0) {
+          vm = won / divisore;
+          tr.appendChild(createEl("td", { text: vm.toFixed(2),style: { fontWeight: "bold", color: "#2c43ab" }}));
+      } else { 
+          tr.appendChild(createEl("td", { text: "-",style: { fontWeight: "bold", color: "#2c43ab" }}));
+      }
+
+
+     Ptbody.appendChild(tr);
+  });
+
+
+  // --------------
+  // 04 Buttons Details/Referees
+  // --------------
+  const trBtns = document.createElement("tr");
+  const tdLeft = createEl("td", { colspan: 10 });
+        tdLeft.classList.add("no-border-btn");
+
+  // Bottone
+  const btn1 = document.createElement("button");
+        btn1.id = `btnToggle1-${id}`;
+        btn1.classList.add("PoolTab-button", "left");
+  const icon1 = document.createElement("i");
+        icon1.classList.add("fa-solid", "fa-list");
+        btn1.appendChild(icon1);
+        tdLeft.appendChild(btn1);
+
+   // Spazio
+  const tdEmpty = createEl("td");
+  tdEmpty.style.border = "none";
+
+   // Bottone
+   const tdRight = createEl("td", { colspan: 12 });
+         tdRight.classList.add("no-border-btn");
+
+   const btn2 = document.createElement("button");
+         btn2.id = `btnToggle1-${id}`;
+         btn2.classList.add("PoolTab-button", "right");
+   const img2 = document.createElement("img");
+         img2.src = "images/referee02white.png";
+         img2.alt = "Referees";
+
+         btn2.appendChild(img2);
+         tdRight.appendChild(btn2);
+
+         trBtns.append(tdLeft, tdEmpty, tdRight);
+         Ptbody.appendChild(trBtns);
+
+  // costruzione tabella
+  table.append(thead, Ptbody);
+  container.appendChild(table);
+
+  // -----------------------
+  // Tab 01 extra - Details
+  // -----------------------
+  const extraRow    = createEl("div",   { id: `extraRow-${id}`,    class: "extraTables hidden" });
+  const extraCol1   = createEl("div",   { class: "extraColumn" });
+  const extraTable1 = createEl("table", { id: `extraTable1-${id}`, class: "extraTable extraTableLeft hidden" });
+
+  // creo thead
+  const Dthead  = document.createElement("thead");
+  const DtrHead = document.createElement("tr");
+  const th1 = createEl("th", { text: "#",       class: "DTabH" });
+  const th2 = createEl("th", { text: "Athleta", class: "DTabH" });
+  const th3 = createEl("th", { text: "Athleta", class: "DTabH" });
+  const th4 = createEl("th", { text: "Score",   class: "DTabH", colspan: 2});
+  DtrHead.append(th1, th2, th3, th4);
+  Dthead.appendChild(DtrHead);
+  extraTable1.appendChild(Dthead);
+
+  poolData.details.forEach((Val, index) => {
+     const [val2, val3] = [Val[2], Val[3]].map(v => Number(v.slice(1)));
+     const [clr1, clr2] = val3 > val2 ? ["red", "green"] : ["green", "red"];
+     const tr = document.createElement("tr");
+           tr.appendChild(createEl("td", { text: index + 1,    style: {                 textAlign: "right"               } }));
+           tr.appendChild(createEl("td", { text: Val[0],       style: { width: "200px", textAlign: "left",   color: clr1 } }));
+           tr.appendChild(createEl("td", { text: Val[1],       style: { width: "200px", textAlign: "left",   color: clr2 } }));
+           tr.appendChild(createEl("td", { text: String(val2), style: { width:  "20px", textAlign: "center", color: clr1 } }));
+           tr.appendChild(createEl("td", { text: String(val3), style: { width:  "20px", textAlign: "center", color: clr2 } }));
+     extraTable1.appendChild(tr);
+  });
+  extraCol1.appendChild(extraTable1);
+  extraRow.appendChild(extraCol1);
+
+  // -----------------------
+  // Tab 02 extra - Referees
+  // -----------------------
+  const extraCol2   = createEl("div",   { class: "extraColumn right" });
+  const extraTable2 = createEl("table", { id: `extraTable2-${id}`, class: "extraTable extraTableRight hidden" });
+  const tbody       = document.createElement("tbody");
+
+  poolData.referees.forEach((rowpool, index) => {
+     const tr = document.createElement("tr");
+           tr.appendChild(createEl("td", { text: rowpool.role, class: "RTabH" }));
+     const td = document.createElement("td");
+           td.style.textAlign = "left";
+           td.append(Object.assign(document.createElement("span"), {
+           className: `fi fi-${rowpool.flag.toLowerCase()}`,
+           style: "margin-right:6px;"
+           }));
+           td.append(document.createTextNode(rowpool.referee));
+           tr.appendChild(td);
+           tbody.appendChild(tr);
+  });
+
+  extraTable2.appendChild(tbody);
+  extraCol2.appendChild(extraTable2);
+  extraRow.append(extraCol1, extraCol2);
+  container.appendChild(extraRow);
+
+  // toggle
+  function toggleTable(tableId) {
+    const table = document.getElementById(tableId);
+    table.classList.toggle("hidden");
+    if (!extraTable1.classList.contains("hidden") || !extraTable2.classList.contains("hidden")) {
+      extraRow.classList.remove("hidden");
+    } else {
+      extraRow.classList.add("hidden");
+    }
+  }
+  btn1.addEventListener("click", () => toggleTable(`extraTable1-${id}`));
+  btn2.addEventListener("click", () => toggleTable(`extraTable2-${id}`));
+
+  return container;
+};
+
+//// ------------------- Creazione tabelle -------------------
+//document.addEventListener("DOMContentLoaded", () => {
+//  const root = document.body;
+//  Object.keys(dati).forEach(id => {
+//    root.appendChild(createPoolTable(id, dati[id]));
+//  });
+//});

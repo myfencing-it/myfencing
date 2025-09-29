@@ -1,17 +1,18 @@
 /*===========================================================
 == FFD v.1.0.0 - 27/07/2025 21:35:01                       ==
+== FFD v.2.0.0 - 29/09/2025 09:11:46                       ==
 == #003366 blue title                                      ==
 == #005599 blue menu
 == #005599 blue heading tabl
 == #0047AB NO NO
 == #f5f7fa; background cont-earea
 == #64748b title color
+== Responsive - ottimizzato per mobile e tablet            ==
 ===========================================================*/
- 
-.content-inner {
-	border: 1px solid orange;
-}
 
+.content-inner {
+  border: 1px solid orange;
+}
 
 .event-schedule-title {
   font-size:     1.5rem;
@@ -21,26 +22,21 @@
   margin-bottom: 25px;
 }
 
-.event-schedule-grid  {
-  display:               grid;
+.event-schedule-grid {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap:                   1rem;
+  gap: 1rem;
 }
 
 .schedule-container {
-  margin-top: 80px;
-  margin-left:25px; 
-  /*background-color:    #f5f7fa !important; */
-  background-color:    #f5f7fa !important;
-
-  padding:       2rem;
+  margin: 80px auto 0 auto;       /* centrato */
+  background-color: #f5f7fa !important;
+  padding: 2rem;
   border-radius: 16px;
-  box-shadow:    0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   width: 100%;
   max-width: 800px;
   animation: fadeIn 0.4s ease;
-  /*margin-top: 50px; */
-  
 }
 
 .scheduled-card {
@@ -51,7 +47,7 @@
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
- 
+
 .event-table {
   width: 100%;
   table-layout: fixed;  
@@ -75,8 +71,6 @@
 .col-img-live { width: 60px; }
 .col-text {}
 
-
-/* placeholder che mantiene la forma e si mimetizza con lo sfondo #f1f5f9 */
 .img-empty {
   width: 60px;        
   height: 30px;       
@@ -108,18 +102,16 @@
 .schedule-description {
   font-size: 1.05rem;
   color: #64748b;
-  font-weight: italic; 
+  font-style: italic;
   padding-left: 11ch;
 }
 
 /* --------------------
- CSS - Race List #f5f7fa;
+ CSS - Race List 
 -------------------- */
 
-
 .racelist-container {
-  margin-top: 80px;
-  margin-left:25px;
+  margin: 80px auto 0 auto;
   background: #f5f7fa;
   padding: 1.5rem;
   border-radius: 12px;
@@ -127,7 +119,7 @@
   width: 100%;
   max-width: 930px;
   animation: fadeIn 0.4s ease;
-  max-height: calc(5 * (72px + 0.8rem)); /* altezza card + gap */
+  max-height: calc(5 * (72px + 0.8rem));
   overflow-y: auto;
 }
 
@@ -138,7 +130,7 @@
 }
 
 /* -------------------------------------
- CSS -  CARD con layout a griglia
+ CSS -  CARD
 ------------------------------------- */
 .event-card {
   background: #f1f5f9;
@@ -159,7 +151,6 @@
   color: #1e293b;
 }
 
-/* Singola colonna */
 .event-list-single-column {
   display: flex;
   flex-direction: column;
@@ -170,4 +161,63 @@
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.95); }
   to   { opacity: 1; transform: scale(1);    }
+}
+
+/* ===========================================================
+   📱 Responsive Design
+=========================================================== */
+
+/* Tablet e schermi medi */
+@media (max-width: 768px) {
+  .event-grid,
+  .event-schedule-grid {
+    grid-template-columns: 1fr; /* una colonna */
+  }
+
+  .schedule-container,
+  .racelist-container {
+    padding: 1.2rem;
+  }
+}
+
+/* Smartphone piccoli */
+@media (max-width: 600px) {
+  .event-schedule-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .event-header {
+    font-size: 1rem;
+  }
+
+  .event-description {
+    font-size: 0.8rem;
+  }
+
+  .col-img-sx,
+  .col-img-team,
+  .col-img-live {
+    width: 40px;
+  }
+
+  .img-live img {
+    width: 60px;
+    height: 24px;
+  }
+}
+
+/* Scrollbar più elegante */
+.racelist-container {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f5f7fa;
+}
+
+.racelist-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.racelist-container::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
 }

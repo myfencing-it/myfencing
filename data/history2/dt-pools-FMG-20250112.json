@@ -1,0 +1,41 @@
+"01": {
+  pool: [
+    { atleta: "ILARI Michelangelo",               flag: "it", rank: "97",   value: [NN;V5;D2;V5;D1;V5;V5  ], club: "APACC" country:"ITA" },
+    { atleta: "DELL'EDERA Zeno",                  flag: "it", rank: "47",   value: [D1;NN;D3;D3;D1;V5;V5  ], club: "RMCAP" country:"ITA" },
+    { atleta: "GAMBARDELLA Emanuele",             flag: "it", rank: "91",   value: [V5;V5;NN;V5;D0;V5;V5  ], club: "RMFRC" country:"ITA" },
+    { atleta: "IARMOLIUK Bogdan",                 flag: "it", rank: "51",   value: [D2;V5;D4;NN;D1;V5;V5  ], club: "PSUNU" country:"ITA" },
+    { atleta: "STACCHIOTTI Diego",                flag: "it", rank: "1",    value: [V5;V5;V5;V5;NN;V5;V5  ], club: "ANJES" country:"ITA" },
+    { atleta: "ANNUNZIATA Paolo",                 flag: "it", rank: "9999", value: [D1;D2;D0;D1;D1;NN;D1  ], club: "MCADR" country:"ITA" },
+    { atleta: "ROMAGNOLI Edoardo",                flag: "it", rank: "9999", value: [D0;D2;D0;D2;D1;V5;NN  ], club: "ANREC" country:"ITA" }
+  ],
+
+"02": {
+  pool: [
+    { atleta: "BETTINI Lorenzo",                  flag: "it", rank: "53",   value: [NN;V3;V5;D1;V5;D3     ], club: "ANSEN" country:"ITA" },
+    { atleta: "BILORA Saverio",                   flag: "it", rank: "116",  value: [D2;NN;D1;D0;V5;D2     ], club: "RMAPP" country:"ITA" },
+    { atleta: "GIOVANNETTI Mattia",               flag: "it", rank: "39",   value: [D4;V5;NN;D0;V5;V5     ], club: "RMFRC" country:"ITA" },
+    { atleta: "BELFIORE Jacopo",                  flag: "it", rank: "4",    value: [V5;V5;V5;NN;V5;V5     ], club: "ANJES" country:"ITA" },
+    { atleta: "GIRALDO Antoine",                  flag: "it", rank: "9999", value: [D2;D4;D2;D1;NN;D2     ], club: "RMCAP" country:"ITA" },
+    { atleta: "BALDUCCI Mattia",                  flag: "it", rank: "88",   value: [V5;V5;D3;D1;V5;NN     ], club: "PSUNU" country:"ITA" }
+  ],
+
+"03": {
+  pool: [
+    { atleta: "DELLA ROSA Dennis",                flag: "it", rank: "59",   value: [NN;V5;D2;D1;V5;V5     ], club: "RMFRC" country:"ITA" },
+    { atleta: "DE VINCENTIS Mattia",              flag: "it", rank: "123",  value: [D3;NN;D0;D2;V5;D1     ], club: "RMFRC" country:"ITA" },
+    { atleta: "MONTI Ludovico",                   flag: "it", rank: "7",    value: [V5;V5;NN;V5;V5;V5     ], club: "PSUNU" country:"ITA" },
+    { atleta: "VITALI Jacopo",                    flag: "it", rank: "37",   value: [V5;V5;D2;NN;V5;V5     ], club: "APACC" country:"ITA" },
+    { atleta: "LATINI Francesco",                 flag: "it", rank: "96",   value: [D4;D1;D2;D0;NN;V5     ], club: "ANFAB" country:"ITA" },
+    { atleta: "ALBANO Alessandro",                flag: "it", rank: "202",  value: [D2;V5;D2;D3;D1;NN     ], club: "RMCAP" country:"ITA" }
+  ],
+
+"04": {
+  pool: [
+    { atleta: "EL RHRAIR HASI Malk",              flag: "it", rank: "20",   value: [NN;V5;D2;D3;V5;V5     ], club: "RMFRC" country:"ITA" },
+    { atleta: "DAL POZ Simone",                   flag: "it", rank: "141",  value: [D1;NN;D2;D2;D1;D4     ], club: "RMFRC" country:"ITA" },
+    { atleta: "BUONOMINI Luca",                   flag: "it", rank: "35",   value: [V3;V5;NN;V5;V5;V5     ], club: "RMCAP" country:"ITA" },
+    { atleta: "ORTENZI Giovanni Paolo",           flag: "it", rank: "70",   value: [V5;V5;D1;NN;V5;V5     ], club: "APACC" country:"ITA" },
+    { atleta: "DE ROSA Tiago",                    flag: "it", rank: "83",   value: [D2;V5;D1;D3;NN;V5     ], club: "RMAPP" country:"ITA" },
+    { atleta: "COLUZZI Mattia",                   flag: "it", rank: "174",  value: [D0;V5;D0;D1;D1;NN     ], club: "LTGGS" country:"ITA" }
+  ]
+}
