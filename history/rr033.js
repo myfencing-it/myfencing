@@ -225,6 +225,6 @@ function createPoolTable(id, poolData) {
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.body;
   Object.keys(dati).forEach(id => {
-    root.appendChild(createPoolTable(id, dati[id]));
+    root.appendChild(createPoolTable(id, dati[id]));    
   });
 });
