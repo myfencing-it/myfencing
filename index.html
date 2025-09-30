@@ -1,32 +1,35 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-<meta charset="UTF-8">
-<title>Login</title>
-</head>
-<body>
-<h2>Login</h2>
-<form id="loginForm">
-  <input type="text" id="user" placeholder="Username" required>
-  <input type="password" id="pass" placeholder="Password" required>
-  <button type="submit">Accedi</button>
-</form>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
 
-<script>
-const USER = "admin";
-const PASS = "1234";
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 
-document.getElementById("loginForm").addEventListener("submit", function(e){
-    e.preventDefault();
-    const user = document.getElementById("user").value;
-    const pass = document.getElementById("pass").value;
-    if(user === USER && pass === PASS){
-        alert("Login riuscito!");
-        window.location.href = "home04.html"; // Pagina da proteggere
-    } else {
-        alert("Username o password errati");
-    }
+// Sign-up
+document.getElementById('btnSignUp').addEventListener('click', async () => {
+  const email = document.getElementById('email').value;
+  const pass = document.getElementById('password').value;
+  try {
+    await createUserWithEmailAndPassword(auth, email, pass);
+    alert('Registrazione OK');
+  } catch(e) {
+    alert('Errore: ' + e.message);
+  }
+});
+
+// Login
+document.getElementById('btnSignIn').addEventListener('click', async () => {
+  const email = document.getElementById('email').value;
+  const pass = document.getElementById('password').value;
+  try {
+    await signInWithEmailAndPassword(auth, email, pass);
+  } catch(e) {
+    alert('Errore: ' + e.message);
+  }
+});
+
+// Redirect se già loggato
+onAuthStateChanged(auth, user => {
+  if(user) window.location.href = '/myfencing/home04.html';
 });
 </script>
-</body>
-</html>
